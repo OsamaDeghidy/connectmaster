@@ -1,0 +1,97 @@
+{% extends 'Base.html' %}{% load static %} {% block Title%} {{product.Product_Name}} {%endblock%} {% block body%}
+
+
+<!-- BreadCrumbs -->
+
+<!-- BreadCrumbs -->
+
+
+<!-- Content -->
+
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="card ">
+            <div class="card-header card-title text-center">
+                <div class="col-3"><img src="{% static 'images/logo.jpg'%}" alt="Logo">
+                </div>
+                <h1 class="card-title text-center">
+
+                    Customer File &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{customer.customer_code}}
+
+                </h1>
+            </div>
+            <div class="card text-right ">
+
+                <div class="card-body ">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="w-100">
+
+                                <div class="card">
+                                    <h5 class="card-header">بيانات العميل
+                                    </h5>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            <div class="row">
+                                                <div class="col">{{customer.Contact_Name}}<label dir='rtl'>اسم العميل:</label></div>
+                                                <div class="col">{{customer.Customer_Sector}}
+                                                    <label dir='rtl'> القطاع :</label></div>
+                                                <div class="w-100"></div>
+                                                <div class="col">{{customer.customer_code}}<label dir='rtl'>كود العميل :</label></div>
+                                                <div class="col">{{customer.Contact_Email}}
+                                                    <label dir='rtl'>  الايميل:</label></div>
+                                                <div class="w-100"></div>
+                                                <div class="col">{{customer.Contact_Phone}} <label dir='rtl'>رقم التليفون :</label></div>
+                                                <div class="w-100"></div>
+                                                <div class="col">{{customer.customer_representative}} <label dir='rtl'>ممثل العميل   :</label></div>
+
+
+
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="card-footer text-muted ">
+
+                    <p class="card-text text-left "> {{customer.Created_Dt}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created_By:{{customer.Created_By}}</p>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+</div>
+
+{%endblock%}

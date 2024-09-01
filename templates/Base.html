@@ -1,0 +1,317 @@
+{% load static %}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block Title%}{% endblock%}</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block head%}{% endblock%}
+    <link rel="apple-touch-icon" href="{% static 'images/Logo.png'%}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico'%}">
+
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/flag-icon-css/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/selectFX/css/cs-skin-elastic.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/jqvmap/dist/jqvmap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}">
+
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/rtl.css' %}">  -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    
+
+</head>
+
+<body>
+
+    {% block body %}
+
+    <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- <a class="navbar-brand">Connect ERP System</a> -->
+                <p class="navbar-brand" href=""><img src="{% static 'images/Logo.png'%}" alt="Logo"></p>
+                <p class="navbar-brand hidden" href="">C</p>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="navbar-nav nav ">
+                    <li class="active">
+                        <a href="{% url 'dashboard' %}">Dashboard <i class="menu-icon fa fa-dashboard"></i></a>
+                    </li>
+                    <h3 class="menu-title" style="padding-top: 0;">CRM</h3>
+                    <!-- /.menu-title -->
+                    <ul class="navbar-nav nav ">
+                        <li class="active sub-menu ">
+                            <a href="{% url 'sectors' %}" style="padding-bottom: 0;">Sectors <i class="menu-icon fa fa-flag"></i></a>
+                        </li>
+
+                        <li class="active sub-menu">
+                            <a href="{% url 'customers' %}" style="padding-bottom: 0;"> Customers<i class="menu-icon fa fa-id-card-o"></i></a>
+                        </li>
+<!-- product all removed -->
+
+                        <li class="active sub-menu">
+                            <a href="{% url 'orders' %}" style="padding-bottom: 0;">Orders<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'order_delivery_date_list' %}" style="padding-bottom: 0;">Order Delivery Date <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                      
+
+
+                        <h3 class="menu-title" style="padding-top: 0;">WORK ORDER</h3>
+                        <li class="active sub-menu">
+                            <a href="{% url 'opend_orders' %}" style="padding-bottom: 0;">Opened Orders ({{ total_orders_count }})<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'Prepressied' %}" style="padding-bottom: 0;">Prepress          ({{ total_Prepress_count }}) <i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'paperpreprat' %}" style="padding-bottom: 0;">Paper Prepration ({{ total_Paper_Prepration_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'In_progress' %}" style="padding-bottom: 0;"> Printing  ({{ total_Printing_count }}) <i class=" menu-icon  fa-solid fa-chart-simple"></i></a><!--Inprogress-->
+                        </li>
+
+                       
+                        <li class="active sub-menu">
+                            <a href="{% url 'PrintingServics' %}" style="padding-bottom: 0;">Printing Services ({{ total_Printing_Services_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'diecvting' %}" style="padding-bottom: 0;">Diecutting ({{ total_Diecutting_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'gluing' %}" style="padding-bottom: 0;">Gluing ({{ total_Gluing_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'Under_Delivery' %}" style="padding-bottom: 0;">Under Delivery ({{ Under_Delivery_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+
+                        <li class="active sub-menu">
+                            <a href="{% url 'Closed' %}" style="padding-bottom: 0;">Finished ({{ finished_orders_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'Fenished' %}" style="padding-bottom: 0;">Invoicing ({{ accounting_orders_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'In_voiced' %}" style="padding-bottom: 0;">Closed ({{ closed_orders_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'Deleted' %}" style="padding-bottom: 0;">Deleted ({{ deleted_orders_count }})<i class=" menu-icon fa-solid fa-chart-simple"></i></a>
+                        </li>
+                       
+                        
+                        <h3 class="menu-title" style="padding-top: 0;">MACHINES</h3>
+                        <li class="active sub-menu">
+                            <a href="{% url 'GTO_view' %}" style="padding-bottom: 0;">GTO(1) طباعة ربع<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'SM2_view' %}" style="padding-bottom: 0;">SM(2) طباعة ربع<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'SM5_view' %}" style="padding-bottom: 0;">SM(5) طباعة ربع<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'SORM_view' %}" style="padding-bottom: 0;">SORM طباعة نص<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'SM2_half_view' %}" style="padding-bottom: 0;">SM(2) طباعة نص<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'SM_full_view' %}" style="padding-bottom: 0;">SM طباعة فرخ<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'CD5_view' %}" style="padding-bottom: 0;">CD(5) طباعة فرخ<i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <h3 class="menu-title" style="padding-top: 0;"></h3>
+                        <li class="active sub-menu">
+                            <a href="{% url 'lamination_view' %}" style="padding-bottom: 0;">سلوفان <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'printing_varnish_services_uv' %}" style="padding-bottom: 0;">خدمات طباعة ورنيش/يوفي <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'external_printing_services' %}" style="padding-bottom: 0;">خدمات طباعة خارجي <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <h3 class="menu-title" style="padding-top: 0;"></h3>
+                        <li class="active sub-menu">
+                            <a href="{% url 'die_cutting_46' %}" style="padding-bottom: 0;">DIE 46 تكسير <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'die_cutting_57' %}" style="padding-bottom: 0;">DIE 57 تكسير <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'bobst_cutting' %}" style="padding-bottom: 0;">BOBST تكسير <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'desilking_and_cleaning' %}" style="padding-bottom: 0;">التسليك و التنظيف <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <h3 class="menu-title" style="padding-top: 0;"></h3>
+                        <li class="active sub-menu">
+                            <a href="{% url 'pactek_85_gluing' %}" style="padding-bottom: 0;">PACTEK 85 تلزيق <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'pactek_65_gluing' %}" style="padding-bottom: 0;">PACTEK 65 تلزيق <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'fg_gluing' %}" style="padding-bottom: 0;">FG  تلزيق <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'sbl_gluing' %}" style="padding-bottom: 0;">SBL  تلزيق <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'manual_gluing' %}" style="padding-bottom: 0;">تلزيق يدوي <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'binding' %}" style="padding-bottom: 0;">تجليد <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'finished_goods_cutting' %}" style="padding-bottom: 0;">قص بضاعة منتهية <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        <li class="active sub-menu">
+                            <a href="{% url 'external_gluing' %}" style="padding-bottom: 0;">تلزيق خارجي <i class="menu-icon fa fa-file-text"></i></a>
+                        </li>
+                        
+    
+                        
+                       
+                    </ul>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+
+        <header id="header" class="header" style="padding-bottom:0">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                      
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+
+                    <div class="user-area dropdown float-right">
+                        {%if user.is_authenticated%} welcome
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: rgb(22, 126, 223); font-weight: bold;">
+                              {{user.username}}
+                        </a>
+
+                        <div class="user-menu dropdown-menu" ;>
+                            <a class="nav-link " href="# "><i class="fa fa-user "></i> My Profile</a>
+
+                            <a class="nav-link " href="# "><i class="fa fa-user "></i> Notifications <span class="count ">13</span></a>
+
+                            <a class="nav-link " href="{%url 'change password'%} "><i class="fa fa-cog "></i> Change Password</a>
+
+                            <a class="nav-link " href="{%url 'logout'%} "> <i class="fa fa-power-off "></i> Logout</a>
+                        </div>
+
+
+
+                        {%endif%}
+                    </div>
+
+                   
+                </div>
+            </div>
+
+        </header>
+        <!-- Header-->
+
+        <!-- BreadCrumbs -->
+
+
+       
+        <!-- Content -->
+
+        {% block content %} {% endblock %}
+      
+    </div>
+
+    {% endblock %}
+
+
+
+
+    <script src="{% static 'vendors/jquery/dist/jquery.min.js' %} "></script>
+    <script src="{% static 'vendors/popper.js/dist/umd/popper.min.js' %} "></script>
+    <script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js' %} "></script>
+    <script src="{% static 'assets/js/main.js' %} "></script>
+
+
+    <script src="{% static 'vendors/chart.js/dist/Chart.bundle.min.js' %} "></script>
+    <script src="{% static 'assets/js/dashboard.js' %} "></script>
+    <script src="{% static 'assets/js/widgets.js' %} "></script>
+    <script src="{% static 'vendors/jqvmap/dist/jquery.vmap.min.js' %} "></script>
+    <script src="{% static 'vendors/jqvmap/examples/js/jquery.vmap.sampledata.js' %} "></script>
+    <script src="{% static 'vendors/jqvmap/dist/maps/jquery.vmap.world.js' %} "></script>
+    <script src="{% static 'vendors/datatables.net/js/jquery.dataTables.min.js' %} "></script>
+    <script src="{% static 'vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %} "></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/dataTables.buttons.min.js' %} "></script>
+    <script src="{% static 'vendors/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %} "></script>
+    <script src="{% static 'vendors/jszip/dist/jszip.min.js' %} "></script>
+    <script src="{% static 'vendors/pdfmake/build/pdfmake.min.js' %} "></script>
+    <script src="{% static 'vendors/pdfmake/build/vfs_fonts.js' %} "></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.html5.min.js' %} "></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.print.min.js' %} "></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.colVis.min.js' %} "></script>
+    {% block link %} 
+    <script src="{% static 'assets/js/init-scripts/data-table/datatables-init.js' %} "></script>
+    {% endblock %}
+    <script src="https://kit.fontawesome.com/ef1599ab54.js" crossorigin="anonymous"></script>
+    <script>
+        (function($) {
+            "use strict ";
+
+            jQuery('#vmap').vectorMap({
+                map: 'world_en',
+                backgroundColor: null,
+                color: '#ffffff',
+                hoverOpacity: 0.7,
+                selectedColor: '#1de9b6',
+                enableZoom: true,
+                showTooltip: true,
+                values: sample_data,
+                scaleColors: ['#1de9b6', '#03a9f5'],
+                normalizeFunction: 'polynomial'
+            });
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+{% extends 'Base.html' %} {% block Title%} {{sector.Sector_Name}} {%endblock%} {% block content%}
+
+{% block head%}     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>{% endblock%}
+<style>
+    .card {
+        width: 100%;
+    }
+    tr
+    {
+        text-align: center;
+       
+        font-weight: bolder;
+    }
+    td {
+        text-align: center;
+        
+    }
+    h5 {
+        color: rgb(0, 98, 155);
+        font-weight: bolder;
+        text-align: center;
+    }
+    a{
+        color: black;
+    }
+    tbody tr:hover {
+        background-color: lightgray; /* Change the background color to a different shade */
+    }
+    .search-box {
+       
+        width: 100%;
+        max-width: 200px;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+    }
+    /* تأكد من أنك تقوم بتحميل هذا الملف */
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* يمكنك تعديل هذا لتغيير المسافة بين الأزرار */
+    justify-content: center; /* يمكنك استخدام justify-content لإدارة المحاذاة */
+    align-items: center; /* لمحاذاة الأزرار عموديًا */
+}
+
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column; /* تحويل الاتجاه إلى عمودي في الشاشات الأصغر */
+        align-items: stretch; /* لتمديد الأزرار على طول العمود */
+    }
+}
+
+</style>
+
+<div class="content mt-3">
+    <div class="card-header card-title row ">
+        <div class="col"><h2>{{ machine_name }}</h2></div>
+
+
+            
+            <div class="col-auto">
+                <div class="search-box mb-3">
+                    <input type="text" id="global-search" class="form-control" placeholder="بحث...">
+                </div>
+            </div>
+        
+
+        
+        
+    </div>
+    
+        
+    <div class="animated fadeIn">
+        <div class="row">
+
+
+
+          
+            {% include 'order_filter/fristtable.html' with title='جديد' machines_list=New %}
+            {% include 'order_filter/machine_card.html' with title='تصميم' machines_list=design %}
+            {% include 'order_filter/machine_card.html' with title='مونتاج' machines_list=Produced_by %}
+            {% include 'order_filter/machine_card.html' with title='أفلام' machines_list=aflam %}
+            {% include 'order_filter/machine_card.html' with title='شراء ورق' machines_list=buy_paper %}
+            {% include 'order_filter/machine_card.html' with title='ورق' machines_list=paper %}
+            {% include 'order_filter/machine_card.html' with title='شيتر' machines_list=chitter %}
+            {% include 'order_filter/machine_card.html' with title='تجهيز ورق' machines_list=paper_processing %}
+            {% include 'order_filter/machine_card.html' with title='GTO(1) طباعة ربع' machines_list=Gto %}
+            {% include 'order_filter/machine_card.html' with title='SM(2) طباعة ربع' machines_list=SM %}
+            {% include 'order_filter/machine_card.html' with title='SM(5) طباعة ربع' machines_list=SM5 %}
+            {% include 'order_filter/machine_card.html' with title='SORM طباعة نص' machines_list=SORM %}
+            {% include 'order_filter/machine_card.html' with title='SM(2) طباعة نص' machines_list=SM2 %}
+            {% include 'order_filter/machine_card.html' with title='SM طباعة فرخ' machines_list=SM_chick %}
+            {% include 'order_filter/machine_card.html' with title='CD(5) طباعة فرخ' machines_list=SD_SM %}
+
+            {% include 'order_filter/machine_card.html' with title='سلوفان' machines_list=slofan %}
+            {% include 'order_filter/machine_card.html' with title='خدمات طباعة ورنيش/يوفي' machines_list=uv %}
+            {% include 'order_filter/machine_card.html' with title='خدمات طباعة خارجي' machines_list=outside_printing %}
+
+            {% include 'order_filter/machine_card.html' with title='DIE 46 تكسير' machines_list=DIE_46 %}
+            {% include 'order_filter/machine_card.html' with title='DIE 57 تكسير' machines_list=DIE_57 %}
+            {% include 'order_filter/machine_card.html' with title='BOBST تكسير' machines_list=BOBST %}
+            {% include 'order_filter/machine_card.html' with title='التسليك و التنظيف' machines_list=cleaning %}
+            {% include 'order_filter/machine_card.html' with title='PACTEK 85 تلزيق' machines_list=BACTED_8S %}
+            {% include 'order_filter/machine_card.html' with title='PACTEK 65 تلزيق' machines_list=BACTECHGS %}
+            {% include 'order_filter/machine_card.html' with title='FG  تلزيق' machines_list=FG %}
+            {% include 'order_filter/machine_card.html' with title='SBL  تلزيق' machines_list=SBL %}
+            {% include 'order_filter/machine_card.html' with title='تلزيق يدوي' machines_list=Manual %}
+            {% include 'order_filter/machine_card.html' with title='تجليد' machines_list=bind %}
+            {% include 'order_filter/machine_card.html' with title='قص بضاعة منتهية' machines_list=finished_goods %}
+            {% include 'order_filter/machine_card.html' with title='تلزيق خارجي' machines_list=external_adhesive %}
+            
+         
+
+        </div>
+
+
+    </div>
+</div>
+<!-- .animated -->
+
+<script>
+    $(document).ready(function() {
+        // تهيئة DataTables لكل جدول
+        var tables = [];
+        $('.searchable-table').each(function(index) {
+            var table = $(this).DataTable({
+                "dom": 't', // إخفاء مربع البحث الافتراضي
+                "scrollCollapse": true, // تمكين التمرير والانهيار
+                "paging": false, // تعطيل ترقيم الصفحات
+                "info": false // إخفاء معلومات الجدول (عدد الصفوف والمعلومات الأخرى)
+            });
+    
+            // تحديد ارتفاع منطقة التمرير بناءً على عدد الصفوف
+            var rowCount = table.rows().count();
+            var scrollYValue = rowCount > 10 ? "400px" : "auto"; // تعديل هذا الرقم بناءً على احتياجاتك
+    
+            table.settings()[0].oScroll.sY = scrollYValue;
+            table.draw();
+    
+            tables.push(table);
+        });
+    
+        // تطبيق البحث العام
+        $('#global-search').on('keyup', function() {
+            var searchTerm = this.value;
+            tables.forEach(function(table) {
+                table.search(searchTerm).draw();
+            });
+        });
+    
+        // تطبيق الفرز العام
+        $('#global-search').on('keyup', function() {
+            var searchTerm = this.value.toLowerCase();
+            tables.forEach(function(table) {
+                table.rows().every(function() {
+                    var row = this.node();
+                    $(row).toggle($(row).text().toLowerCase().indexOf(searchTerm) !== -1);
+                });
+            });
+        });
+    
+        // التعامل مع حالة عدم وجود بيانات في الجدول الأول
+        function checkTables() {
+            tables.forEach(function(table) {
+                var rowCount = table.rows({ filter: 'applied' }).count();
+                if (rowCount === 0) {
+                    $(table.table().container()).hide();
+                } else {
+                    $(table.table().container()).show();
+                }
+            });
+        }
+    
+        // التحقق من الجداول عند التهيئة
+        checkTables();
+    
+        // التحقق من الجداول عند البحث
+        $('#global-search').on('keyup', function() {
+            checkTables();
+        });
+    });
+    
+    
+    
+    
+</script>
+    
+
+
+
+{%endblock%}

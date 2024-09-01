@@ -1,0 +1,54 @@
+
+{% extends 'Base.html' %} {% block Title%} Create Corrective Action {%endblock%} {% block content%}
+
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-title">
+                        <h5>
+                            New Corrective Action
+                        </h5>
+                    </div>
+
+
+
+                    <form method="post" novalidate>
+
+
+
+                        <div class="card rounded text-right" dir="rtl">
+                            <div class="card-header  text-white bg-dark rounded text-white bg-dark">
+                                <strong>New Corrective Action </strong>
+                            </div>
+
+
+
+                            <div class="card-body card-block  bg-light ">
+                                {% csrf_token%} {% include 'Includes/Form.html' %}
+                                <div class="card-body card-block text-xl-center rounded  ">
+                                    <button type="submit" class="btn btn-success col-lg-5 rounded">Add</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- .animated -->
+    </div>
+    <!-- .content -->
+</div>
+
+
+
+{%endblock%}

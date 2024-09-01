@@ -1,0 +1,92 @@
+{% extends 'Base.html' %} {% block Title%} closed {%endblock%} {% block content%}
+
+<style>
+    .card {
+        width: 100%;
+    }
+    tr
+    {
+        text-align: center;
+       
+        font-weight: bolder;
+    }
+    td {
+        text-align: center;
+    }
+    h5 {
+        color: rgb(0, 98, 155);
+        font-weight: bolder;
+        text-align: center;
+    }
+    a{
+        color: black;
+    }
+    tbody tr:hover {
+        background-color: lightgray; /* Change the background color to a different shade */
+    }
+</style>
+
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+
+           
+                <div class="card">
+                    <div class="card-header card-title">
+                        <h5>Deleted</h5>
+                    </div>
+                    <div class="card-body">
+                        <div style="float: right;">
+                        </div>
+
+
+                        <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                            <thead>
+                                <tr>
+                                    <th > أمر الشغل </th>
+                                    <th >العميل </th>
+                                    <th > المنتج </th>
+                                    <th >الكمية </th>
+                                    <th >المرحلة </th>
+                                    <th >ممثل العميل </th>
+                                    <th >Created Date </th>
+                              
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for Order in orders %}
+                                <tr style="text-align: center;  font-weight: bolder;  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;" ondblclick="window.location='{% url 'Order_details' Order.pk %}'" style="cursor: pointer;">
+                                                                    <td> <a href="{% url 'Order_details' Order.pk %}">{{Order.Ord_work_order_number}}</a></td>
+                                <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  Order.Ord_Product.Product_Customer.pk %}  ">{{Order.Ord_Product.Product_Customer}}</a></td>
+                                    <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' Order.Ord_Product.Product_Sector.pk Order.Ord_Product.Product_Customer.pk Order.Ord_Product.pk %} ">{{Order.Ord_Product.Product_Name}}</a></td>
+                                <td>{{Order.Ord_Required_quantity}}</td>
+                                <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' Order.Ord_Product.Product_Sector.pk Order.Ord_Product.Product_Customer.pk Order.Ord_Product.pk Order.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                    data-toggle="tooltip " title="Edit Status ">{{Order.Ord_states}}</a></td>
+
+                                <td>{{Order.Ord_Product.customer_representative}}</td>
+                                <td>{{Order.Ord_Created_Dt}}</td>
+
+                                 
+
+                            </tr>
+                                {% endfor %}
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+        
+        </div>
+
+
+    </div>
+</div>
+<!-- .animated -->
+<!-- .content -->
+
+
+
+{%endblock%}

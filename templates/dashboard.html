@@ -1,0 +1,708 @@
+{% extends 'Base.html' %} {% block Title%} Sectors {%endblock%} {% block content%}
+
+
+<!-- BreadCrumbs -->
+
+
+<div class="breadcrumbs ">
+
+
+    <div class="content container-fluid">
+
+
+
+
+
+        <body>
+
+
+            <!-- Left Panel -->
+
+
+
+
+            <div id="right-panel" class="right-panel">
+
+
+
+
+                <div class="content mt-3">
+
+
+
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-1">
+                            <div class="card-body pb-0">
+                                <div class="dropdown float-right">
+                                    <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton1" data-toggle="dropdown">
+                                           <i class="fa fa-cog"></i>
+                                       </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="{% url 'sectors' %}">sector</a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="mb-0">
+                                    <span class="count">{{sec}}</span>
+                                </h4>
+                                <p class="text-light">sectors </p>
+
+                                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                                    <canvas id="widgetChart1"></canvas>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-2">
+                            <div class="card-body pb-0">
+                                <div class="dropdown float-right">
+                                    <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton2" data-toggle="dropdown">
+                                           <i class="fa fa-cog"></i>
+                                       </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="{% url 'customers' %}">customers</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="mb-0">
+                                    <span class="count">{{customers}}</span>
+                                </h4>
+                                <p class="text-light"> customers</p>
+
+                                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                                    <canvas id="widgetChart2"></canvas>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-3">
+                            <div class="card-body pb-0">
+                                <div class="dropdown float-right">
+                                    <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton3" data-toggle="dropdown">
+                                           <i class="fa fa-cog"></i>
+                                       </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="#">products</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="mb-0">
+                                    <span class="count">{{products}}</span>
+                                </h4>
+                                <p class="text-light">products</p>
+
+                            </div>
+
+                            <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                                <canvas id="widgetChart3"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/.col-->
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card text-white bg-flat-color-4">
+                            <div class="card-body pb-0">
+                                <div class="dropdown float-right">
+                                    <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton4" data-toggle="dropdown">
+                                           <i class="fa fa-cog"></i>
+                                       </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                        <div class="dropdown-menu-content">
+                                            <a class="dropdown-item" href="{% url 'orders' %}">orders</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="mb-0">
+                                    <span class="count">{{orders}}</span>
+                                </h4>
+                                <p class="text-light">orders</p>
+
+                                <div class="chart-wrapper px-3" style="height:70px;" height="70">
+                                    <canvas id="widgetChart4"></canvas>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Prepressied' %}">
+
+                                        <div class="stat-icon dib"><i class="fa fa-plus-square-o text-success border-success"></i></div>
+                                    </a>
+                                    </a>
+                                    <div class="stat-content dib">
+
+                                        <div class="stat-text">جديد</div>
+
+                                        <div class="stat-digit">{{New}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Prepressied' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-eye "></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">تصميم</div>
+                                        <div class="stat-digit">{{design}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Prepressied' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-toggle-left text-warning border-warning"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> مونتاج</div>
+                                        <div class="stat-digit">{{Produced_by}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Prepressied' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-file-text-o text-primary border-primary"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> ورق </div>
+                                        <div class="stat-digit">{{paper}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Prepressied' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-calendar-o text-success border-success"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> شراءورق </div>
+                                        <div class="stat-digit">{{buy_paper}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Prepressied' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-align-center "></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">شيتر</div>
+                                        <div class="stat-digit">{{chitter}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Prepressied' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-star-half-o text-warning border-warning"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">تجهيز ورق</div>
+                                        <div class="stat-digit">{{paper_processing}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-print text-primary border-primary"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> GTO طباعة ربع </div>
+                                        <div class="stat-digit">{{Gto}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-print  text-success border-success"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> SM طباعة ربع </div>
+                                        <div class="stat-digit">{{SM}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-print "></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> SORM طباعة نص </div>
+                                        <div class="stat-digit">{{SORM}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-print text-warning border-warning"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> SM طباعة فرخ </div>
+                                        <div class="stat-digit">{{SM_chick}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-print text-primary border-primary"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> CD-SM طباعة فرخ </div>
+                                        <div class="stat-digit">{{SD_SM}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa   fa-eraser  text-success border-success"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> سلوفان </div>
+                                        <div class="stat-digit">{{cellophane}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-print "></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> خدمات طباعة </div>
+                                        <div class="stat-digit">{{Varnish_UV}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-paste (alias) text-warning border-warning"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> طباعة خارجي</div>
+                                        <div class="stat-digit">{{Outside_printing}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-chain-broken text-primary border-primary"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">DIE 46 تكسير'</div>
+                                        <div class="stat-digit">{{DIE_46}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa   fa-chain-broken  text-success border-success"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> DIE 57 تكسير </div>
+                                        <div class="stat-digit">{{DIE_57}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-chain-broken "></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> BOBST تكسير </div>
+                                        <div class="stat-digit">{{BOBST}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-building-o text-warning border-warning"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> التسليك و التنظيف</div>
+                                        <div class="stat-digit">{{cleaning}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-ticket text-primary border-primary"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> PACTEK 85 تلزيق </div>
+                                        <div class="stat-digit">{{BACTED_8S}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa   fa-ticket  text-success border-success"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> PACTEK 65 تلزيق </div>
+                                        <div class="stat-digit">{{BACTECHGS}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-ticket "></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> FG تلزيق </div>
+                                        <div class="stat-digit">{{FG}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-ticket text-warning border-warning"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> SBL تلزيق </div>
+                                        <div class="stat-digit">{{SBL}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-ticket text-primary border-primary"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> تلزيق يدوي </div>
+                                        <div class="stat-digit">{{Manual}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-chain (alias)  text-success border-success"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> تجليد </div>
+                                        <div class="stat-digit">{{bind}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-scissors "></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> قص بضاعة منتهية </div>
+                                        <div class="stat-digit">{{finished_goods}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_progress' %}">
+                                        <div class="stat-icon dib"><i class="fa  fa-ticket text-warning border-warning"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text"> تلزيق خارجي </div>
+                                        <div class="stat-digit">{{external_adhesive}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Closed' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-check-square text-primary border-primary"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">Closed</div>
+                                        <div class="stat-digit">{{Closed}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Fenished' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-money  text-success border-success"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">Finshed</div>
+                                        <div class="stat-digit">{{Account}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'In_voiced' %}">
+                                        <div class="stat-icon dib"><i class="fa   fa-dot-circle-o "></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">Invoiced</div>
+                                        <div class="stat-digit">{{Invoiced}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-one">
+                                    <a href="{% url 'Deleted' %}">
+                                        <div class="stat-icon dib"><i class="fa fa-times-circle-o text-warning border-warning"></i></div>
+                                    </a>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">Deleted</div>
+                                        <div class="stat-digit">{{Deleted}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <!-- .content -->
+            </div>
+            <!-- /#right-panel -->
+
+            <!-- Right Panel -->
+
+
+            <script>
+                (function($) {
+                    "use strict";
+
+                    jQuery('#vmap').vectorMap({
+                        map: 'world_en',
+                        backgroundColor: null,
+                        color: '#ffffff',
+                        hoverOpacity: 0.7,
+                        selectedColor: '#1de9b6',
+                        enableZoom: true,
+                        showTooltip: true,
+                        values: sample_data,
+                        scaleColors: ['#1de9b6', '#03a9f5'],
+                        normalizeFunction: 'polynomial'
+                    });
+                })(jQuery);
+            </script>
+
+        </body>
+
+
+
+
+
+    </div>
+
+</div>
+<!-- BreadCrumbs -->
+
+<!-- Content -->
+{%endblock%}

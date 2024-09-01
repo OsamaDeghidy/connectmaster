@@ -1,0 +1,371 @@
+{% extends 'Base.html' %}{% load static %} {% block Title%} {{product.Product_Name}} {%endblock%} {% block content%}
+
+
+<!-- BreadCrumbs -->
+
+<!-- BreadCrumbs -->
+
+
+<!-- Content -->
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="card ">
+            <div class="card-header card-title">
+                <h5 class="card-title"> <a href="{% url 'orders' %}">Orders</a> / {{orders.Ord_work_order_number}}
+
+
+        </div>
+        <div class= " row m-2 text-center col-12">
+            <div class= " col-3">
+            <a href="{% url 'order_update' orders.Ord_Product.Product_Sector.pk orders.Ord_Product.Product_Customer.pk orders.Ord_Product.pk orders.pk %} " class="btn btn-success btn-sm col-12" data-toggle="tooltip " title="Edit All"><i class="fa fa-magic "></i> Edit All</a>
+            </div>
+            <div class= " col-3">
+            <a class="btn btn-success btn-sm col-12 " href="{% url 'order_status_update' orders.Ord_Product.Product_Sector.pk orders.Ord_Product.Product_Customer.pk orders.Ord_Product.pk orders.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                        data-toggle="tooltip " title="Edit Status ">{{orders.Ord_states}}</a></td></div>
+            <div class= " col-3">
+            <a href="{% url 'print_order'   orders.pk %} " class="btn btn-success btn-sm col-12" data-toggle="tooltip " title="Order Print"><i class="fa fa-magic "></i> Order Print</a>
+          </div>
+          <div class= " col-3">
+            <a href="{% url 'machine_edit' orders.pk %}" type="button" class="btn btn-success btn-sm col-12" target="popup" onclick="window.open(this.href, 'name', 'width=800,height=600')" class="btn btn-success btn-sm" data-toggle="tooltip" title="Machine"><i class="fa-regular fa-pen-to-square"></i>Machine</a>
+        </div>
+        </div>
+            <div class="card text-right ">
+
+                <div class="card-body ">
+
+                    <div class="row">
+                        <div class="col-12" dir='rtl'>
+
+                            <div class="card">
+                                <h5 class="card-header">المواصفات الرئيسيه
+                                </h5>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div class="row">
+
+                                            <div class="col">
+                                                <h3><label>اسم العميل: </label> <a  style="text-align: center; font-weight: bolder; color: rgb(0, 98, 155); 
+                                                    " href="{% url 'customer_products' orders.Ord_Product.Product_Sector.pk orders.Ord_Product.Product_Customer.pk %}  ">{{orders.Ord_Product.Product_Customer}}</a></h3>
+                                            </div>
+                                            <div class="col">
+                                                <h3><label> المنتج: </label><a style="text-align: center; color:  rgb(0, 98, 155);  " href="{% url 'product_orders' orders.Ord_Product.Product_Sector.pk orders.Ord_Product.Product_Customer.pk orders.Ord_Product.pk %} ">{{orders.Ord_Product.Product_Name}}</a></h3>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label> التاريخ:  </label>{{orders.Ord_Created_Dt}}</div>
+                                            <div class="col"><label>ممثل العميل: </label>{{orders.Ord_Product.customer_representative}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label> كود المنتج لدى  الشركة: </label>{{orders.Ord_Product.Product_MyCode}}</div>
+                                            <div class="col"><label>كود المنتج لدى العميل: </label>{{orders.Ord_Product.Product_Code}} </div>
+
+
+                                            <div class="w-100"></div>
+                                            <div class="col"><label>الكمية المطلوبة: </label>{{orders.Ord_Required_quantity}}</div>
+                                            <div class="col"><label>رقم أمر التوريد: </label> {{orders.Ord_import_order_number}}</div>
+
+                                            <div class="w-100"></div>
+                                            <div class="col"><label>المرحلة: </label>{{orders.Ord_states}}</div>
+                                            <div class="col"><label>مقاس المنتج: </label>الطول: {{orders.Ord_Product.Product_length}} العرض: {{orders.Ord_Product.Product_width}} الارتفاع: {{orders.Ord_Product.Product_height}}
+                                            </div>
+
+                                        </div>
+
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                        <div class="col-12 " dir='rtl'>
+                            <div class="card">
+                                <h5 class="card-header">بيانات التصميم والتجهيزات الفنية
+                                </h5>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div class="row">
+                                            <div class="col"><label dir='rtl'> نوع العملية:  </label> {{orders.Ord_Operation_type}}</div>
+                                            <div class="col"><label dir='rtl'>نوع التعديل: </label> {{orders.Ord_Operation_modification_type}}</div>
+
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>مقاس المونتاج: </label> {{orders.Ord_montage_size}} </div>
+                                            <div class="col"><label dir='rtl'>الزنكات: </label>{{orders.Ord_zincs}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>عدد فى المونتاج: </label> {{orders.Ord_Number_the_montage}} </div>
+                                            <div class="col"><label dir='rtl'>فورم: </label>{{orders.Ord_form}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>مرفقات: </label> {{orders.Ord_Annexes_design_data}} </div>
+                                            <div class="col"><label dir='rtl'>لوازم أخرى: </label>{{orders.Ord_Other_supplies}}</div>
+                                            <div class="w-100"></div>
+
+                                            <div></div>
+                                        </div>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-12" dir='rtl'>
+                            <div class="card">
+                                <h5 class="card-header"> بيانـات الورق والكرتون&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label dir='rtl'> رقم أمر الشغل فى الشيتر: </label> {{paper_and_cardboard_data.CARD_Work_order_number_in_chart}}
+                                </h5>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div class="row">
+                                            <table class="table table-striped table-bordered ">
+                                                <thead>
+                                                    <tr>
+                                                        <th><label>المورد</label></th>
+                                                        <th><label>نوع الورق ومقاسة </label></th>
+                                                        <th><label>الجرام </label></th>
+                                                        <th><label>العدد </label></th>
+                                                        <th><label>الوزن القائم </label> </th>
+                                                        <th><label>الوزن الصافى </label></th>
+                                                        <th><label>عدد الطوايل </label></th>
+
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- main date -->
+                                                    <tr>
+                                                        <td>{{paper_and_cardboard_data.CARD_Supplier}}</td>
+                                                        <td> {{paper_and_cardboard_data.CARD_Paper_type_and_size}} </td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Grame}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Number}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Gross_weight}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Net_weight}} </td>
+                                                        <td>{{paper_and_cardboard_data.CARD_long_number}} </td>
+                                                    </tr>
+                                                    <!-- data_1 -->
+                                                    <tr>
+                                                        <td>{{paper_and_cardboard_data.CARD_Supplier_1}}</td>
+                                                        <td> {{paper_and_cardboard_data.CARD_Paper_type_and_size_1}} </td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Grame_1}}</td>
+
+                                                        <td>{{paper_and_cardboard_data.CARD_Number_1}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Gross_weight_1}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Net_weight_1}} </td>
+                                                        <td>{{paper_and_cardboard_data.CARD_long_number_1}} </td>
+
+                                                    </tr>
+                                                    <!-- data_2 -->
+                                                    <tr>
+                                                        <td>{{paper_and_cardboard_data.CARD_Supplier_2}}</td>
+                                                        <td> {{paper_and_cardboard_data.CARD_Paper_type_and_size_2}} </td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Grame_2}}</td>
+
+                                                        <td>{{paper_and_cardboard_data.CARD_Number_2}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Gross_weight_2}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Net_weight_2}} </td>
+                                                        <td>{{paper_and_cardboard_data.CARD_long_number_3}} </td>
+
+                                                    </tr>
+                                                    <!-- data_3 -->
+                                                    <tr>
+                                                        <td>{{paper_and_cardboard_data.CARD_Supplier_3}}</td>
+                                                        <td> {{paper_and_cardboard_data.CARD_Paper_type_and_size_3}} </td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Grame_3}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Number_3}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Gross_weight_3}}</td>
+                                                        <td>{{paper_and_cardboard_data.CARD_Net_weight_3}} </td>
+                                                        <td>{{paper_and_cardboard_data.CARD_long_number_3}} </td>
+
+                                                    </tr>
+
+
+                                                </tbody>
+
+                                            </table>
+                                            <div class="col"><label dir='rtl'> رقم أمر الشغل فى الشيتر: </label> {{paper_and_cardboard_data.CARD_Work_order_number_in_chart}} </div>
+                                            <div class="col"><label dir='rtl'>العدد الإجمالي: </label>{{paper_and_cardboard_data.CARD_Total_weight}}</div>
+
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>ملاحظات على نوع الورق ومقاسة: </label>{{paper_and_cardboard_data.CARD_note_Paper_type_and_size}}</div>
+                                            <div class="col"><label dir='rtl'>مقاس قص السكينة: </label> {{paper_and_cardboard_data.CARD_Cut_size}}</div>
+
+
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>اتجاه الالياف: </label>{{paper_and_cardboard_data.CARD_fiber_direction}}</div>
+                                            <div class="w-100"></div>
+
+                                            <div></div>
+                                        </div>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="col-12" dir='rtl'>
+                            <div class="card">
+                                <h5 class="card-header"> بيانات الطباعة
+                                </h5>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div class="row" style="min-height:  185px;">
+                                            <div class="col"><label dir='rtl'> طباعة: </label>{{ orders.Ord_type_print }} </div>
+                                            <div class="col"><label dir='rtl'>عدد الألوان: </label>{{orders.Ord_colors_nember}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'> عدد الأوجه: </label>{{ orders.Ord_number_of_faces }} </div>
+                                            <div class="col"><label dir='rtl'>الماكينة: </label>{{orders.Ord_the_machine}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>ألوان  صور: </label> {{orders.Ord_colors_are_picture}} </div>
+                                            <div class="col"><label dir='rtl'>ألوان مخصوصة: </label> {{orders.Ord_custom_colors}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>ملاحظات الطباعة: </label> {{orders.Ord_print_note}}</div>
+
+                                            <div></div>
+                                        </div>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-12" dir='rtl'>
+                            <div class="card">
+                                <h5 class="card-header">خدمات ما بعد الطباعة
+                                </h5>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div class="row" style="min-height:  180px;">
+                                            {% if orders.Ord_cellophane_type != '' %}
+                                            <div class="col"><label dir='rtl'> نوع السلوفان: </label> {{ orders.Ord_cellophane_type}} </div>
+                                            <div class="col"><label dir='rtl'>عدد الأوجه: </label>{{ orders.Ord_face_number}} </div>
+                                            <div class="col"><label dir='rtl'>مقاس البكر: </label> {{orders.Ord_Maiden_size }}</div>
+
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>خدمات أخرى: </label> {{ orders.Ord_Other_services}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>وصف الخدمة: </label> {{ orders.Ord_Description_services }} </div>
+                                            <div class="col"><label dir='rtl'>ملاحظات: </label> {{ orders.Ord_Notes}}</div>
+                                            <div class="w-100"></div>
+
+                                            <div></div>
+                                            {%else%}
+                                            <div class="col"><label dir='rtl'>خدمات أخرى: </label> {{ orders.Ord_Other_services}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>وصف الخدمة: </label> {{ orders.Ord_Description_services }} </div>
+                                            <div class="col"><label dir='rtl'>ملاحظات: </label> {{ orders.Ord_Notes}}</div>
+
+
+                                            {%endif%}
+
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-12" dir='rtl'>
+                            <div class="card">
+                                <h5 class="card-header">خدمات التكسير
+                                </h5>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div class="row">
+                                            <div class="col"><label dir='rtl'> خدمات التكسير: </label> {{orders.Ord_Breaking_services}} {{orders.Ord_Breaking_services_two}}</div>
+                                            <div class="col"><label dir='rtl'>كود/عدد الفورمه: </label>{{orders.Ord_Chop_code}} </div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>فورمه من: </label> {{orders.Ord_form_of}}</div>
+                                            <div class="col"><label dir='rtl'>الماكينة: </label> {{orders.Ord_Machine}} </div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'> عدد الريج: </label> {{orders.Ord_Number_Reg}} </div>
+                                            <div class="col"><label dir='rtl'>المرفقات: </label> {{orders.Ord_Attachments}}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>ملاحظات التكسير: </label> {{orders.Ord_Note_Breaking}} </div>
+                                            <div class="col"><label dir='rtl'>أخرى: </label> {{orders.Ord_Others}}</div>
+                                            <div class="w-100"></div>
+
+                                            <div></div>
+
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-12 " dir='rtl'>
+                            <div class="card">
+                                <h5 class="card-header">خدمات اللصق والتجليد
+                                </h5>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div class="row">
+                                            <div class="col"><label dir='rtl'>تلزيق: </label> {{orders.Ord_Gluing }}</div>
+                                            <div class="col"><label dir='rtl'>ملاحظات التلزيق: </label>{{orders.Ord_Note_Gluing }} </div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>تجليد: </label> {{orders.Ord_Binding_Gluing }}</div>
+                                            <div class="col"><label dir='rtl'>عدد الأركان: </label> {{orders.Ord_number_corners }} </div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'> وصف التلزيق: </label> {{orders.Ord_Gluing_Description }} </div>
+                                            <div class="col"><label dir='rtl'>إسم الماكينة: </label> {{orders.Ord_machine_name }}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>المنتج التام: </label> {{orders.Ord_Complete_Product }} </div>
+                                            <div class="col"><label dir='rtl'>عدد الباندات: </label> {{orders.Ord_number_pandas }}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>التغليف: </label> {{orders.Ord_Packing }} </div>
+                                            <div class="col"><label dir='rtl'>العدد الباكو: </label> {{orders.Ord_number_pacu }}</div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><label dir='rtl'>الخامات  المطلوبة: </label> {{orders.Ord_Required_materials }} </div>
+                                            <div class="col"><label dir='rtl'>إرشادات التسليم: </label> {{orders.Ord_Delivery_Instructions }}</div>
+                                            <div class="w-100"></div>
+
+                                            <div></div>
+
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+</div>
+
+
+
+</div>
+
+{%endblock%}

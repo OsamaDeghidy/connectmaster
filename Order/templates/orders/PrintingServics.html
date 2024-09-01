@@ -1,0 +1,189 @@
+{% extends 'Base.html' %} {% block Title%} Inprogress {%endblock%} {% block content%}
+
+<style>
+    .card {
+        width: 100%;
+    }
+    tr
+    {
+        text-align: center;
+       
+        font-weight: bolder;
+    }
+    td {
+        text-align: center;
+        
+    }
+    h5 {
+        color: rgb(0, 98, 155);
+        font-weight: bolder;
+        text-align: center;
+    }
+    a{
+        color: black;
+    }
+    tbody tr:hover {
+        background-color: lightgray; /* Change the background color to a different shade */
+    }
+</style>
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5> سلوفان </h5>
+                </div>
+                <div class="card-body">
+                    <div style="float: right;">
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for cellophane in cellophane %}
+                            <tr style="text-align: center;  font-weight: bolder;  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;" ondblclick="window.location='{% url 'Order_details' cellophane.pk %}'" style="cursor: pointer;">
+                            <td> <a href="{% url 'Order_details' cellophane.pk %}">{{cellophane.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  cellophane.Ord_Product.Product_Customer.pk %}  ">{{cellophane.Ord_Product.Product_Customer}}</a></td>
+                            <td><a style="text-align: center;    font-weight: bolder;" href="{% url 'product_orders' cellophane.Ord_Product.Product_Sector.pk cellophane.Ord_Product.Product_Customer.pk cellophane.Ord_Product.pk %} ">{{cellophane.Ord_Product.Product_Name}}</a></td>
+                            <td>{{cellophane.Ord_Required_quantity}}</td>
+                            <td><a href="{% url 'order_status_update' cellophane.Ord_Product.Product_Sector.pk cellophane.Ord_Product.Product_Customer.pk cellophane.Ord_Product.pk cellophane.pk %} " type="button "
+                                target="popup " onclick="window.open( this.href , 'name',
+                        'width=800,height=600') " style="text-align: center; color: darkcyan; font-weight: bolder;" data-toggle="tooltip" title="Edite Status">{{cellophane.Ord_states}}</a></td>
+
+                            <td>{{cellophane.Ord_montage_size}}</td>
+                            <td>{{cellophane.Ord_Number_the_montage}}</td>
+
+                           
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5> ورنيش يوفى لاكر   </h5>
+                </div>
+                <div class="card-body">
+                    <div class="card-header card-title">
+                        <h5>  خدمات طباعة ورنيش/يوفي </h5>
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for Varnish_UV in Varnish_UV %}
+                            <tr style="text-align: center;  font-weight: bolder;  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;" ondblclick="window.location='{% url 'Order_details' Varnish_UV.pk %}'" style="cursor: pointer;">
+
+                            <td>
+                                <a href="{% url 'Order_details' Varnish_UV.pk %}">{{Varnish_UV.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  Varnish_UV.Ord_Product.Product_Customer.pk %}  ">{{Varnish_UV.Ord_Product.Product_Customer}}</a></td>
+                            <td><a style="text-align: center;    font-weight: bolder;" href="{% url 'product_orders' Varnish_UV.Ord_Product.Product_Sector.pk Varnish_UV.Ord_Product.Product_Customer.pk Varnish_UV.Ord_Product.pk %} ">{{Varnish_UV.Ord_Product.Product_Name}}</a></td>
+                            <td>{{Varnish_UV.Ord_Required_quantity}}</td>
+                            <td><a href="{% url 'order_status_update' Varnish_UV.Ord_Product.Product_Sector.pk Varnish_UV.Ord_Product.Product_Customer.pk Varnish_UV.Ord_Product.pk Varnish_UV.pk %} " type="button "
+                                target="popup " onclick="window.open( this.href , 'name',
+                        'width=800,height=600') " style="text-align: center; color: darkcyan; font-weight: bolder;" data-toggle="tooltip" title="Edite Status">{{Varnish_UV.Ord_states}}</a></td>
+
+                            <td>{{Varnish_UV.Ord_montage_size}}</td>
+                            <td>{{Varnish_UV.Ord_Number_the_montage}}</td>
+
+                            <td>
+
+                              
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-header card-title">
+                        <h5>  خدمات طباعة خارجي </h5>
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for Outside_printing in Outside_printing %}
+                            <tr style="text-align: center;  font-weight: bolder;  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;" ondblclick="window.location='{% url 'Order_details' Outside_printing.pk %}'" style="cursor: pointer;">
+
+                            <td> <a href="{% url 'Order_details' Outside_printing.pk %}">{{Outside_printing.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  Outside_printing.Ord_Product.Product_Customer.pk %}  ">{{Outside_printing.Ord_Product.Product_Customer}}</a></td>
+                            <td><a style="text-align: center;    font-weight: bolder;" href="{% url 'product_orders' Outside_printing.Ord_Product.Product_Sector.pk Outside_printing.Ord_Product.Product_Customer.pk Outside_printing.Ord_Product.pk %} ">{{Outside_printing.Ord_Product.Product_Name}}</a></td>
+                            <td>{{Outside_printing.Ord_Required_quantity}}</td>
+                            <td><a href="{% url 'order_status_update' Outside_printing.Ord_Product.Product_Sector.pk Outside_printing.Ord_Product.Product_Customer.pk Outside_printing.Ord_Product.pk Outside_printing.pk %} " type="button " target="popup "
+                                onclick="window.open( this.href , 'name',
+                        'width=800,height=600') " style="text-align: center; color: darkcyan; font-weight: bolder;" data-toggle="tooltip" title="Edite Status">{{Outside_printing.Ord_states}}</a></td>
+
+                            <td>{{Outside_printing.Ord_montage_size}}</td>
+                            <td>{{Outside_printing.Ord_Number_the_montage}}</td>
+
+                           
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        
+
+
+        </div>
+
+
+    </div>
+</div>
+<!-- .animated -->
+<!-- .content -->
+
+
+
+{%endblock%}

@@ -1,0 +1,178 @@
+{% extends 'Base.html' %} {% block Title%} {{sector.Sector_Name}} {%endblock%} {% block content%}
+
+{% block head%} <!-- Include DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    
+<!-- Include jQuery (required by DataTables) -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!-- Include DataTables JS -->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>{% endblock%}
+<style>
+    .card {
+        width: 100%;
+    }
+    tr
+    {
+        text-align: center;
+       
+        font-weight: bolder;
+    }
+    td {
+        text-align: center;
+        
+    }
+    h5 {
+        color: rgb(0, 98, 155);
+        font-weight: bolder;
+        text-align: center;
+    }
+    a{
+        color: black;
+    }
+    tbody tr:hover {
+        background-color: lightgray; /* Change the background color to a different shade */
+    }
+    .search-box {
+       
+        width: 100%;
+        max-width: 200px;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+    }
+    /* تأكد من أنك تقوم بتحميل هذا الملف */
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* يمكنك تعديل هذا لتغيير المسافة بين الأزرار */
+    justify-content: center; /* يمكنك استخدام justify-content لإدارة المحاذاة */
+    align-items: center; /* لمحاذاة الأزرار عموديًا */
+}
+
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column; /* تحويل الاتجاه إلى عمودي في الشاشات الأصغر */
+        align-items: stretch; /* لتمديد الأزرار على طول العمود */
+    }
+}
+
+</style>
+
+<div class="content mt-3">
+    <div class="card-header card-title row ">
+        <div class="col"><h2>{{ machine_name }}</h2></div>
+
+
+            
+            <div class="col-auto">
+                <div class="search-box mb-3">
+                    <input type="text" id="global-search" class="form-control" placeholder="بحث...">
+                </div>
+            </div>
+        
+
+        
+        
+    </div>
+    
+        
+    <div class="animated fadeIn">
+        <div class="row">
+
+
+
+          
+            {% include 'filter/fristtable.html' with title='تصميم' machines_list=design %}
+            {% include 'filter/machine_card.html' with title='مونتاج' machines_list=produced_by %}
+            {% include 'filter/machine_card.html' with title='أفلام' machines_list=aflam %}
+            {% include 'filter/machine_card.html' with title='شراء ورق' machines_list=buy_paper %}
+            {% include 'filter/machine_card.html' with title='ورق' machines_list=paper %}
+            {% include 'filter/machine_card.html' with title='شيتر' machines_list=chitter %}
+            {% include 'filter/machine_card.html' with title='تجهيز ورق' machines_list=paper_processing %}
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5>{{ machine_name }} </h5>
+                </div>
+            {% include 'filter/machine_card.html' with  machines_list=Gto %}
+          
+            </div>
+        
+         
+
+        </div>
+
+
+    </div>
+</div>
+<!-- .animated -->
+
+<script>
+    $(document).ready(function() {
+        // تهيئة DataTables لكل جدول
+        var tables = [];
+        $('.searchable-table').each(function(index) {
+            var table = $(this).DataTable({
+                "dom": 't', // إخفاء مربع البحث الافتراضي
+                "scrollCollapse": true, // تمكين التمرير والانهيار
+                "paging": false, // تعطيل ترقيم الصفحات
+                "info": false // إخفاء معلومات الجدول (عدد الصفوف والمعلومات الأخرى)
+            });
+    
+            // تحديد ارتفاع منطقة التمرير بناءً على عدد الصفوف
+            var rowCount = table.rows().count();
+            var scrollYValue = rowCount > 10 ? "400px" : "auto"; // تعديل هذا الرقم بناءً على احتياجاتك
+    
+            table.settings()[0].oScroll.sY = scrollYValue;
+            table.draw();
+    
+            tables.push(table);
+        });
+    
+        // تطبيق البحث العام
+        $('#global-search').on('keyup', function() {
+            var searchTerm = this.value;
+            tables.forEach(function(table) {
+                table.search(searchTerm).draw();
+            });
+        });
+    
+        // تطبيق الفرز العام
+        $('#global-search').on('keyup', function() {
+            var searchTerm = this.value.toLowerCase();
+            tables.forEach(function(table) {
+                table.rows().every(function() {
+                    var row = this.node();
+                    $(row).toggle($(row).text().toLowerCase().indexOf(searchTerm) !== -1);
+                });
+            });
+        });
+    
+        // التعامل مع حالة عدم وجود بيانات في الجدول الأول
+        function checkTables() {
+            tables.forEach(function(table) {
+                var rowCount = table.rows({ filter: 'applied' }).count();
+                if (rowCount === 0) {
+                    $(table.table().container()).hide();
+                } else {
+                    $(table.table().container()).show();
+                }
+            });
+        }
+    
+        // التحقق من الجداول عند التهيئة
+        checkTables();
+    
+        // التحقق من الجداول عند البحث
+        $('#global-search').on('keyup', function() {
+            checkTables();
+        });
+    });
+    
+    
+    
+    
+</script>
+    
+
+
+{%endblock%}

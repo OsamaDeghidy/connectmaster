@@ -1,0 +1,29 @@
+{% extends 'Base.html' %} {% load static %}{% block Title%} login {%endblock%} {% block body%}
+
+
+<div class="sufee-login d-flex align-content-center flex-wrap">
+    <div class="container">
+        <div class="login-content">
+            <div class="login-form">
+
+                <img class="align-content" src="{% static 'images/logo.jpg'%}" alt="">
+
+
+
+
+
+                <form method="post" novalidate>
+                    {% csrf_token%}
+
+                    <input type="hidden" name="next" value="{{ next }}">{% csrf_token%}{% include 'Includes/Form.html' %}
+                    <div class="card-body card-block rounded  ">
+                        <button type="submit" class="btn btn-primary rounded">Login</button>
+                    </div>
+                    <a href="{% url 'signup' %}" class="btn btn-primary rounded">Signup</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

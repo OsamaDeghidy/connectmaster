@@ -1,0 +1,100 @@
+{% extends 'Base.html' %} {% block Title%}  {%endblock%} {% block body%}
+
+
+
+
+
+
+<!-- Content -->
+<div class="content mt-3  ">
+    <div class="animated fadeIn">
+        <div class="row">
+
+
+            <div class="col-md-12">
+                <div class="card">
+                    
+
+                    <form method="post">
+                        {% csrf_token %}
+
+
+                        <div class="row rounded">
+                            <form method="post">
+
+                                <div class="col-md-12  " dir="rtl">
+
+                                    <div class="card-header text-right text-white bg-dark rounded ">
+                                        <strong>الموصفات  الرئسية  </strong>
+                                    </div>
+
+
+                                    <div class="card-body card-block text-lg-right bg-light   ">
+                                        <div class="card-body card-block">
+
+                                            <div class="row">
+                                                <div class="w-100"> <label hidden>{{form.as_p}}</label></div>
+                                                <div class="w-100"></div>
+                                                <div class="col"><label dir='rtl'>إسم العميل:</label>{{orders.Ord_Product.Product_Customer}}</div>
+                                                <div class="col"><label dir='rtl'>كود المنتج لدى العميل :</label>{{orders.Ord_Product.Product_Code}} </div>
+                                                <div class="w-100"></div>
+                                                <div class="col"><label dir='rtl'>إسم المنتج :</label>{{orders.Ord_Product.Product_Name}}</div>
+                                                <div class="col"><label dir='rtl'>كود المنتج :</label>{{orders.Ord_Product.Product_MyCode}}</div>
+                                                
+                                                
+                                                
+                                              
+                                                <div class="w-100"></div>
+                                                <div class="col text-left" ><label >:New RDD</label>{{form.RDD}}</div>
+                                                <div class="col text-left"><label >:New EDD</label>{{form.EDD}}</div>
+
+                                               
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="card-body card-block text-xl-center rounded">
+                                    <button type="submit" class="btn btn-success col-lg-5 rounded" onclick="closeTabAndRefreshParent()">Add</button>
+                                    <script>
+                                        function closeTabAndRefreshParent() {
+                                            setTimeout(function(){
+                                                window.close(); // Close the current tab after 200 milliseconds
+                                            }, 150);
+                                
+                                            setTimeout(function(){
+                                                // Refresh the parent page after 500 milliseconds
+                                                window.opener.location.reload();
+                                            }, 150);
+                                        }
+                                    </script>
+                                </div>
+                                
+                                
+                            </form>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- .animated -->
+    </div>
+</div>
+<!-- .content -->
+
+
+
+
+
+{%endblock%}

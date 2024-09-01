@@ -1,0 +1,882 @@
+{% block Title%} Create New product {%endblock%} {% block content%}
+
+
+
+<body>
+
+
+
+
+    <!-- /header -->
+    <!-- Header-->
+
+
+
+    <div class="content mt-3">
+        <div class="animated fadeIn">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card">
+
+
+                        <form method="post" novalidate>
+                            <div class="content mt-3" dir="rtl">
+                                <div class="animated fadeIn">
+
+
+                                    <div class="row">
+
+                                        <!--/.col-->
+                                        <div class="col-lg-12" dir="rtl">
+                                            <div class="card">
+                                                <div class="card-header text-right">
+                                                    <strong>الموصفات الرئسيه للمنتج </strong>
+                                                </div>
+
+
+                                                <div class="card-body card-block">
+                                                    <div class="card-body card-block">
+                                                        <form action="" method="post" class="form-inline">
+                                                            <div class="form-group text-right"><label for="exampleInputName2" class="pr-3  form-control-label">اسم المنتج</label><input type="text" id="exampleInputName2" required="" class="form-control">{{ProductNewProductForm.Product_Name}}</div>
+                                                            <div class="form-group text-right"><label for="exampleInputName2" class="px-3  form-control-label">كود المنتج لدى العميل</label><input type="text" id="exampleInputName2" required="" class="form-control">{{NewProductForm.Product_Code}}</div>
+
+                                                        </form>
+
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row form-group">
+                                                    <div class="col col-md-2"><label for="select" class=" form-control-label">وصف المنتج </label></div>
+                                                    <div class="col-12 col-md-9">
+                                                        <select name="select" id="select" class="form-control">                                                
+                                                                                                <option value="0">Please select</option>
+                                                                                                {% for Product_Description in Product_Descriptions %}
+                                                                                                <option value="{{Product.product_dicription}}">{{form.product_dicription}}</option>
+                                                                                                {% endfor %}
+                                                                                            </select>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="card-body card-block ">
+                                                    <form action="" method="post" class="form-inline">
+                                                        <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label">الطول </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+                                                        <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label">العرض </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+                                                        <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> الارتفاع</label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+
+
+                                                    </form>
+                                                </div>
+
+
+                                                <div class="row form-group">
+                                                    <div class="col col-md-2"><label for="text-input" class=" form-control-label">الكميه المتوقعه</label></div>
+                                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                                                </div>
+
+
+                                                <div class="row form-group" dir="rtl">
+                                                    <div class="col col-md-2"><label class=" form-control-label">الزياده المسموحه</label></div>
+                                                    <div class="col col-md-3">
+                                                        <div class="form-check-inline form-check">
+                                                            <label for="inline-checkbox1" class="form-check-label ">
+                                                                                                        <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">حسب امر الشغل
+                                                                                                    </label>
+                                                            <label for="inline-checkbox2" class="form-check-label ">
+                                                                                                        <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2" class="form-check-input">10% بحد اقصى 
+                                                                                                    </label>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+
+
+
+
+
+                                            <div class="row">
+
+                                                <!--/.col-->
+                                                <div class="col-lg-12" dir="rtl">
+                                                    <div class="card">
+                                                        <div class="card-header text-right">
+                                                            <strong>مواصفات التصميم والطباعة </strong>
+                                                        </div>
+
+
+
+                                                        <div class="card-body card-block">
+
+                                                            <div class="row form-group">
+                                                                <div class="col col-md-2"><label for="select" class=" form-control-label">مصدر التصميم</label></div>
+                                                                <div class="col-12 col-md-9">
+                                                                    <select name="select" id="select" class="form-control">
+                                                                                                            <option value="0">Please select</option>
+                                                                                                            <option value="1">Option #1</option>
+                                                                                                            <option value="2">Option #2</option>
+                                                                                                        </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row form-group">
+                                                            <div class="col col-md-2"><label for="file-multiple-input" class=" form-control-label"> إرفاق التصميم المعتمد</label></div>
+                                                            <div class="col-12 col-md-9"><input type="file" id="file-multiple-input" name="file-multiple-input" multiple="" class="form-control-file"></div>
+                                                        </div>
+
+
+
+
+
+                                                        <div class="row form-group">
+                                                            <div class="col col-md-2"><label for="select" class=" form-control-label">نوع التصميم</label></div>
+                                                            <div class="col-12 col-md-9">
+                                                                <select name="select" id="select" class="form-control">
+                                                                                                    <option value="0">Please select</option>
+                                                                                                    <option value="1">Option #1</option>
+                                                                                                    <option value="2">Option #2</option>
+                                                                                                    <option value="3">Option #3</option>
+                                                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row form-group">
+                                                            <div class="col col-md-2"><label class=" form-control-label">اعدام القديم</label></div>
+                                                            <div class="col col-md-1">
+                                                                <div class="form-check-inline form-check">
+                                                                    <label for="inline-checkbox1" class="form-check-label ">
+                                                                            <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">
+                                                                        </label>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div class="row form-group">
+                                                            <div class="col col-md-2"><label for="select" class=" form-control-label">عدد لاوجه </label></div>
+                                                            <div class="col-12 col-md-9">
+                                                                <select name="select" id="select" class="form-control">
+                                                                                                        <option value="0">Please select</option>
+                                                                                                        <option value="1">Option #1</option>
+                                                                                                        <option value="2">Option #2</option>
+                                                                                                        <option value="3">Option #3</option>
+                                                                                                    </select>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="row form-group">
+                                                            <div class="col col-md-2"><label class=" form-control-label">الالوان</label></div>
+                                                            <div class="col col-md-3">
+                                                                <div class="form-check-inline form-check">
+                                                                    <label for="inline-checkbox1" class="form-check-label ">
+                                                                            <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">One
+                                                                        </label>
+                                                                    <label for="inline-checkbox2" class="form-check-label ">
+                                                                            <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2" class="form-check-input">Two
+                                                                        </label>
+                                                                    <label for="inline-checkbox3" class="form-check-label ">
+                                                                            <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3" class="form-check-input">Three
+                                                                        </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="card-body card-block ">
+                                                            <form action="" method="post" class="form-inline">
+                                                                <p>الالوان المخصوصه</p>
+                                                                <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+                                                                <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+                                                                <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+
+                                                                <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+                                                                <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+                                                                <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" required="" class="form-control"></div>
+
+
+                                                            </form>
+                                                        </div>
+
+
+
+                                                    </div>
+
+
+
+
+
+
+
+
+
+                                                    <div class="row">
+
+                                                        <!--/.col-->
+                                                        <div class="col-lg-12">
+                                                            <div class="card">
+                                                                <div class="card-header text-right">
+                                                                    <strong>مواصفات الورق</strong>
+                                                                </div>
+
+
+
+                                                                <div class="card-body card-block">
+                                                                    <div class="row form-group">
+                                                                        <div class="col col-md-2"><label for="select" class=" form-control-label">نوع الورق</label></div>
+                                                                        <div class="col-12 col-md-9">
+                                                                            <select name="select" id="select" class="form-control">
+                                                                                                                    <option value="0">Please select</option>
+                                                                                                                    <option value="1">Option #1</option>
+                                                                                                                    <option value="2">Option #2</option>
+                                                                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row form-group">
+                                                                    <div class="col col-md-2"><label for="text-input" class=" form-control-label">جرام الورق</label></div>
+                                                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                                                                </div>
+
+                                                                <div class="row form-group">
+                                                                    <div class="col col-md-2"><label for="select" class=" form-control-label">اتجاه الالياف</label></div>
+                                                                    <div class="col-12 col-md-9">
+                                                                        <select name="select" id="select" class="form-control">
+                                                                                                                <option value="0">Please select</option>
+                                                                                                                <option value="1">Option #1</option>
+                                                                                                                <option value="2">Option #2</option>
+                                                                                                                <option value="3">Option #3</option>
+                                                                                                            </select>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="row">
+
+                                                                <!--/.col-->
+                                                                <div class="col-lg-12" dir="rtl">
+                                                                    <div class="card">
+                                                                        <div class="card-header text-right">
+                                                                            <strong>خدمات ما بعد الطباعه</strong>
+                                                                        </div>
+
+
+
+                                                                        <div class="card-body card-block">
+
+                                                                            <div class="row form-group">
+                                                                                <div class="col col-md-2"><label class=" form-control-label">نوع الخدمه</label></div>
+                                                                                <div class="col col-md-3">
+                                                                                    <div class="form-check-inline form-check">
+                                                                                        <label for="inline-checkbox1" class="form-check-label ">
+                                                                                            <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">One
+                                                                                        </label>
+                                                                                        <label for="inline-checkbox2" class="form-check-label ">
+                                                                                            <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2" class="form-check-input">Two
+                                                                                        </label>
+                                                                                        <label for="inline-checkbox3" class="form-check-label ">
+                                                                                            <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3" class="form-check-input">Three
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row form-group">
+                                                                            <div class="col col-md-2"><label for="text-input" class=" form-control-label">التفاصيل</label></div>
+                                                                            <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                                                                        </div>
+                                                                        <button type="submit" class="btn btn-success">Add</button>
+                                                                    </div>
+                                                                    <div class="row">
+
+                                                                    </div>
+
+                                                                    <div class="row">
+
+                                                                        <!--/.col-->
+                                                                        <div class="col-lg-12" dir="rtl">
+                                                                            <div class="card">
+                                                                                <div class="card-header text-right">
+                                                                                    <strong>بيانات التكسير</strong>
+                                                                                </div>
+
+
+
+                                                                                <div class="card-body card-block">
+
+                                                                                    <div class="row form-group">
+                                                                                        <div class="col col-md-2"><label class=" form-control-label">نوع الخدمه</label></div>
+                                                                                        <div class="col col-md-3">
+                                                                                            <div class="form-check-inline form-check">
+                                                                                                <label for="inline-checkbox1" class="form-check-label ">
+                                                                                                    <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">One
+                                                                                                </label>
+                                                                                                <label for="inline-checkbox2" class="form-check-label ">
+                                                                                                    <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2" class="form-check-input">Two
+                                                                                                </label>
+                                                                                                <label for="inline-checkbox3" class="form-check-label ">
+                                                                                                    <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3" class="form-check-input">Three
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row form-group">
+                                                                                    <div class="col col-md-2"><label for="text-input" class=" form-control-label">التفاصيل</label></div>
+                                                                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                                                                                </div>
+                                                                                <button type="submit" class="btn btn-success">Add</button>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                            </div>
+
+                                                                            <div class="row">
+
+                                                                                <!--/.col-->
+                                                                                <div class="col-lg-12" dir="rtl">
+                                                                                    <div class="card">
+                                                                                        <div class="card-header text-right">
+                                                                                            <strong>بيانات التلزيق والتجليد</strong>
+                                                                                        </div>
+
+                                                                                        <div class="card-body card-block">
+
+                                                                                            <div class="row form-group">
+                                                                                                <div class="col col-md-2"><label class=" form-control-label">نوع الخدمه</label></div>
+                                                                                                <div class="col col-md-3">
+                                                                                                    <div class="form-check-inline form-check">
+                                                                                                        <label for="inline-checkbox1" class="form-check-label ">
+                                                                                                        <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">One
+                                                                                                    </label>
+                                                                                                        <label for="inline-checkbox2" class="form-check-label ">
+                                                                                                        <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2" class="form-check-input">Two
+                                                                                                    </label>
+                                                                                                        <label for="inline-checkbox3" class="form-check-label ">
+                                                                                                        <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3" class="form-check-input">Three
+                                                                                                    </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="row form-group">
+                                                                                            <div class="col col-md-2"><label for="text-input" class=" form-control-label">التفاصيل</label></div>
+                                                                                            <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                                                                                        </div>
+                                                                                        <button type="submit" class="btn btn-success">Add</button>
+                                                                                    </div>
+                                                                                    <div class="row">
+
+                                                                                        <!--/.col-->
+                                                                                        <div class="col-lg-12" dir="rtl">
+                                                                                            <div class="card">
+                                                                                                <div class="card-header text-right">
+                                                                                                    <strong>بيانات المنتج التام والتعبئة</strong>
+                                                                                                </div>
+
+
+
+
+                                                                                                <div class="card-body card-block">
+
+                                                                                                    <div class="row form-group">
+                                                                                                        <div class="col col-md-2"><label for="select" class=" form-control-label">المنتج</label></div>
+                                                                                                        <div class="col-12 col-md-9">
+                                                                                                            <select name="select" id="select" class="form-control">
+                                                                                                                                            <option value="0">Please select</option>
+                                                                                                                                            <option value="1">Option #1</option>
+                                                                                                                                            <option value="2">Option #2</option>
+                                                                                                                                        </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="row form-group">
+                                                                                                    <div class="col col-md-2"><label for="select" class=" form-control-label">الباكو</label></div>
+                                                                                                    <div class="col-12 col-md-9">
+                                                                                                        <select name="select" id="select" class="form-control">
+                                                                                                                                        <option value="0">Please select</option>
+                                                                                                                                        <option value="1">Option #1</option>
+                                                                                                                                        <option value="2">Option #2</option>
+                                                                                                                                    </select>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="row form-group">
+                                                                                                    <div class="col col-md-2"><label for="text-input" class=" form-control-label">التفاصيل</label></div>
+                                                                                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                                                                                                </div>
+
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- .animated -->
+                                                                            </div>
+                                                                            <!-- .content -->
+                                                                        </div>
+                                                                        <!-- /#right-panel -->
+                                                                        <!-- Right Panel -->
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-success">Add</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- .animated -->
+    </div>
+
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+
+
+                    <form method="post" novalidate>
+                        <div class="content mt-3" dir="rtl">
+                            <div class="animated fadeIn">
+
+
+                                <div class="row">
+                                    <div class="col-lg-12" dir="rtl">
+                                        <div class="card">
+                                            <div class="card-header text-right">
+                                                <strong>الموصفات الرئسيه للمنتج </strong>
+                                            </div>
+
+
+                                            <div class="card-body card-block">
+                                                <div class="card-body card-block">
+                                                    <form action="" method="post" class="form-inline">
+                                                        <div class="form-group text-right"><label for="exampleInputName2" class="pr-3  form-control-label">اسم المنتج</label><input type="text" id="exampleInputName2" class="form-control" required={{form.Product_Name}}></div>
+                                                        <div class="form-group text-right"><label for="exampleInputName2" class="px-3  form-control-label">كود المنتج لدى العميل</label><input type="text" id="exampleInputName2" class="form-control" required={{form.Product_Code}}></div>
+
+                                                    </form>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <div class="col col-md-2"><label for="select" class=" form-control-label">وصف المنتج </label></div>
+                                                <div class="col-12 col-md-9">
+                                                    <select name="select" id="select" class="form-control">                                                
+                                                                                            
+                                                                                             
+                                                                                            <option value="{{form.product_dicription}}"></option>
+                                                                                            
+                                                                                        </select>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="card-body card-block ">
+                                                <form action="" method="post" class="form-inline">
+                                                    <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label">الطول </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form.Product_length}}></div>
+                                                    <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label">العرض </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form.Product_width}}></div>
+                                                    <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> الارتفاع</label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form.Product_height}}></div>
+
+
+                                                </form>
+                                            </div>
+
+
+                                            <div class="row form-group">
+                                                <div class="col col-md-2"><label for="text-input" class=" form-control-label">الكميه المتوقعه</label></div>
+                                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control" required={{form.product_avrage_prdect_ammount}}><small class="form-text text-muted">This is a help text</small></div>
+                                            </div>
+
+
+                                            <div class="row form-group" dir="rtl">
+                                                <div class="col col-md-6"><label class=" form-control-label">الزياده المسموحه</label> {{form.Product_Allowable_increase}}</div>
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+
+
+                                        <div class="row">
+
+                                            <!--/.col-->
+                                            <div class="col-lg-12" dir="rtl">
+                                                <div class="card">
+                                                    <div class="card-header text-right">
+                                                        <strong>مواصفات التصميم والطباعة </strong>
+                                                    </div>
+
+
+
+                                                    <div class="card-body card-block">
+
+                                                        <div class="row form-group">
+                                                            <div class="col col-md-2"><label for="select" class=" form-control-label">مصدر التصميم</label></div>
+                                                            <div class="col-12 col-md-9">
+                                                                <select name="select" id="select" class="form-control">
+                                                                                                        <option value={{form_2.pro_design_source}}></option>
+                                                                                                        
+                                                                                                    </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row form-group">
+                                                        <div class="col col-md-2"><label for="file-multiple-input" class=" form-control-label"> إرفاق التصميم المعتمد</label></div>
+                                                        <div class="col-12 col-md-9"><input type="file" id="file-multiple-input" name="file-multiple-input" class="form-control-file" multiple={{form_2.attachments_file}}></div>
+                                                    </div>
+
+
+
+
+
+                                                    <div class="row form-group">
+                                                        <div class="col col-md-2"><label for="select" class=" form-control-label">نوع التصميم</label></div>
+                                                        <div class="col-12 col-md-9">
+                                                            <select name="select" id="select" class="form-control">
+                                                                                                <option value="{{form_2.pro_design_type}}"></option>
+                                                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row form-group">
+                                                        <div class="col col-md-5"><label class=" form-control-label"></label>{{form_2.pro_old_execution}}</div>
+
+                                                    </div>
+
+
+
+
+                                                    <div class="row form-group">
+                                                        <div class="col col-md-2"><label for="select" class=" form-control-label">عدد الاوجه </label></div>
+                                                        <div class="col-12 col-md-9">
+                                                            <select name="select" id="select" class="form-control">
+                                                                                                    <option value= {{form_2.number_of_sides}}></option>
+                                                                                                    
+                                                                                                </select>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="row form-group">
+                                                        <div class="col col-md-2"><label class=" form-control-label">الالوان</label> </div>
+                                                        <div class="col col-md-3">
+                                                            <div class="form-check-inline form-check">
+                                                                <label for="inline-checkbox1" class="form-check-label ">
+                                                                    {{form_2.product_color}}
+                                                                    </label>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="card-body card-block ">
+                                                        <form action="" method="post" class="form-inline">
+                                                            <p>الالوان المخصوصه</p>
+                                                            <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form_2.tinted_colors1}}></div>
+                                                            <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form_2.tinted_colors2}}></div>
+                                                            <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form_2.tinted_colors3}}></div>
+
+                                                            <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form_2.tinted_colors4}}></div>
+                                                            <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form_2.tinted_colors5}}></div>
+                                                            <div class="form-group"><label for="exampleInputName2" class="pr-5  form-control-label"> </label><input type="text" id="exampleInputName2" placeholder="Jane Doe" class="form-control" required={{form_2.tinted_colors6}}></div>
+
+
+                                                        </form>
+                                                    </div>
+
+
+
+                                                </div>
+
+
+
+
+
+
+
+
+
+                                                <div class="row">
+
+                                                    <!--/.col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-header text-right">
+                                                                <strong>مواصفات الورق</strong>
+                                                            </div>
+
+
+
+                                                            <div class="card-body card-block">
+                                                                <div class="row form-group">
+                                                                    <div class="col col-md-2"><label for="select" class=" form-control-label">نوع الورق</label></div>
+                                                                    <div class="col-12 col-md-9">
+                                                                        <select name="select" id="select" class="form-control">
+                                                                                                                <option value={{form_3.pro_paper_type}}></option>
+                                                                                                               
+                                                                                                            </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row form-group">
+                                                                <div class="col col-md-2"><label for="text-input" class=" form-control-label">جرام الورق</label></div>
+                                                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control" required={{form_3.pro_paper_gram}}><small class="form-text text-muted">This is a help text</small></div>
+                                                            </div>
+
+                                                            <div class="row form-group">
+                                                                <div class="col col-md-2"><label for="select" class=" form-control-label">اتجاه الالياف</label></div>
+                                                                <div class="col-12 col-md-9">
+                                                                    <select name="select" id="select" class="form-control">
+                                                                                                            <option value={{form_3.fiber_direction}}></option>
+
+                                                                                                        </select>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+
+                                                            <!--/.col-->
+                                                            <div class="col-lg-12" dir="rtl">
+                                                                <div class="card">
+                                                                    <div class="card-header text-right">
+                                                                        <strong>خدمات ما بعد الطباعه</strong>
+                                                                    </div>
+
+
+
+                                                                    <div class="card-body card-block">
+
+                                                                        <div class="row form-group">
+                                                                            <div class="col col-md-6"><label class=" form-control-label">نوع الخدمه</label>{{form_4.pro_aftar_print_services_type}}</div>
+                                                                            <div class="col col-md-3">
+                                                                                <div class="form-check-inline form-check">
+                                                                                    <label for="inline-checkbox1" class="form-check-label ">
+                                                                                        <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">One
+                                                                                    </label>
+                                                                                    <label for="inline-checkbox2" class="form-check-label ">
+                                                                                        <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2" class="form-check-input">Two
+                                                                                    </label>
+                                                                                    <label for="inline-checkbox3" class="form-check-label ">
+                                                                                        <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3" class="form-check-input">Three
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row form-group">
+                                                                        <div class="col col-md-2"><label for="text-input" class=" form-control-label">التفاصيل</label></div>
+                                                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control" required={{form_4.pro_aftar_print_services_detals}}><small class="form-text text-muted">This is a help text</small></div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="row">
+
+                                                                </div>
+
+                                                                <div class="row">
+
+                                                                    <!--/.col-->
+                                                                    <div class="col-lg-12" dir="rtl">
+                                                                        <div class="card">
+                                                                            <div class="card-header text-right">
+                                                                                <strong>بيانات التكسير</strong>
+                                                                            </div>
+
+
+
+                                                                            <div class="card-body card-block">
+
+                                                                                <div class="row form-group">
+                                                                                    <div class="col col-md-6"><label class=" form-control-label">نوع الخدمه</label>{{form_5.pro_crushing_data_type}}</div>
+                                                                                    <div class="col col-md-3">
+                                                                                        <div class="form-check-inline form-check">
+                                                                                            <label for="inline-checkbox1" class="form-check-label ">
+                                                                                                <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">One
+                                                                                            </label>
+                                                                                            <label for="inline-checkbox2" class="form-check-label ">
+                                                                                                <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2" class="form-check-input">Two
+                                                                                            </label>
+                                                                                            <label for="inline-checkbox3" class="form-check-label ">
+                                                                                                <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3" class="form-check-input">Three
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row form-group">
+                                                                                <div class="col col-md-2"><label for="text-input" class=" form-control-label">التفاصيل</label></div>
+                                                                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control" required={{form_5.pro_crushing_data_detals}}><small class="form-text text-muted">This is a help text</small></div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="row">
+                                                                        </div>
+
+                                                                        <div class="row">
+
+                                                                            <!--/.col-->
+                                                                            <div class="col-lg-12" dir="rtl">
+                                                                                <div class="card">
+                                                                                    <div class="card-header text-right">
+                                                                                        <strong>بيانات التلزيق والتجليد</strong>
+                                                                                    </div>
+
+                                                                                    <div class="card-body card-block">
+
+                                                                                        <div class="row form-group">
+                                                                                            <div class="col col-md-6"><label class=" form-control-label">نوع الخدمه</label>{{form_6.pro_Gluing_And_Binding_Data_type}}</div>
+                                                                                            <div class="col col-md-3">
+                                                                                                <div class="form-check-inline form-check">
+                                                                                                    <label for="inline-checkbox1" class="form-check-label ">
+                                                                                                    <input type="checkbox" id="inline-checkbox1" name="inline-checkbox1" value="option1" class="form-check-input">One
+                                                                                                </label>
+                                                                                                    <label for="inline-checkbox2" class="form-check-label ">
+                                                                                                    <input type="checkbox" id="inline-checkbox2" name="inline-checkbox2" value="option2" class="form-check-input">Two
+                                                                                                </label>
+                                                                                                    <label for="inline-checkbox3" class="form-check-label ">
+                                                                                                    <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3" class="form-check-input">Three
+                                                                                                </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row form-group">
+                                                                                        <div class="col col-md-2"><label for="text-input" class=" form-control-label">التفاصيل</label></div>
+                                                                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control" required={{form_6.pro_Gluing_And_Binding_Data_detals}}>
+                                                                                            <small class="form-text text-muted">This is a help text</small>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                                <div class="row">
+
+                                                                                    <!--/.col-->
+                                                                                    <div class="col-lg-12" dir="rtl">
+                                                                                        <div class="card">
+                                                                                            <div class="card-header text-right">
+                                                                                                <strong>بيانات المنتج التام والتعبئة</strong>
+                                                                                            </div>
+
+
+
+
+                                                                                            <div class="card-body card-block">
+
+                                                                                                <div class="row form-group">
+                                                                                                    <div class="col col-md-2"><label for="select" class=" form-control-label">المنتج</label></div>
+                                                                                                    <div class="col-12 col-md-9">
+                                                                                                        <select name="select" id="select" class="form-control">
+                                                                                                                                        <option value={{form_7.pro_finished_product_and_packing_data_type}}>Please select</option>
+                                                                                                                                      
+                                                                                                                                    </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="row form-group">
+                                                                                                <div class="col col-md-2"><label for="select" class=" form-control-label">الباكو</label></div>
+                                                                                                <div class="col-12 col-md-9">
+                                                                                                    <select name="select" id="select" class="form-control">
+                                                                                                                                    <option value={{form_7.pro_Finished_product_and_packing_data_Baku}}>Please select</option>
+
+                                                                                                                                </select>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div class="row form-group">
+                                                                                                <div class="col col-md-2"><label for="text-input" class=" form-control-label">التفاصيل</label></div>
+                                                                                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted" required={{form_6.pro_Gluing_And_Binding_Data_detals}}>This is a help text</small></div>
+                                                                                            </div>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- .animated -->
+                                                                        </div>
+                                                                        <!-- .content -->
+                                                                    </div>
+                                                                    <!-- /#right-panel -->
+                                                                    <!-- Right Panel -->
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% include 'prodect_new_form.html' %}{% include 'includes/form.html' %} {%endblock%}

@@ -1,0 +1,98 @@
+
+<div class="card">
+    <div class="card-header card-title">
+        <h5>{{ title }}</h5>
+        
+    </div>
+
+    <div class="card-body">
+        <div style="float: right;">
+        </div>
+        <!-- وضع مربع البحث في الكارد الأول فقط -->
+        {% if forloop.first %}
+        <input type="text" id="global-search" placeholder="بحث...">
+        {% endif %}
+        <table id="table-2" class="table table-striped table-bordered searchable-table">
+            <thead>
+                <tr>
+                    <th>أمر الشغل</th>
+                    <th>العميل</th>
+                    <th>المنتج</th>
+                    <th>الكمية</th>
+                    <th>المرحلة</th>
+                    <th>ممثل العميل</th>
+                    <th>Created Date</th>
+                    
+                    <th>Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for machines in machines_list %}
+                <tr style="text-align: center; font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;" ondblclick="window.location='{% url 'Order_details' machines.order.pk %}'" style="cursor: pointer;">
+                    <td><a href="{% url 'Order_details' machines.order.pk %}">{{machines.order.Ord_work_order_number}}</a></td>
+                    <td><a style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view' machines.order.Ord_Product.Product_Customer.pk %}">{{machines.order.Ord_Product.Product_Customer}}</a></td>
+                    <td><a style="text-align: center; font-weight: bolder;" href="{% url 'product_orders' machines.order.Ord_Product.Product_Sector.pk machines.order.Ord_Product.Product_Customer.pk machines.order.Ord_Product.pk %}">{{machines.order.Ord_Product.Product_Name}}</a></td>
+                    <td>{{machines.order.Ord_Required_quantity}}</td>
+                    <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' machines.order.Ord_Product.Product_Sector.pk machines.order.Ord_Product.Product_Customer.pk machines.order.Ord_Product.pk machines.order.pk %}" type="button" target="popup" onclick="window.open(this.href, 'name', 'width=800,height=600')" data-toggle="tooltip" title="Edit Status">{{machines.order.Ord_states}}</a></td>
+                    <td>{{machines.order.Ord_Product.customer_representative}}</td>
+                    <td>{{machines.order.Ord_Created_Dt}}</td>
+                    
+                    {% if machine_name == 'تجهيز ورق' %}
+                    <td>{{ machines.paper_processing }}</td>
+                    {% elif machine_name == 'GTO(1) طباعة ربع' %}
+                    <td>{{ machines.gto1_print_quarter }}</td>
+                    {% elif machine_name == 'SM(2) طباعة ربع' %}
+                    <td>{{ machines.sm2_print_quarter }}</td>
+                    {% elif machine_name == 'SM(5) طباعة ربع' %}
+                    <td>{{ machines.sm5_print_quarter }}</td>
+                    {% elif machine_name == 'SORM طباعة نص' %}
+                    <td>{{ machines.sorm_print_half }}</td>
+                    {% elif machine_name == 'SM(2) طباعة نص' %}
+                    <td>{{ machines.sm2_print_half }}</td>
+                    {% elif machine_name == 'SM طباعة فرخ' %}
+                    <td>{{ machines.sm_print_chick }}</td>
+                    {% elif machine_name == 'CD(5) طباعة فرخ' %}
+                    <td>{{ machines.cd5_print_chick }}</td>
+                    {% elif machine_name == 'سلوفان' %}
+                    <td>{{ machines.lamination }}</td>
+                    {% elif machine_name == 'خدمات طباعة ورنيش/يوفي' %}
+                    <td>{{ machines.printing_varnish_services_uv }}</td>
+                    {% elif machine_name == 'خدمات طباعة خارجي' %}
+                    <td>{{ machines.external_printing_services }}</td>
+                    {% elif machine_name == 'DIE 46 تكسير' %}
+                    <td>{{ machines.die_cutting_46 }}</td>
+                    {% elif machine_name == 'DIE 57 تكسير' %}
+                    <td>{{ machines.die_cutting_57 }}</td>
+                    {% elif machine_name == 'BOBST تكسير' %}
+                    <td>{{ machines.bobst_die_cutting }}</td>
+                    {% elif machine_name == 'التسليك و التنظيف' %}
+                    <td>{{ machines.wiring_and_cleaning }}</td>
+                    {% elif machine_name == 'PACTEK 85 تلزيق' %}
+                    <td>{{ machines.pactek_85_gluing }}</td>
+                    {% elif machine_name == 'PACTEK 65 تلزيق' %}
+                    <td>{{ machines.pactek_65_gluing }}</td>
+                    {% elif machine_name == 'FG  تلزيق' %}
+                    <td>{{ machines.fg_gluing }}</td>
+                    {% elif machine_name == 'SBL  تلزيق' %}
+                    <td>{{ machines.sbl_gluing }}</td>
+                    {% elif machine_name == 'تلزيق يدوي' %}
+                    <td>{{ machines.manual_gluing }}</td>
+                    {% elif machine_name == 'تجليد' %}
+                    <td>{{ machines.binding }}</td>
+                    {% elif machine_name == 'قص بضاعة منتهية' %}
+                    <td>{{ machines.finished_goods_cutting }}</td>
+                    {% elif machine_name == 'تلزيق خارجي' %}
+                    <td>{{ machines.external_gluing }}</td>
+                    <!-- يمكنك إضافة حالات للحقول الأخرى بنفس الطريقة -->
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+     
+    </div>
+</div>
+
+
+
+

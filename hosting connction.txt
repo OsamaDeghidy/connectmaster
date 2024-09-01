@@ -1,0 +1,239 @@
+ip /user name :     24.199.111.36         password :        c0nnectPack
+
+
+ip : 24.199.111.36
+
+user : sammy         pass : osama
+
+db name myprojecto 
+db user: connect   db pass: connectdb
+
+pip install django-widget-tweaks
+pip install django-multiselectfield
+pip install django-import-export
+
+pip install isort
+pip install psycopg2-binary
+pip install numpy
+pip install requests
+pip install arabic-reshaper
+pip install django-widget-tweaks
+pip install django-multiselectfield
+pip install psycopg2
+pip install isort
+pip install numpy
+pip install requests
+pip install arabic_reshaper
+pip install django-import-export
+pip install django-simple-history
+
+ 
+
+super user   username : connect      pass : connectadmin5555
+
+projet name : Connect_ERP_System
+
+doman oms.connect-pack.com
+
+ssh root@24.199.111.36 
+su sammy   
+cd ~/myprojectdir
+
+source myprojectenv/bin/activate    
+python manage.py makemigrations
+ python manage.py migrate
+deactivate
+sudo systemctl restart gunicorn
+sudo systemctl daemon-reload
+sudo systemctl restart gunicorn.socket gunicorn.service
+sudo nginx -t && sudo systemctl restart nginx
+python manage.py collectstatic
+
+pip install -r requirements.txt
+pip freeze > requirements.txt
+python manage.py flush   # مسح الداتا بيز 
+
+
+pip install django-paypal
+
+
+
+ 
+
+
+
+…or create a new repository on the command line
+echo "# master-connect-system-2024" >> README.md
+git init
+git add README.md
+git commit -m "osama"
+git branch -M main
+git remote add origin git@github.com:Osama4Code/master-connect-system-2024.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin git@github.com:Osama4Code/master-connect-system-2024.git
+git branch -M main
+git push -u origin main
+
+
+python -m venv venv
+>venv\scripts\activate
+>pip3 install django
+>django-admin startproject dicussion_board
+>django-admin startproject dicussion_board .
+>py manage.py runserver
+py manage.py startapp
+>c
+cyrl c
+>py manage.py runserver 5000
+>django-admin startapp boards
+------>python manage.py makemigrations
+------>python manage.py migrate
+
+py manage.py createsuperuser
+
+echo "# connectmaster-" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/OsamaDeghidy/connectmaster-.git
+git push -u origin main
+
+
+
+
+
+            {% include 'filter/machine_card.html' with title='تصميم' machines_list=design %}
+            {% include 'filter/machine_card.html' with title='مونتاج' machines_list=produced_by %}
+            {% include 'filter/machine_card.html' with title='أفلام' machines_list=aflam %}
+            {% include 'filter/machine_card.html' with title='شراء ورق' machines_list=buy_paper %}
+            {% include 'filter/machine_card.html' with title='ورق' machines_list=paper %}
+            {% include 'filter/machine_card.html' with title='شيتر' machines_list=chitter %}
+            {% include 'filter/machine_card.html' with title='تجهيز ورق' machines_list=paper_processing %}
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5>طباعة </h5>
+                </div>
+            {% include 'filter/machine_card.html' with title='GTO(1) طباعة ربع' machines_list=Gto %}
+            {% include 'filter/machine_card.html' with title='SM(2) طباعة ربع' machines_list=SM %}
+            {% include 'filter/machine_card.html' with title='SM(5) طباعة ربع' machines_list=SM5 %}
+            {% include 'filter/machine_card.html' with title='SORM طباعة نص' machines_list=SORM %}
+            {% include 'filter/machine_card.html' with title='SM(2) طباعة نص' machines_list=SM2 %}
+            {% include 'filter/machine_card.html' with title='SM طباعة فرخ' machines_list=SM_chick %}
+            {% include 'filter/machine_card.html' with title='CD(5) طباعة فرخ' machines_list=SD_SM %}
+            </div>
+            {% include 'filter/machine_card.html' with title='سلوفان' machines_list=cellophane %}
+            {% include 'filter/machine_card.html' with title='خدمات طباعة ورنيش/يوفي' machines_list=Varnish_UV %}
+            {% include 'filter/machine_card.html' with title='خدمات طباعة خارجي' machines_list=Outside_printing %}
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5>تكسير </h5>
+                </div>
+            {% include 'filter/machine_card.html' with title='DIE 46 تكسير' machines_list=DIE_46 %}
+            {% include 'filter/machine_card.html' with title='DIE 57 تكسير' machines_list=DIE_57 %}
+            {% include 'filter/machine_card.html' with title='BOBST تكسير' machines_list=BOBST %}
+            </div>
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5>تلزيق  </h5>
+                </div>
+            {% include 'filter/machine_card.html' with title='التسليك و التنظيف' machines_list=cleaning %}
+            {% include 'filter/machine_card.html' with title='PACTEK 85 تلزيق' machines_list=BACTED_8S %}
+            {% include 'filter/machine_card.html' with title='PACTEK 65 تلزيق' machines_list=BACTECHGS %}
+            {% include 'filter/machine_card.html' with title='FG تلزيق' machines_list=FG %}
+            {% include 'filter/machine_card.html' with title='SBL تلزيق' machines_list=SBL %}
+            {% include 'filter/machine_card.html' with title='تلزيق يدوي' machines_list=Manual %}
+            {% include 'filter/machine_card.html' with title='تجليد' machines_list=bind %}
+            {% include 'filter/machine_card.html' with title='قص بضاعة منتهية' machines_list=finished_goods %}
+            {% include 'filter/machine_card.html' with title='تلزيق خارجي' machines_list=external_adhesive %}
+            
+            </div>
+
+def GTOveiw(request):
+    filtered_machines = [
+        'GTO(1) طباعة ربع',
+    ]
+    machines = Machine_Order.objects.filter(machine__machine_name__in=filtered_machines).distinct()
+    design = machines.filter(order__Ord_states__name__contains='تصميم').order_by('-id')
+    produced_by = machines.filter(order__Ord_states__name__contains='مونتاج').order_by('-id')
+    aflam = machines.filter(order__Ord_states__name__contains='أفلام').order_by('-id')
+    #-------------------------------------- فلتر لجميع الحالات -------------------------------------------------
+
+    buy_paper = machines.filter(order__Ord_states__name__contains= 'شراء ورق').order_by('-id')
+    paper = machines.filter(order__Ord_states__name__contains='ورق').exclude(order__Ord_states__name__contains='تجهيز ورق').exclude(order__Ord_states__name__contains='شراء ورق').order_by('-id')
+    chitter = machines.filter(order__Ord_states__name__contains= 'شيتر').order_by('-id')
+    paper_processing = machines.filter(order__Ord_states__name__contains= 'تجهيز ورق').order_by('-id')
+
+    #-------طباعه------------------------------------------------------------------------
+    Gto= machines.filter(order__Ord_states__name__contains= 'GTO(1) طباعة ربع').order_by('-id')
+    SM = machines.filter(order__Ord_states__name__contains= 'SM(2) طباعة ربع').order_by('-id')
+    SM5 = machines.filter(order__Ord_states__name__contains= 'SM(5) طباعة ربع').order_by('-id')#add
+
+    SORM = machines.filter(order__Ord_states__name__contains= 'SORM طباعة نص').order_by('-id')
+    SM2 = machines.filter(order__Ord_states__name__contains= 'SM(2) طباعة نص').order_by('-id')#add
+
+    SM_chick = Order.objects.filter(Ord_states__name = 'SM طباعة فرخ').order_by('-id')
+    SD_SM = machines.filter(order__Ord_states__name__contains= 'CD(5) طباعة فرخ').order_by('-id')
+
+    cellophane = machines.filter(order__Ord_states__name__contains= 'سلوفان').order_by('-id')
+    #------- ----خدمات طباعة -------------------------------------------------------------------------
+    Varnish_UV = machines.filter(order__Ord_states__name__contains= 'خدمات طباعة ورنيش/يوفي').order_by('-id')
+    Outside_printing = machines.filter(order__Ord_states__name__contains= 'خدمات طباعة خارجي').order_by('-id')
+    #-----------------------تكسير-----------------------------------------------------------------------------   #-----------------------تكسير-----------------------------------------------------------------------------
+    DIE_46 = machines.filter(order__Ord_states__name__contains= 'DIE 46 تكسير').order_by('-id')
+    DIE_57 = machines.filter(order__Ord_states__name__contains= 'DIE 57 تكسير').order_by('-id')
+    BOBST = machines.filter(order__Ord_states__name__contains= 'BOBST تكسير').order_by('-id')
+    #-------------------------------------------------------------------------------------------------
+    cleaning = machines.filter(order__Ord_states__name__contains= 'التسليك و التنظيف').order_by('-id')
+  
+    #-----------------------تلزيق------------------------------------------------------------------------
+    BACTED_8S = machines.filter(order__Ord_states__name__contains= 'PACTEK 85 تلزيق').order_by('-id')
+    BACTECHGS = machines.filter(order__Ord_states__name__contains= 'PACTEK 65 تلزيق').order_by('-id')
+    FG = machines.filter(order__Ord_states__name__contains= 'FG  تلزيق').order_by('-id')
+    SBL= machines.filter(order__Ord_states__name__contains= 'SBL  تلزيق').order_by('-id')
+    Manual = machines.filter(order__Ord_states__name__contains= 'تلزيق يدوي').order_by('-id')
+    #-------------------------------------------------------------------------------------------------
+    bind = machines.filter(order__Ord_states__name__contains= 'تجليد').order_by('-id')
+    finished_goods = machines.filter(order__Ord_states__name__contains= 'قص بضاعة منتهية').order_by('-id')
+    external_adhesive = machines.filter(order__Ord_states__name__contains= 'تلزيق خارجي').order_by('-id')
+
+
+    context = {
+        'design': design,
+        'produced_by': produced_by,
+        'aflam': aflam,
+        'buy_paper': buy_paper,
+        'paper': paper,
+        'chitter': chitter,
+        'paper_processing': paper_processing,
+        'Gto': Gto,
+        'SM': SM,
+        'SM5': SM5,
+        'SORM': SORM,
+        'SM2': SM2,
+        'SM_chick': SM_chick,
+        'SD_SM': SD_SM,
+        'cellophane': cellophane,
+        'Varnish_UV': Varnish_UV,
+        'Outside_printing': Outside_printing,
+        'DIE_46': DIE_46,
+        'DIE_57': DIE_57,
+        'BOBST': BOBST,
+        'cleaning': cleaning,
+        'BACTED_8S': BACTED_8S,
+        'BACTECHGS': BACTECHGS,
+        'FG': FG,
+        'SBL': SBL,
+        'Manual': Manual,
+        'bind': bind,
+        'finished_goods': finished_goods,
+        'external_adhesive': external_adhesive
+        
+    }
+    return render(request, 'filter/GTO.html', context)
+
+
+
+
+

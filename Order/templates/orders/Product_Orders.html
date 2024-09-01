@@ -1,0 +1,301 @@
+{% extends 'Base.html' %}{% load static %} {% block Title%} {{product.Product_Name}} {%endblock%} {% block content%}
+<style>
+
+label {
+        font-weight: bold;
+        direction: rtl;
+        color: rgb(72, 72, 178);
+
+
+    }
+  
+h5 {
+    font-weight: bolder;
+    color: rgb(10, 160, 50);
+}
+.custom-div {
+  height: 200px; /* Customize the height value as needed */
+}
+.min-height {
+    min-height: 600px; /* Set the minimum height to 100 pixels */
+}
+
+/* Maximum height */
+.max-height {
+    max-height: 1000px; /* Set the maximum height to 200 pixels */
+    margin-right: 10;
+}
+
+</style>
+<div class="content mt-3">
+
+    <div class="animated fadeIn">
+        <div class="card" style="text-align: left;"> 
+
+    <div class="card-header card-title">
+
+        <h5 class="card-title"> <a href="{% url 'sectors' %}">Sectors</a> /
+            <a href="{% url 'sector_customers' product.Product_Sector.pk %} ">{{product.Product_Sector.Sector_Name}}</a> /
+
+            <a href="{% url 'customer_products' product.Product_Sector.pk product.Product_Customer.pk %} ">{{product.Product_Customer.Customer_Name}}</a> / {{product.Product_Name}}
+        </h5>
+
+    </div>
+
+    <div class="card-body " >
+        <div style="float: right;">
+
+            <a href="{% url 'new_order' product.Product_Sector.pk product.Product_Customer.pk product.pk %}" class="btn btn-primary">New Order</a>
+        </div>
+        <table id='bootstrap-data-table-export' class="table table-striped table-bordered ">
+            <thead>
+
+                <tr class="text-center">
+                    <th style="width: 5%;"> أمر الشغل</th>
+
+                    <th style="width: 8%;">الكمية</th>
+                    <th style="width: 12%;">المرحلة</th>
+                    <th style="width: 7%;"> Editor</th>
+                    <th style="width: 5%;">Created Date</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                {% for Order in orders %}
+                <tr style="text-align: center; color: darkcyan; font-weight: bolder;">
+                    <td> <a style="color: rgb(0, 68, 111); font-weight:600; " href="{% url 'Order_details' Order.pk %}">{{Order.Ord_work_order_number}}</a></td>
+                    <td>{{Order.Ord_Required_quantity}}</td>
+                    <td>{{Order.Ord_states}}</td>
+
+                    <td>{{Order.Ord_Created_By}}</td>
+                    <td>{{Order.Ord_Created_Dt}}</td>
+
+                    
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <a href="{% url 'edit_product' product.Product_Sector.pk product.Product_Customer.pk product.pk %}" class="btn btn-success col-md-12 mb-3">  تعديل على المنتج </a>
+  
+    <div style="text-align: right;"> 
+        
+       
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card min-height">
+                  <div class="card-body text-right ">
+                      
+      
+      
+                          <h5> خدمات ما بعد الطباعه    
+      
+                          </h5>
+                          <div class="card-body ">
+                             
+                                  <div class="row">
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Aftar_Print_Services.pro_aftar_print_services_type}} <label class="font-weight-bold" >خدمات ما بعد الطباعه: </label></div> 
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Gluing_And_Binding_Data.pro_aftar_print_services_detals}} <label >تفاصيل الخدمة: </label></div>
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Crushing_Data.pro_crushing_data_type}} <label class="font-weight-bold" >بيانات التكسير: </label></div>
+
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Aftar_Print_Services.pro_aftar_print_services_detals}} <label >تفاصيل الخدمة: </label></div>
+                                      <div class="w-100 mb-3"><h5>  بيانات التلزيق و التجليد   </h5></div>
+                                      <div class="col">{{product.Product_Gluing_And_Binding_Data.pro_Gluing_And_Binding_Data_type}} <label class="font-weight-bold" >بيانات التلزيق والتجليد: </label></div>
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Gluing_And_Binding_Data.pro_Gluing_And_Binding_Data_detals}} <label >تفاصيل الخدمة: </label></div>
+
+                                      <div class="w-100 mb-3"> <h5>بيانات المنتج التام والتعبئة</h5></div>
+                                      <div class="col">{{product.Product_Finished_product_and_packing_data.pro_finished_product_and_packing_data_detals}} <label >تفاصيل الخدمة: </label></div>
+                                      <div class="w-100"> </div>
+                                      <div class="col">{{product.Product_Finished_product_and_packing_data.pro_Finished_product_and_packing_data_Baku}} <label >الباكو: </label></div>
+                                      <div class="w-100"> </div>
+                                      <div class="col">{{product.Product_Finished_product_and_packing_data.pro_finished_product_and_packing_data_type}} <label >المنتج النهائى :</label></div>
+                                     
+                                      
+      
+                                    </div>
+                                  </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+            <div class="col-md-4">
+
+                <div class="card min-height">
+                  
+                  <div class="card-body text-right ">
+
+
+
+                    <h5>مواصفات التصميم و المونتاج  
+      
+                          </h5>
+                          <div class="card-body">
+                             
+                                  <div class="row">
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.pro_design_source}} <label >نوع التصميم: </label></div>
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.pro_old_execution}} <label ></label></div>
+
+                                      <div class="w-100"></div>
+                                      <div class="col"> {{product.Product_Design_and_printing_specifications.number_of_sides}}<label >عدد الأوجه: </label></div>
+                                      
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.pro_design_ditals}} <label >تفاصيل التصميم: </label></div>
+                                      <div class="w-100"></div>
+                                      <div class="col"> {{product.Product_Design_and_printing_specifications.number_of_sides}}<label >عدد الأوجه: </label></div>
+                                      <div class="w-100"></div>
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.product_color}} <label >الألوان: </label></div>
+                                      <div class="w-100"></div>
+                                      <div class="w-100"> </div>
+                                      <div class="col"> {{product.Product_Design_and_printing_specifications.tinted_colors6}} </div>
+                                      
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.tinted_colors5}} <label >الألوان المخصوصة :</label></div>
+                                      <div class="w-100"> </div>
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.tinted_colors4}}</div>
+                                      
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.tinted_colors3}}</div>
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.tinted_colors2}}</div>
+                                      <div class="w-100"> </div>
+                                      <div class="col">{{product.Product_Design_and_printing_specifications.tinted_colors1}}</div>
+                                      <div class="w-100"></div>
+                                      <div class="col"> {{product.product_dicription.Product_Description_type}} <label >وصف المنتج:</label></div>
+                                      
+                                      
+      
+                                      <div class="w-100"></div>
+                                      <div class="col">{% if product.Product_Design_and_printing_specifications.attachments_file %}
+                                        <div class="col"><a href="{{ product.Product_Design_and_printing_specifications.attachments_file.url }} "><i class="fa fa-file-pdf-o "></i></a> <label >الملحقات: </label></div>
+                                        {% else %}
+                                        <i class="fa fa-file-pdf-o "></i></a> <label >الملحقات: </label> {% endif %} </div>   
+                                        <div class="w-100 mb-3"><h5>مواصفات الورق   </h5></div>
+                                        <div class="col">{{product.Product_paper_specification.pro_paper_gram}} <label >جرامات الورق: </label></div>
+
+                                        <div class="w-100"></div>
+                                        <div class="col">{{product.Product_paper_specification.pro_paper_type}} <label > نوع الورق: </label></div>
+                                        <div class="w-100"></div>
+                                        <div class="col">{{product.Product_paper_specification.fiber_direction}} <label >إتجاه الالياف: </label></div>
+                                    </div>
+                                  </div>
+                          </div>
+                      </div>
+                  </div>
+                
+             
+            <div class="col-md-4">
+          <div class="card  min-height">
+            <div class="card-body text-right ">
+                
+
+
+                    <h5>الموصفات الرئيسيه للمنتج
+
+                    </h5>
+                    <div class="card-body">
+                       
+                            <div class="row">
+                                <div class="w-100"></div>
+                                <div class="col">{{product.Product_Sector}} <label > القطاع:</label></div>
+                                <div class="w-100"></div>
+                                <div class="col">{{product.customer_representative}} <label >ممثل العميل:</label></div>
+                                <div class="w-100"></div>
+                                <div class="col">{{product.Product_Customer}} <label >اسم العميل:</label></div>
+                                <div class="w-100"></div>
+                                <div class="col">{{product.Product_Code}} <label >كود المنتج لدى العميل:</label></div>
+                                <div class="w-100"></div>
+                                <div class="col">{{product.Product_MyCode}} <label > كود المنتج:</label></div>
+                                <div class="w-100"></div>
+                                <div class="col">{{product.Product_Name}} <label >اسم المنتج:</label></div>
+                                <div class="w-100"></div>
+                                <div class="col"> {{product.product_dicription.Product_Description_type}} <label >وصف المنتج:</label></div>
+                                
+                                
+
+                                <div class="w-100 mr-3"><label >مقاس المنتج:</label></div>
+                                <div class="col"> الطول: {{product.Product_length}} العرض: {{product.Product_width}} الإرتفاع: {{product.Product_height}} 
+                                </div>
+                               
+                               
+                              
+                                <div class="w-100"></div>
+                                <div class="col"> {{product.product_avrage_prdect_ammount}}  <label >المتوسط للكمية:</label></div>
+                                <div class="w-100"></div>
+                                <div class="col">{{product.Product_Allowable_increase}} <label >سماحية الزيادة:</label></div>
+                                <div class="w-100"></div>
+                                <div class="col">{{product.Product_Design_and_printing_specifications.approved_montage_size}} <label > مقاس المونتاج المعتمد: </label></div>
+
+                                <div class="w-100"></div>
+                                <div class="col">{{product.Product_Design_and_printing_specifications.approved_montage_count}} <label > العدد فى المونتاج المعتمد: </label></div>
+                            </div>
+
+                      
+                    </div>
+
+                
+            </div>
+          </div>
+        
+        </div>
+        <div class="col-md-12 ">
+        <a href="{% url 'new_corrective_action' product.pk %}" class="btn btn-primary col-md-12 mb-3">اضافه اجراء تصحيحي</a>
+        {% if corrective_actions %}
+        {% for corrective_actions in corrective_actions %}
+       
+        <div  >
+            <div class="card mb-3">
+                
+                <div class="card-body">
+
+                    <h5 class="mb-1"> {{corrective_actions.date}}    <a href="{% url 'edit_corrective_action'  corrective_actions.pk %} " type="button " target="popup " onclick="window.open( this.href , 'name', 'width=800,height=600') "
+                        class="btn btn-success btn-sm " data-toggle="tooltip " title="Edite  "><i class="fa-regular fa-pen-to-square
+                "></i></a>
+  
+                    </h5>
+                      
+                    <div class="row">
+                        
+                         
+                        <div class="w-100"></div>
+                        <div class="col">{{corrective_actions.complaint_details}} <label >تفاصيل الشكوى: </label></div>
+                        <div class="w-100"></div>
+                        <div class="col">{{corrective_actions.proposed_solution}} <label class="font-weight-bold" >الحل المقترح: </label></div>
+
+                        <div class="w-100"></div>
+                        <div class="col">{{corrective_actions.action_status}} <label > حالة الإجراء: </label></div>
+                        <div class="w-100"></div>
+                        <div class="col">{{corrective_actions.solution}} <label class="font-weight-bold" >  الحل: </label></div>
+                    </div>
+                </div>
+ 
+            </div>
+          
+        </div>
+        {% endfor %}
+        {% endif %}
+   
+ 
+        
+    </div>
+    </div>
+    
+</div>
+<div class="card-footer text-muted ">
+  
+    <p class="card-text text-left "> {{product.Created_Dt}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created_By:{{product.Created_By}}</p>
+
+</div>
+        
+    </div>
+
+  
+    
+    
+    {%endblock%}

@@ -1,0 +1,397 @@
+{% extends 'Base.html' %} {% block Title%} Inprogress {%endblock%} {% block content%}
+
+<style>
+    .card {
+        width: 100%;
+    }
+    tr
+    {
+        text-align: center;
+       
+        font-weight: bolder;
+    }
+    td {
+        text-align: center;
+        
+    }
+    h5 {
+        color: rgb(0, 98, 155);
+        font-weight: bolder;
+        text-align: center;
+    }
+    a{
+        color: black;
+    }
+    tbody tr:hover {
+        background-color: lightgray; /* Change the background color to a different shade */
+    }
+</style>
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+
+           
+
+
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5> تلزيق </h5>
+                </div>
+                <div class="card-body">
+                    <div class="card-header card-title">
+                        <h5>  PACTEK 85 تلزيق </h5>
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for BACTED_8S in BACTED_8S %}
+                                <tr style="text-align: center;  font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;"   ondblclick="window.location='{% url 'Order_details' BACTED_8S.pk %}'" style="cursor: pointer;">
+                            <td> <a href="{% url 'Order_details' BACTED_8S.pk %}">{{BACTED_8S.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  BACTED_8S.Ord_Product.Product_Customer.pk %}  ">{{BACTED_8S.Ord_Product.Product_Customer}}</a></td>
+                                    <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' BACTED_8S.Ord_Product.Product_Sector.pk BACTED_8S.Ord_Product.Product_Customer.pk BACTED_8S.Ord_Product.pk %} ">{{BACTED_8S.Ord_Product.Product_Name}}</a></td>
+                            <td>{{BACTED_8S.Ord_Required_quantity}}</td>
+                            <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' BACTED_8S.Ord_Product.Product_Sector.pk BACTED_8S.Ord_Product.Product_Customer.pk BACTED_8S.Ord_Product.pk BACTED_8S.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                data-toggle="tooltip " title="Edit Status ">{{BACTED_8S.Ord_states}}</a></td>
+                            <td>{{BACTED_8S.Ord_montage_size}}</td>
+                            <td>{{BACTED_8S.Ord_Number_the_montage}}</td>
+ 
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-header card-title">
+                        <h5>  PACTEK 65 تلزيق  </h5>
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for BACTECHGS in BACTECHGS %}
+                                <tr style="text-align: center;  font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;" ondblclick="window.location='{% url 'Order_details' BACTECHGS.pk %}'" style="cursor: pointer;">
+                            <td>
+                                <a href="{% url 'Order_details' BACTECHGS.pk %}">{{BACTECHGS.Ord_work_order_number}}</a></td>
+                                <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  BACTECHGS.Ord_Product.Product_Customer.pk %}  ">{{BACTECHGS.Ord_Product.Product_Customer}}</a></td>
+                                <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' BACTECHGS.Ord_Product.Product_Sector.pk BACTECHGS.Ord_Product.Product_Customer.pk BACTECHGS.Ord_Product.pk %} ">{{BACTECHGS.Ord_Product.Product_Name}}</a></td>
+                            <td>{{BACTECHGS.Ord_Required_quantity}}</td>
+                            <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' BACTECHGS.Ord_Product.Product_Sector.pk BACTECHGS.Ord_Product.Product_Customer.pk BACTECHGS.Ord_Product.pk BACTECHGS.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                data-toggle="tooltip " title="Edit Status ">{{BACTECHGS.Ord_states}}</a></td>
+
+                            <td>{{BACTECHGS.Ord_montage_size}}</td>
+                            <td>{{BACTECHGS.Ord_Number_the_montage}}</td>
+
+                             
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="card-body">
+                    <div class="card-header card-title">
+                        <h5>  FG  تلزيق  </h5>
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for FG in FG %}
+                                <tr style="text-align: center;  font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;" ondblclick="window.location='{% url 'Order_details' FG.pk %}'" style="cursor: pointer;">
+                            <td><a href="{% url 'Order_details' FG.pk %}">{{FG.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  FG.Ord_Product.Product_Customer.pk %}  ">{{FG.Ord_Product.Product_Customer}}</a></td>
+                                    <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' FG.Ord_Product.Product_Sector.pk FG.Ord_Product.Product_Customer.pk FG.Ord_Product.pk %} ">{{FG.Ord_Product.Product_Name}}</a></td>
+                            <td>{{FG.Ord_Required_quantity}}</td>
+                            <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' FG.Ord_Product.Product_Sector.pk FG.Ord_Product.Product_Customer.pk FG.Ord_Product.pk FG.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                data-toggle="tooltip " title="Edit Status ">{{FG.Ord_states}}</a></td>
+
+                            <td>{{FG.Ord_montage_size}}</td>
+                            <td>{{FG.Ord_Number_the_montage}}</td>
+
+                            
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="card-body">
+                    <div class="card-header card-title">
+                        <h5>  SBL  تلزيق  </h5>
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for SBL in SBL %}
+                                <tr style="text-align: center;  font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;" ondblclick="window.location='{% url 'Order_details' SBL.pk %}'" style="cursor: pointer;">
+                            <td> <a href="{% url 'Order_details' SBL.pk %}">{{SBL.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view' SBL.Ord_Product.Product_Customer.pk %}  ">{{SBL.Ord_Product.Product_Customer}}</a></td>
+                                    <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' SBL.Ord_Product.Product_Sector.pk SBL.Ord_Product.Product_Customer.pk SBL.Ord_Product.pk %} ">{{SBL.Ord_Product.Product_Name}}</a></td>
+                            <td>{{SBL.Ord_Required_quantity}}</td>
+                            <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' SBL.Ord_Product.Product_Sector.pk SBL.Ord_Product.Product_Customer.pk SBL.Ord_Product.pk SBL.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                data-toggle="tooltip " title="Edit Status ">{{SBL.Ord_states}}</a></td>
+
+                            <td>{{SBL.Ord_montage_size}}</td>
+                            <td>{{SBL.Ord_Number_the_montage}}</td>
+
+                             
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="card-body">
+                    <div class="card-header card-title">
+                        <h5>  تلزيق يدوي  </h5>
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for Manual in Manual %}
+                                <tr style="text-align: center;  font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;"  ondblclick="window.location='{% url 'Order_details' Manual.pk %}'" style="cursor: pointer;">
+                            <td><a href="{% url 'Order_details' Manual.pk %}">{{Manual.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  Manual.Ord_Product.Product_Customer.pk %}  ">{{Manual.Ord_Product.Product_Customer}}</a></td>
+                                    <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' Manual.Ord_Product.Product_Sector.pk Manual.Ord_Product.Product_Customer.pk Manual.Ord_Product.pk %} ">{{Manual.Ord_Product.Product_Name}}</a></td>
+                            <td>{{Manual.Ord_Required_quantity}}</td>
+                            <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' Manual.Ord_Product.Product_Sector.pk Manual.Ord_Product.Product_Customer.pk Manual.Ord_Product.pk Manual.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                data-toggle="tooltip " title="Edit Status ">{{Manual.Ord_states}}</a></td>
+
+                            <td>{{Manual.Ord_montage_size}}</td>
+                            <td>{{Manual.Ord_Number_the_montage}}</td>
+
+                           
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+       
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5> تجليد </h5>
+                </div>
+                <div class="card-body">
+                    <div style="float: right;">
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for bind in bind %}
+                                <tr style="text-align: center;  font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;"  ondblclick="window.location='{% url 'Order_details' bind.pk %}'" style="cursor: pointer;">
+                            <td> <a href="{% url 'Order_details' bind.pk %}">{{bind.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  bind.Ord_Product.Product_Customer.pk %}  ">{{bind.Ord_Product.Product_Customer}}</a></td>
+                                    <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' bind.Ord_Product.Product_Sector.pk bind.Ord_Product.Product_Customer.pk bind.Ord_Product.pk %} ">{{bind.Ord_Product.Product_Name}}</a></td>
+                            <td>{{bind.Ord_Required_quantity}}</td>
+                            <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' bind.Ord_Product.Product_Sector.pk bind.Ord_Product.Product_Customer.pk bind.Ord_Product.pk bind.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                data-toggle="tooltip " title="Edit Status ">{{bind.Ord_states}}</a></td>
+
+                            <td>{{bind.Ord_montage_size}}</td>
+                            <td>{{bind.Ord_Number_the_montage}}</td>
+
+                             
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        
+        
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5> قص بضاعة منتهية </h5>
+                </div>
+                <div class="card-body">
+                    <div style="float: right;">
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for finished_goods in finished_goods %}
+                                <tr style="text-align: center;  font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;"  ondblclick="window.location='{% url 'Order_details' finished_goods.pk %}'" style="cursor: pointer;">
+                            <td> <a href="{% url 'Order_details' finished_goods.pk %}">{{finished_goods.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  finished_goods.Ord_Product.Product_Customer.pk %}  ">{{finished_goods.Ord_Product.Product_Customer}}</a></td>
+                            <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' finished_goods.Ord_Product.Product_Sector.pk finished_goods.Ord_Product.Product_Customer.pk finished_goods.Ord_Product.pk %} ">{{finished_goods.Ord_Product.Product_Name}}</a></td>
+                            <td>{{finished_goods.Ord_Required_quantity}}</td>
+                            <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' finished_goods.Ord_Product.Product_Sector.pk finished_goods.Ord_Product.Product_Customer.pk finished_goods.Ord_Product.pk finished_goods.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                data-toggle="tooltip " title="Edit Status ">{{finished_goods.Ord_states}}</a></td>
+
+                            <td>{{finished_goods.Ord_montage_size}}</td>
+                            <td>{{finished_goods.Ord_Number_the_montage}}</td>
+ 
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        
+        
+            <div class="card">
+                <div class="card-header card-title">
+                    <h5> تلزيق خارجى </h5>
+                </div>
+                <div class="card-body">
+                    <div style="float: right;">
+                    </div>
+
+
+                    <table id="bootstrap-data-table-export   " class="table table-striped table-bordered    ">
+                        <thead>
+                            <tr>
+                                <th> أمر الشغل</th>
+                                <th>العميل</th>
+                                <th> المنتج</th>
+                                <th >الكمية </th>
+                                <th >المرحلة</th>
+                                <th > مقاس المونتاج</th>
+                                <th >عدد فى المونتاج</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for external_adhesive in external_adhesive %}
+                            <tr style="text-align: center;  font-weight: bolder; color: black; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;"  ondblclick="window.location='{% url 'Order_details' external_adhesive.pk %}'" style="cursor: pointer;">
+                                <td> <a href="{% url 'Order_details' external_adhesive.pk %}">{{external_adhesive.Ord_work_order_number}}</a></td>
+                            <td><a  style="text-align: center; font-weight: bolder; font-size:medium; color: rgb(0, 98, 155);" href="{% url 'representative_view'  external_adhesive.Ord_Product.Product_Customer.pk %}  ">{{external_adhesive.Ord_Product.Product_Customer}}</a></td>
+                                    <td><a style="text-align: center;  font-weight: bolder;" href="{% url 'product_orders' external_adhesive.Ord_Product.Product_Sector.pk external_adhesive.Ord_Product.Product_Customer.pk external_adhesive.Ord_Product.pk %} ">{{external_adhesive.Ord_Product.Product_Name}}</a></td>
+                            <td>{{external_adhesive.Ord_Required_quantity}}</td>
+                            <td><a style="text-align: center; color: darkcyan; font-weight: bolder;" href="{% url 'order_status_update' external_adhesive.Ord_Product.Product_Sector.pk external_adhesive.Ord_Product.Product_Customer.pk external_adhesive.Ord_Product.pk external_adhesive.pk %} " type="button " target="popup " onclick="window.open( this.href, 'name', 'width=800,height=600') " 
+                                data-toggle="tooltip " title="Edit Status ">{{external_adhesive.Ord_states}}</a></td>
+
+                            <td>{{external_adhesive.Ord_montage_size}}</td>
+                            <td>{{external_adhesive.Ord_Number_the_montage}}</td>
+
+                           
+                            </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!-- .animated -->
+<!-- .content -->
+
+
+
+{%endblock%}
