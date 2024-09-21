@@ -1,0 +1,65 @@
+{% extends 'layouts/base.html' %}{% load crispy_forms_tags %} {% block title %} supplier_add_view {% endblock title %} {% block content %}
+
+
+<!-- Page content -->
+<div class="container-fluid mt--2">
+    <div class="row">
+
+        <div class="col-xl-12  order-xl-1">
+            <div class="card" dir="rtl">
+                <div class="card-header">
+                    <div class="row align-items-center text-right">
+                        <div class="col-8">
+                            <h3 class="mb-0">اضافه مورد جديد </h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        <h6 class="heading-small text-muted mb-4 text-right">معلومات المورد</h6>
+                        <div class="pl-lg-4 text-right">
+                            <div class="row ">
+                                <div class="col-lg-6 ">
+                                    <div class="form-group ">
+                                        <label class="form-control-label text-right" for="input-username">الاسم</label> {{form.name}}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-email">الايميل الخاص بالمورد </label> {{form.email}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-first-name">رقم التلفون </label> {{form.phone}}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-last-name">العنوان </label> {{form.address}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4" />
+                        <div class="col-12 ">
+                            <button type="submit" class="btn btn-sm btn-primary text-right">حفظ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %}{% endblock javascripts %}

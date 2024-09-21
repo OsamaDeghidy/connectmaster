@@ -1,0 +1,70 @@
+<nav class="sidenav navbar navbar-vertical  fixed-right  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+        <!-- Brand -->
+        <div class="sidenav-header  align-items-center">
+            <a class="navbar-brand" href="/">
+                <h1 style="color: #5e72e4;"> المخزن </h1>
+            </a>
+        </div>
+        <div class="navbar-inner">
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+                <!-- Nav items -->
+                <ul class="navbar-nav" dir="rtl">
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'index' in segment %} active {% endif %} " href="{% url 'dashboard' %}">
+                            <i class="ni ni-tv-2 text-primary"></i>
+                            <span class="nav-link-text">Dashboard </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'index' in segment %} active {% endif %} " href="{% url 'transaction'%}">
+                            <i class="ni ni-tv-2 text-primary"></i>
+                            <span class="nav-link-text">العمليات </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'icons' in segment %} active {% endif %}" href="{% url 'custmer'%}">
+                            <i class="ni ni-circle-08 text-pink"></i>
+                            <span class="nav-link-text">العملاء</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'map' in segment %} active {% endif %}" href="{% url 'supplier'%}">
+                            <i class="ni ni-single-02 text-yellow"></i>
+                            <span class="nav-link-text">الموردين </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'profile' in segment %} active {% endif %}" href="{% url 'InStockNumber'%}">
+
+                            <i class="ni ni-pin-3 text-primary"></i>
+                            <span class="nav-link-text"> إذن إضافه   </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'tables' in segment %} active {% endif %}" href="{% url 'OutStockNumber'%}">
+                            <i class="ni ni-bullet-list-67 text-default"></i>
+                            <span class="nav-link-text">اذن الصرف </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'iteam'%}">
+                            <i class="ni ni-key-25 text-info"></i>
+                            <span class="nav-link-text"> الاصناف الرئيسية</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'item_stock'%}">
+                            <i class="ni ni-key-25 text-info"></i>
+                            <span class="nav-link-text">  الأرصده </span>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

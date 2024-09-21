@@ -252,3 +252,4 @@ class CorrectiveActions(models.Model): # اجراءات تصصيصيه المن�
 
     def __str__(self):
         return f"{self.date} - {self.complaint_details}"
+

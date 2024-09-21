@@ -50,6 +50,11 @@ INSTALLED_APPS = [
     'machines',
     'simple_history',
     
+    'crispy_forms',
+    'storge',
+    'django_tables2',
+    'django_filters',
+    
     
 ]
 

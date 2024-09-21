@@ -1,0 +1,163 @@
+{% extends 'layouts/base.html' %}{% load static %} {% block Title%} iteams_list {%endblock%} {% block content%} {% load render_table from django_tables2 %} {% load django_tables2 %}
+<!-- BreadCrumbs -->
+
+<!-- BreadCrumbs -->
+<div class="header bg-primary pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+
+
+                <div class="col-lg-6 col-3 mt--6">
+                    {% if out_stocknumber.status != 'نهائي' %}
+                    <button type="button" class="btn btn-sm btn-neutral " data-toggle="modal" data-target="#exampleModal">
+                        اضف واحدة 
+                      </button>
+
+                    <a href="{% url 'out_stock_add' out_stocknumber.pk %}" class="btn btn-sm btn-neutral">اضافة</a> {% endif %}
+                </div>
+
+                <div class="col-lg-6 col-5 text-right" dir="rtl">
+
+                    <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href=" {% url 'OutStockNumber' %} ">الرئيسية</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">الاصناف اذن الصرف </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-lg-12 col-5 text-right mb--1" dir="rtl">
+                <form class="navbar-search navbar-search-light  " id="navbar-search-main" method="get">{% csrf_token %}
+                    <div class="form-group mb-0">
+                        <div class="input-group input-group-alternative input-group-merge" dir="rtl">
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                            {{filter.form}}
+                            <input type="submit" value="Search" class="btn btn-primary">
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Content -->
+<div class="container-fluid mt--5" dir="rtl">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <!-- Card header -->
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        {% render_table tables %}
+
+
+                    </table>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <div class="row text-right">
+
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+             </button>
+
+                </div>
+                <h5 class="modal-title  " id="exampleModalLabel">اضف صنف امر صرف </h5>
+            </div>
+            <form method="post" id="supplier-form">
+                <div class="modal-body " dir="rtl">
+
+                    {% csrf_token %}
+                    <div class="pl-lg-4 text-right">
+
+                        <div class="col-lg-12 ">
+                            <div class="form-group ">
+                                <label class="form-control-label text-right" for="input-username"> الصنف  </label> {{form.in_stock}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 ">
+                                <div class="form-group ">
+                                    <label class="form-control-label text-right" for="input-username">الوزن   </label> {{form.weaight}}
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ">
+                                <div class="form-group ">
+                                    <label class="form-control-label text-right" for="input-username"> العدد  </label> {{form.sheet}}
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 ">
+                                <div class="form-group ">
+                                    <label class="form-control-label text-right" for="input-username">السعر   </label> {{form.price }}
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer" dir="rtl">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                    <button type="submit" class="btn btn-primary" id="save-supplier">حفظ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Script to open and close the popup form -->
+<script>
+    $(document).on('click', '#save-supplier', function() {
+        $.ajax({
+            url: '/suppliers/add/',
+            type: 'POST',
+            data: $('#supplier-form').serialize(),
+            success: function(response) {
+                // handle success response
+                $('#exampleModal').modal('hide');
+            },
+            error: function(error) {
+                // handle error response
+            }
+        });
+    });
+    const stockSelect = document.getElementById('stockSelect');
+    const stockInfo = document.getElementById('stockInfo');
+
+    stockSelect.addEventListener('change', () => {
+        const selectedValue = stockSelect.value;
+
+        if (selectedValue === 'in_stock') {
+            // Update the stockInfo div with In_stock information
+            stockInfo.innerHTML = 'In_stock information';
+        } else {
+            // Update the stockInfo div with Out_stock information
+            stockInfo.innerHTML = 'Out_stock information';
+        }
+    });
+</script>
+{%endblock%}
+<!-- Specific JS goes HERE -->
+{% block javascripts %}{% endblock javascripts %}

@@ -177,6 +177,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -222,6 +230,30 @@
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -1067,6 +1099,918 @@
     },
     {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -2275,6 +3219,54 @@
         "documentation": {}
     },
     {
+        "label": "ImportExportModelAdmin",
+        "importPath": "import_export.admin",
+        "description": "import_export.admin",
+        "isExtraImport": true,
+        "detail": "import_export.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ImportExportModelAdmin",
+        "importPath": "import_export.admin",
+        "description": "import_export.admin",
+        "isExtraImport": true,
+        "detail": "import_export.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ImportExportModelAdmin",
+        "importPath": "import_export.admin",
+        "description": "import_export.admin",
+        "isExtraImport": true,
+        "detail": "import_export.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleHistoryAdmin",
+        "importPath": "simple_history.admin",
+        "description": "simple_history.admin",
+        "isExtraImport": true,
+        "detail": "simple_history.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleHistoryAdmin",
+        "importPath": "simple_history.admin",
+        "description": "simple_history.admin",
+        "isExtraImport": true,
+        "detail": "simple_history.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -2525,6 +3517,22 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "Order",
         "importPath": "Order.models",
         "description": "Order.models",
@@ -2594,6 +3602,22 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "audioop",
+        "description": "audioop",
+        "isExtraImport": true,
+        "detail": "audioop",
         "documentation": {}
     },
     {
@@ -2671,6 +3695,38 @@
     },
     {
         "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -2806,6 +3862,14 @@
         "documentation": {}
     },
     {
+        "label": "Sum",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
         "label": "Q",
         "importPath": "django.db.models",
         "description": "django.db.models",
@@ -2861,30 +3925,6 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "ImportExportModelAdmin",
-        "importPath": "import_export.admin",
-        "description": "import_export.admin",
-        "isExtraImport": true,
-        "detail": "import_export.admin",
-        "documentation": {}
-    },
-    {
-        "label": "ImportExportModelAdmin",
-        "importPath": "import_export.admin",
-        "description": "import_export.admin",
-        "isExtraImport": true,
-        "detail": "import_export.admin",
-        "documentation": {}
-    },
-    {
-        "label": "SimpleHistoryAdmin",
-        "importPath": "simple_history.admin",
-        "description": "simple_history.admin",
-        "isExtraImport": true,
-        "detail": "simple_history.admin",
         "documentation": {}
     },
     {
@@ -3016,6 +4056,22 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "code",
         "importPath": "isort",
         "description": "isort",
@@ -3077,6 +4133,14 @@
         "description": "unicodedata",
         "isExtraImport": true,
         "detail": "unicodedata",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
         "documentation": {}
     },
     {
@@ -3367,6 +4431,186 @@
         "documentation": {}
     },
     {
+        "label": "django_filters",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django_filters",
+        "description": "django_filters",
+        "detail": "django_filters",
+        "documentation": {}
+    },
+    {
+        "label": "DateFilter",
+        "importPath": "django_filters",
+        "description": "django_filters",
+        "isExtraImport": true,
+        "detail": "django_filters",
+        "documentation": {}
+    },
+    {
+        "label": "CharFilter",
+        "importPath": "django_filters",
+        "description": "django_filters",
+        "isExtraImport": true,
+        "detail": "django_filters",
+        "documentation": {}
+    },
+    {
+        "label": "In_stockForm",
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "isExtraImport": true,
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "formset_factory",
+        "importPath": "django.forms",
+        "description": "django.forms",
+        "isExtraImport": true,
+        "detail": "django.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.forms",
+        "description": "django.forms",
+        "isExtraImport": true,
+        "detail": "django.forms",
+        "documentation": {}
+    },
+    {
+        "label": "functools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "functools",
+        "description": "functools",
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "pre_save",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "post_save",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "receiver",
+        "importPath": "django.dispatch",
+        "description": "django.dispatch",
+        "isExtraImport": true,
+        "detail": "django.dispatch",
+        "documentation": {}
+    },
+    {
+        "label": "django_tables2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django_tables2",
+        "description": "django_tables2",
+        "detail": "django_tables2",
+        "documentation": {}
+    },
+    {
+        "label": "SingleTableView",
+        "importPath": "django_tables2",
+        "description": "django_tables2",
+        "isExtraImport": true,
+        "detail": "django_tables2",
+        "documentation": {}
+    },
+    {
+        "label": "RequestConfig",
+        "importPath": "django_tables2",
+        "description": "django_tables2",
+        "isExtraImport": true,
+        "detail": "django_tables2",
+        "documentation": {}
+    },
+    {
+        "label": "mark_safe",
+        "importPath": "django.utils.safestring",
+        "description": "django.utils.safestring",
+        "isExtraImport": true,
+        "detail": "django.utils.safestring",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "FilterView",
+        "importPath": "django_filters.views",
+        "description": "django_filters.views",
+        "isExtraImport": true,
+        "detail": "django_filters.views",
+        "documentation": {}
+    },
+    {
+        "label": "Paginator",
+        "importPath": "django.core.paginator",
+        "description": "django.core.paginator",
+        "isExtraImport": true,
+        "detail": "django.core.paginator",
+        "documentation": {}
+    },
+    {
+        "label": "PageNotAnInteger",
+        "importPath": "django.core.paginator",
+        "description": "django.core.paginator",
+        "isExtraImport": true,
+        "detail": "django.core.paginator",
+        "documentation": {}
+    },
+    {
+        "label": "EmptyPage",
+        "importPath": "django.core.paginator",
+        "description": "django.core.paginator",
+        "isExtraImport": true,
+        "detail": "django.core.paginator",
+        "documentation": {}
+    },
+    {
         "label": "UserCreationForm",
         "importPath": "django.contrib.auth.forms",
         "description": "django.contrib.auth.forms",
@@ -3452,14 +4696,6 @@
         "importPath": "secrets",
         "description": "secrets",
         "detail": "secrets",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -3707,7 +4943,7 @@
         "kind": 5,
         "importPath": "Connect_ERP_System.urls",
         "description": "Connect_ERP_System.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('Work_Orders.urls')),\n    path('',include('Users.urls')),\n    path('',include('Order.urls')),\n    path('',include('machines.urls')),\n]\nurlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('Work_Orders.urls')),\n    path('',include('Users.urls')),\n    path('',include('Order.urls')),\n    path('',include('machines.urls')),\n    path('', include('storge.urls')),\n]\nurlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\nif settings.DEBUG:",
         "detail": "Connect_ERP_System.urls",
         "documentation": {}
     },
@@ -3799,6 +5035,24 @@
         "description": "machines.migrations.0009_alter_machine_order_binding_and_more",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('machines', '0008_machine_order_binding_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='machine_order',\n            name='binding',\n            field=models.PositiveIntegerField(blank=True, null=True, verbose_name='تجليد'),\n        ),",
         "detail": "machines.migrations.0009_alter_machine_order_binding_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "MachineAdmin",
+        "kind": 6,
+        "importPath": "machines.admin",
+        "description": "machines.admin",
+        "peekOfCode": "class MachineAdmin(ImportExportModelAdmin):\n    pass\nclass MachineOrderAdmin(ImportExportModelAdmin):\n    pass\nadmin.site.register(Machine, MachineAdmin)\nadmin.site.register(Machine_Order, MachineOrderAdmin)",
+        "detail": "machines.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MachineOrderAdmin",
+        "kind": 6,
+        "importPath": "machines.admin",
+        "description": "machines.admin",
+        "peekOfCode": "class MachineOrderAdmin(ImportExportModelAdmin):\n    pass\nadmin.site.register(Machine, MachineAdmin)\nadmin.site.register(Machine_Order, MachineOrderAdmin)",
+        "detail": "machines.admin",
         "documentation": {}
     },
     {
@@ -4987,6 +6241,1274 @@
         "description": "static_root.vendors.jqvmap.create.jqvmap",
         "peekOfCode": "processor = Processor(paramsJson)\nprocessor.process()",
         "detail": "static_root.vendors.jqvmap.create.jqvmap",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0001_initial",
+        "description": "storge.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Customer',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "storge.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0002_supplier_user",
+        "description": "storge.migrations.0002_supplier_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('storge', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='supplier',\n            name='user',\n            field=models.ForeignKey(default='1', on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),",
+        "detail": "storge.migrations.0002_supplier_user",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0003_alter_supplier_address_alter_supplier_email_and_more",
+        "description": "storge.migrations.0003_alter_supplier_address_alter_supplier_email_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0002_supplier_user'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='supplier',\n            name='address',\n            field=models.CharField(max_length=100, verbose_name='العنوان'),\n        ),",
+        "detail": "storge.migrations.0003_alter_supplier_address_alter_supplier_email_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0004_alter_iteam_code_alter_iteam_description_and_more",
+        "description": "storge.migrations.0004_alter_iteam_code_alter_iteam_description_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0003_alter_supplier_address_alter_supplier_email_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='iteam',\n            name='code',\n            field=models.CharField(max_length=100, unique=True, verbose_name='الكود'),\n        ),",
+        "detail": "storge.migrations.0004_alter_iteam_code_alter_iteam_description_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0005_alter_iteam_code_alter_iteam_name",
+        "description": "storge.migrations.0005_alter_iteam_code_alter_iteam_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0004_alter_iteam_code_alter_iteam_description_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='iteam',\n            name='code',\n            field=models.CharField(editable=False, max_length=100, verbose_name='الكود'),\n        ),",
+        "detail": "storge.migrations.0005_alter_iteam_code_alter_iteam_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0006_remove_iteam_description_remove_iteam_quntity",
+        "description": "storge.migrations.0006_remove_iteam_description_remove_iteam_quntity",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0005_alter_iteam_code_alter_iteam_name'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='iteam',\n            name='description',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0006_remove_iteam_description_remove_iteam_quntity",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0007_alter_iteam_code_alter_iteam_name",
+        "description": "storge.migrations.0007_alter_iteam_code_alter_iteam_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0006_remove_iteam_description_remove_iteam_quntity'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='iteam',\n            name='code',\n            field=models.CharField(default='00-00-00-00-000', max_length=100, verbose_name='الكود'),\n        ),",
+        "detail": "storge.migrations.0007_alter_iteam_code_alter_iteam_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0008_in_stock_pako_in_stock_pukker_in_stock_sub",
+        "description": "storge.migrations.0008_in_stock_pako_in_stock_pukker_in_stock_sub",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0007_alter_iteam_code_alter_iteam_name'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='in_stock',\n            name='pako',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='storge.pako'),\n        ),",
+        "detail": "storge.migrations.0008_in_stock_pako_in_stock_pukker_in_stock_sub",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0009_alter_iteam_code_alter_iteam_name",
+        "description": "storge.migrations.0009_alter_iteam_code_alter_iteam_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0008_in_stock_pako_in_stock_pukker_in_stock_sub'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='iteam',\n            name='code',\n            field=models.CharField(default='00-00-00-00-000', max_length=100, unique=True, verbose_name='الكود'),\n        ),",
+        "detail": "storge.migrations.0009_alter_iteam_code_alter_iteam_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0009_alter_pako_grams_alter_pako_linght_and_more",
+        "description": "storge.migrations.0009_alter_pako_grams_alter_pako_linght_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0008_in_stock_pako_in_stock_pukker_in_stock_sub'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='pako',\n            name='grams',\n            field=models.FloatField(default=0),\n        ),",
+        "detail": "storge.migrations.0009_alter_pako_grams_alter_pako_linght_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0010_alter_iteam_code_alter_iteam_name",
+        "description": "storge.migrations.0010_alter_iteam_code_alter_iteam_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0009_alter_iteam_code_alter_iteam_name'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='iteam',\n            name='code',\n            field=models.CharField(default='00-00-00-00-000', max_length=100, verbose_name='الكود'),\n        ),",
+        "detail": "storge.migrations.0010_alter_iteam_code_alter_iteam_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0010_remove_pako_grams_remove_sub_grams_and_more",
+        "description": "storge.migrations.0010_remove_pako_grams_remove_sub_grams_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0009_alter_pako_grams_alter_pako_linght_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='pako',\n            name='grams',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0010_remove_pako_grams_remove_sub_grams_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0011_remove_in_stock_iteam",
+        "description": "storge.migrations.0011_remove_in_stock_iteam",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0010_remove_pako_grams_remove_sub_grams_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='in_stock',\n            name='iteam',\n        ),\n    ]",
+        "detail": "storge.migrations.0011_remove_in_stock_iteam",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0012_alter_gram_categore_code_alter_gram_categore_name",
+        "description": "storge.migrations.0012_alter_gram_categore_code_alter_gram_categore_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0011_remove_in_stock_iteam'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='gram_categore',\n            name='code',\n            field=models.CharField(max_length=100),\n        ),",
+        "detail": "storge.migrations.0012_alter_gram_categore_code_alter_gram_categore_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0013_linght_width_rename_width_pukker_total_linght_and_more",
+        "description": "storge.migrations.0013_linght_width_rename_width_pukker_total_linght_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0012_alter_gram_categore_code_alter_gram_categore_name'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='linght',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.FloatField(default=0, max_length=100)),",
+        "detail": "storge.migrations.0013_linght_width_rename_width_pukker_total_linght_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0014_alter_out_stock_date",
+        "description": "storge.migrations.0014_alter_out_stock_date",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0013_linght_width_rename_width_pukker_total_linght_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='out_stock',\n            name='date',\n            field=models.DateTimeField(auto_now_add=True),\n        ),",
+        "detail": "storge.migrations.0014_alter_out_stock_date",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0015_alter_pako_iteam_alter_pukker_iteam_alter_sub_iteam",
+        "description": "storge.migrations.0015_alter_pako_iteam_alter_pukker_iteam_alter_sub_iteam",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0014_alter_out_stock_date'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='pako',\n            name='iteam',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='storge.iteam'),\n        ),",
+        "detail": "storge.migrations.0015_alter_pako_iteam_alter_pukker_iteam_alter_sub_iteam",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0016_alter_out_stock_date",
+        "description": "storge.migrations.0016_alter_out_stock_date",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0015_alter_pako_iteam_alter_pukker_iteam_alter_sub_iteam'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='out_stock',\n            name='date',\n            field=models.DateTimeField(blank=True, null=True),\n        ),",
+        "detail": "storge.migrations.0016_alter_out_stock_date",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0017_merge_20230206_1412",
+        "description": "storge.migrations.0017_merge_20230206_1412",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0010_alter_iteam_code_alter_iteam_name'),\n        ('storge', '0016_alter_out_stock_date'),\n    ]\n    operations = [\n    ]",
+        "detail": "storge.migrations.0017_merge_20230206_1412",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0018_alter_in_stock_date_alter_out_stock_date",
+        "description": "storge.migrations.0018_alter_in_stock_date_alter_out_stock_date",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0017_merge_20230206_1412'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='in_stock',\n            name='date',\n            field=models.DateTimeField(auto_now_add=True, null=True),\n        ),",
+        "detail": "storge.migrations.0018_alter_in_stock_date_alter_out_stock_date",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0019_alter_in_stock_date_alter_in_stock_price_and_more",
+        "description": "storge.migrations.0019_alter_in_stock_date_alter_in_stock_price_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0018_alter_in_stock_date_alter_out_stock_date'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='in_stock',\n            name='date',\n            field=models.DateTimeField(blank=True, null=True),\n        ),",
+        "detail": "storge.migrations.0019_alter_in_stock_date_alter_in_stock_price_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0020_alter_pukker_number",
+        "description": "storge.migrations.0020_alter_pukker_number",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0019_alter_in_stock_date_alter_in_stock_price_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='pukker',\n            name='number',\n            field=models.IntegerField(default=0),\n        ),",
+        "detail": "storge.migrations.0020_alter_pukker_number",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0021_alter_pukker_number",
+        "description": "storge.migrations.0021_alter_pukker_number",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0020_alter_pukker_number'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='pukker',\n            name='number',\n            field=models.IntegerField(blank=True, default=0, null=True),\n        ),",
+        "detail": "storge.migrations.0021_alter_pukker_number",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0022_alter_iteam_gram_categore_alter_iteam_linght_and_more",
+        "description": "storge.migrations.0022_alter_iteam_gram_categore_alter_iteam_linght_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0021_alter_pukker_number'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='iteam',\n            name='gram_categore',\n            field=models.IntegerField(default=0),\n        ),",
+        "detail": "storge.migrations.0022_alter_iteam_gram_categore_alter_iteam_linght_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0023_remove_in_stock_pako_remove_in_stock_pukker_and_more",
+        "description": "storge.migrations.0023_remove_in_stock_pako_remove_in_stock_pukker_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0022_alter_iteam_gram_categore_alter_iteam_linght_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='in_stock',\n            name='pako',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0023_remove_in_stock_pako_remove_in_stock_pukker_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0024_in_stock_iteam",
+        "description": "storge.migrations.0024_in_stock_iteam",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0023_remove_in_stock_pako_remove_in_stock_pukker_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='in_stock',\n            name='iteam',\n            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='storge.iteam'),\n            preserve_default=False,",
+        "detail": "storge.migrations.0024_in_stock_iteam",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0025_in_stock_code_in_stock_name",
+        "description": "storge.migrations.0025_in_stock_code_in_stock_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0024_in_stock_iteam'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='in_stock',\n            name='code',\n            field=models.CharField(default='00-00-00-00-000000000000-0000', max_length=100, verbose_name='الكود'),\n        ),",
+        "detail": "storge.migrations.0025_in_stock_code_in_stock_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0026_remove_in_stock_code_remove_in_stock_iteam_and_more",
+        "description": "storge.migrations.0026_remove_in_stock_code_remove_in_stock_iteam_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0025_in_stock_code_in_stock_name'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='in_stock',\n            name='code',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0026_remove_in_stock_code_remove_in_stock_iteam_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0027_in_stoke_detals_in_stock",
+        "description": "storge.migrations.0027_in_stoke_detals_in_stock",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0026_remove_in_stock_code_remove_in_stock_iteam_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='in_stoke_detals',\n            name='in_stock',\n            field=models.ForeignKey(default='', on_delete=django.db.models.deletion.CASCADE, to='storge.in_stock'),\n            preserve_default=False,",
+        "detail": "storge.migrations.0027_in_stoke_detals_in_stock",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0028_remove_in_stoke_detals_in_stock_in_stoke_detals_date_and_more",
+        "description": "storge.migrations.0028_remove_in_stoke_detals_in_stock_in_stoke_detals_date_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0027_in_stoke_detals_in_stock'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='in_stoke_detals',\n            name='in_stock',\n        ),\n        migrations.AddField(",
+        "detail": "storge.migrations.0028_remove_in_stoke_detals_in_stock_in_stoke_detals_date_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0029_alter_in_stoke_detals_date_and_more",
+        "description": "storge.migrations.0029_alter_in_stoke_detals_date_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0028_remove_in_stoke_detals_in_stock_in_stoke_detals_date_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='in_stoke_detals',\n            name='date',\n            field=models.DateField(auto_now_add=True, null=True),\n        ),",
+        "detail": "storge.migrations.0029_alter_in_stoke_detals_date_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0030_alter_in_stoke_detals_date",
+        "description": "storge.migrations.0030_alter_in_stoke_detals_date",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0029_alter_in_stoke_detals_date_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='in_stoke_detals',\n            name='date',\n            field=models.DateField(auto_now_add=True),\n        ),",
+        "detail": "storge.migrations.0030_alter_in_stoke_detals_date",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0031_customer_slug",
+        "description": "storge.migrations.0031_customer_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0030_alter_in_stoke_detals_date'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='customer',\n            name='slug',\n            field=models.SlugField(default='', max_length=100, unique=True),\n            preserve_default=False,",
+        "detail": "storge.migrations.0031_customer_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0032_alter_customer_slug",
+        "description": "storge.migrations.0032_alter_customer_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0031_customer_slug'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='customer',\n            name='slug',\n            field=models.SlugField(max_length=100),\n        ),",
+        "detail": "storge.migrations.0032_alter_customer_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0033_alter_customer_slug",
+        "description": "storge.migrations.0033_alter_customer_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0032_alter_customer_slug'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='customer',\n            name='slug',\n            field=models.SlugField(blank=True, max_length=100, null=True),\n        ),",
+        "detail": "storge.migrations.0033_alter_customer_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0034_alter_customer_slug",
+        "description": "storge.migrations.0034_alter_customer_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0033_alter_customer_slug'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='customer',\n            name='slug',\n            field=models.SlugField(default='', max_length=100, unique=True),\n            preserve_default=False,",
+        "detail": "storge.migrations.0034_alter_customer_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0035_alter_customer_slug",
+        "description": "storge.migrations.0035_alter_customer_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0034_alter_customer_slug'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='customer',\n            name='slug',\n            field=models.SlugField(blank=True, max_length=100, unique=True),\n        ),",
+        "detail": "storge.migrations.0035_alter_customer_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0036_remove_customer_slug",
+        "description": "storge.migrations.0036_remove_customer_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0035_alter_customer_slug'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='customer',\n            name='slug',\n        ),\n    ]",
+        "detail": "storge.migrations.0036_remove_customer_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0037_remove_out_stock_in_stock_remove_out_stock_iteam_and_more",
+        "description": "storge.migrations.0037_remove_out_stock_in_stock_remove_out_stock_iteam_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0036_remove_customer_slug'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='out_stock',\n            name='In_stock',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0037_remove_out_stock_in_stock_remove_out_stock_iteam_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0038_customer_user_alter_out_stock_customer_and_more",
+        "description": "storge.migrations.0038_customer_user_alter_out_stock_customer_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('storge', '0037_remove_out_stock_in_stock_remove_out_stock_iteam_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='customer',\n            name='user',\n            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),",
+        "detail": "storge.migrations.0038_customer_user_alter_out_stock_customer_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0039_remove_in_stock_supplier_in_stock_code_and_more",
+        "description": "storge.migrations.0039_remove_in_stock_supplier_in_stock_code_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0038_customer_user_alter_out_stock_customer_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='in_stock',\n            name='supplier',\n        ),\n        migrations.AddField(",
+        "detail": "storge.migrations.0039_remove_in_stock_supplier_in_stock_code_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0040_in_stock_supplier",
+        "description": "storge.migrations.0040_in_stock_supplier",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0039_remove_in_stock_supplier_in_stock_code_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='in_stock',\n            name='supplier',\n            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='storge.supplier', verbose_name='المورد'),\n            preserve_default=False,",
+        "detail": "storge.migrations.0040_in_stock_supplier",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0041_remove_in_stock_supplier_and_more",
+        "description": "storge.migrations.0041_remove_in_stock_supplier_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0040_in_stock_supplier'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='in_stock',\n            name='supplier',\n        ),\n        migrations.AlterField(",
+        "detail": "storge.migrations.0041_remove_in_stock_supplier_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0042_instocknumber_states",
+        "description": "storge.migrations.0042_instocknumber_states",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0041_remove_in_stock_supplier_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='instocknumber',\n            name='states',\n            field=models.BooleanField(default=False, verbose_name='الحاله'),\n        ),",
+        "detail": "storge.migrations.0042_instocknumber_states",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0043_rename_states_instocknumber_status",
+        "description": "storge.migrations.0043_rename_states_instocknumber_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0042_instocknumber_states'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='instocknumber',\n            old_name='states',\n            new_name='status',\n        ),",
+        "detail": "storge.migrations.0043_rename_states_instocknumber_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0044_alter_instocknumber_status",
+        "description": "storge.migrations.0044_alter_instocknumber_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0043_rename_states_instocknumber_status'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='instocknumber',\n            name='status',\n            field=models.CharField(choices=[('تعديل', 'تعديل'), ('نهائى', 'نهائى')], default='تعديل', max_length=100, verbose_name='الحاله'),\n        ),",
+        "detail": "storge.migrations.0044_alter_instocknumber_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0045_alter_instocknumber_status",
+        "description": "storge.migrations.0045_alter_instocknumber_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0044_alter_instocknumber_status'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='instocknumber',\n            name='status',\n            field=models.CharField(choices=[('تعديل', 'تعديل'), ('نهائي', 'نهائي')], default='تعديل', max_length=100, verbose_name='الحاله'),\n        ),",
+        "detail": "storge.migrations.0045_alter_instocknumber_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0046_rename_instocknumber_in_stock_in_stocknumber",
+        "description": "storge.migrations.0046_rename_instocknumber_in_stock_in_stocknumber",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0045_alter_instocknumber_status'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='in_stock',\n            old_name='InStockNumber',\n            new_name='in_stocknumber',\n        ),",
+        "detail": "storge.migrations.0046_rename_instocknumber_in_stock_in_stocknumber",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0047_alter_in_stock_sheet_out_stocknumber",
+        "description": "storge.migrations.0047_alter_in_stock_sheet_out_stocknumber",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0046_rename_instocknumber_in_stock_in_stocknumber'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='in_stock',\n            name='sheet',\n            field=models.IntegerField(blank=True, default=0, null=True, verbose_name='الورقه'),\n        ),",
+        "detail": "storge.migrations.0047_alter_in_stock_sheet_out_stocknumber",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0048_remove_out_stock_in_stock_detals_out_stock_in_stock",
+        "description": "storge.migrations.0048_remove_out_stock_in_stock_detals_out_stock_in_stock",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0047_alter_in_stock_sheet_out_stocknumber'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='out_stock',\n            name='in_stock_detals',\n        ),\n        migrations.AddField(",
+        "detail": "storge.migrations.0048_remove_out_stock_in_stock_detals_out_stock_in_stock",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0049_remove_out_stock_code_out_stock_out_stocknumber",
+        "description": "storge.migrations.0049_remove_out_stock_code_out_stock_out_stocknumber",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0048_remove_out_stock_in_stock_detals_out_stock_in_stock'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='out_stock',\n            name='code',\n        ),\n        migrations.AddField(",
+        "detail": "storge.migrations.0049_remove_out_stock_code_out_stock_out_stocknumber",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0050_remove_out_stock_customer",
+        "description": "storge.migrations.0050_remove_out_stock_customer",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0049_remove_out_stock_code_out_stock_out_stocknumber'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='out_stock',\n            name='customer',\n        ),\n    ]",
+        "detail": "storge.migrations.0050_remove_out_stock_customer",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0051_out_stock_total_sheet_out_stock_total_weight",
+        "description": "storge.migrations.0051_out_stock_total_sheet_out_stock_total_weight",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0050_remove_out_stock_customer'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='out_stock',\n            name='total_sheet',\n            field=models.IntegerField(default=0, verbose_name='الشيت الكلي'),\n        ),",
+        "detail": "storge.migrations.0051_out_stock_total_sheet_out_stock_total_weight",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0052_remove_out_stock_total_sheet_and_more",
+        "description": "storge.migrations.0052_remove_out_stock_total_sheet_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0051_out_stock_total_sheet_out_stock_total_weight'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='out_stock',\n            name='total_sheet',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0052_remove_out_stock_total_sheet_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0053_in_stock_total_sheet_in_stock_total_weight_and_more",
+        "description": "storge.migrations.0053_in_stock_total_sheet_in_stock_total_weight_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0052_remove_out_stock_total_sheet_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='in_stock',\n            name='total_sheet',\n            field=models.IntegerField(blank=True, default=0, null=True, verbose_name='إجمالي الشيت'),\n        ),",
+        "detail": "storge.migrations.0053_in_stock_total_sheet_in_stock_total_weight_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0054_remove_in_stock_total_sheet_and_more",
+        "description": "storge.migrations.0054_remove_in_stock_total_sheet_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0053_in_stock_total_sheet_in_stock_total_weight_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='in_stock',\n            name='total_sheet',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0054_remove_in_stock_total_sheet_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0055_remove_in_stoke_detals_code_and_more",
+        "description": "storge.migrations.0055_remove_in_stoke_detals_code_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0054_remove_in_stock_total_sheet_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='in_stoke_detals',\n            name='code',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0055_remove_in_stoke_detals_code_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0056_out_stock_iteam",
+        "description": "storge.migrations.0056_out_stock_iteam",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0055_remove_in_stoke_detals_code_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='out_stock',\n            name='iteam',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='storge.iteam', verbose_name='الصنف'),\n        ),",
+        "detail": "storge.migrations.0056_out_stock_iteam",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0057_out_stock_ts_out_stock_tw_out_stock_name",
+        "description": "storge.migrations.0057_out_stock_ts_out_stock_tw_out_stock_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0056_out_stock_iteam'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='out_stock',\n            name='TS',\n            field=models.IntegerField(blank=True, default=0, null=True, verbose_name='الشيت الكلي'),\n        ),",
+        "detail": "storge.migrations.0057_out_stock_ts_out_stock_tw_out_stock_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0058_remove_out_stock_name",
+        "description": "storge.migrations.0058_remove_out_stock_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0057_out_stock_ts_out_stock_tw_out_stock_name'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='out_stock',\n            name='name',\n        ),\n    ]",
+        "detail": "storge.migrations.0058_remove_out_stock_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0059_remove_out_stock_ts_remove_out_stock_tw",
+        "description": "storge.migrations.0059_remove_out_stock_ts_remove_out_stock_tw",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0058_remove_out_stock_name'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='out_stock',\n            name='TS',\n        ),\n        migrations.RemoveField(",
+        "detail": "storge.migrations.0059_remove_out_stock_ts_remove_out_stock_tw",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "storge.migrations.0060_auto_20230625_0122",
+        "description": "storge.migrations.0060_auto_20230625_0122",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('storge', '0059_remove_out_stock_ts_remove_out_stock_tw'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='gram_categore',\n            name='code',\n            field=models.CharField(default=0, max_length=3),\n        ),",
+        "detail": "storge.migrations.0060_auto_20230625_0122",
+        "documentation": {}
+    },
+    {
+        "label": "StorgeConfig",
+        "kind": 6,
+        "importPath": "storge.apps",
+        "description": "storge.apps",
+        "peekOfCode": "class StorgeConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'storge'",
+        "detail": "storge.apps",
+        "documentation": {}
+    },
+    {
+        "label": "In_StockFilter",
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class In_StockFilter(django_filters.FilterSet):\n    iteam = django_filters.ModelChoiceFilter(queryset=Iteam.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}),label=' اسم الصنف ',required=False)\n    code  = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الرقم')\n    date = django_filters.DateFilter(widget=forms.DateInput(attrs={'type': 'date','class': 'form-control'}),label='التاريخ')\n    class Meta:\n        model = In_stock\n        fields = '__all__'\n        exclude = ['id', 'supplier', 'date', 'name', 'price','sheet','weaight','in_stocknumber','supplier']\nclass Out_StockFilter(django_filters.FilterSet):\n    in_stock=django_filters.ModelChoiceFilter(queryset=In_stock.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}),label=' اسم الصنف ',required=False)",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockFilter",
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class Out_StockFilter(django_filters.FilterSet):\n    in_stock=django_filters.ModelChoiceFilter(queryset=In_stock.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}),label=' اسم الصنف ',required=False)\n    iteam=django_filters.ModelChoiceFilter(queryset=Iteam.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}),label=' اسم الصنف ',required=False)\n    date = django_filters.DateFilter(widget=forms.DateInput(attrs={'type': 'date','class': 'form-control'}),label='التاريخ')\n    class Meta:\n        model = Out_Stock\n        fields = '__all__'\n        exclude = ['id','date','weaight','sheet','price','out_stocknumber','in_stock','iteam','customer']\nclass SupplierFilter(django_filters.FilterSet):\n    name = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم ')",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": "SupplierFilter",
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class SupplierFilter(django_filters.FilterSet):\n    name = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم ')\n    phone = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الهاتف')\n    email = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الايميل')\n    class Meta:\n        model = Supplier\n        fields = '__all__'\n        exclude = ['id', 'user', 'name', 'phone', 'address', 'email']        \nclass InStockNumberFilter(django_filters.FilterSet):\n    number = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الرقم')",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": "InStockNumberFilter",
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class InStockNumberFilter(django_filters.FilterSet):\n    number = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الرقم')\n    supplier = django_filters.ModelChoiceFilter(queryset=Supplier.objects.all(),widget=forms.Select(attrs={'class': 'form-control'}),label='المورد')\n    date = django_filters.DateFilter(widget=forms.DateInput(attrs={'type': 'date','class': 'form-control'}),label='التاريخ')\n    class Meta:\n        model = InStockNumber\n        fields = '__all__'\n        exclude = ['id', 'user', 'supplier', 'date', 'number','status']\nclass IteamFilter(django_filters.FilterSet):\n    name = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم ')",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": "IteamFilter",
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class IteamFilter(django_filters.FilterSet):\n    name = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم ')\n    code = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الكود')\n    #main_categorey = django_filters.ModelChoiceFilter(queryset=Main_categorey.objects.all(),widget=forms.Select(attrs={'class': 'form-control'}),label='القسم الرئيسي')\n    sub_categorey = django_filters.ModelChoiceFilter(queryset=Sub_categorey.objects.all(),widget=forms.Select(attrs={'class': 'form-control'}),label='القسم الفرعي')\n    #peper_type_country = django_filters.ModelChoiceFilter(queryset=Peper_type_country.objects.all(),widget=forms.Select(attrs={'class': 'form-control'}),label='الدولة المصدرة')\n    #degree = django_filters.ModelChoiceFilter(queryset=Degree.objects.all(),widget=forms.Select(attrs={'class': 'form-control'}),label='الدرجة')\n    #linght = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الطول')\n    #width = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='العرض')\n    class Meta:",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": "In_stockFilter",
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class In_stockFilter(django_filters.FilterSet):\n    name = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم')\n    code = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الكود')\n    iteam = django_filters.ModelChoiceFilter(queryset=Iteam.objects.all(),widget=forms.Select(attrs={'class': 'form-control'}),label='الصنف')\n    date = django_filters.DateFilter(field_name='date',widget=forms.DateInput(attrs={'class': 'form-control','type': 'date'}),label='التاريخ')\n    #price = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='السعر')\n    #total = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاجمالي')\n    class Meta:\n        model = In_stock\n        fields = '__all__'",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": "CustomerFilter",
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class CustomerFilter(django_filters.FilterSet):\n    name = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم')\n    phone = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الهاتف')\n    email = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الايميل')\n    class Meta:\n        model = Customer\n        fields = '__all__'\n        exclude = ['id', 'user', 'name', 'phone', 'address', 'email']\nclass Out_StockNumberFilter(django_filters.FilterSet):\n    number = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الرقم')",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockNumberFilter",
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class Out_StockNumberFilter(django_filters.FilterSet):\n    number = django_filters.CharFilter(lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الرقم')\n    customer = django_filters.ModelChoiceFilter(queryset=Customer.objects.all(),widget=forms.Select(attrs={'class': 'form-control'}),label='العميل')\n    date = django_filters.DateFilter(widget=forms.DateInput(attrs={'type': 'date','class': 'form-control'}),label='التاريخ')\n    class Meta:\n        model = Out_StockNumber\n        fields = '__all__'\n        exclude = ['id', 'user', 'customer', 'date', 'number','status']\nclass  out_stockFilter (django_filters.FilterSet):  \n    in_stock_name = django_filters.CharFilter(field_name='in_stock__name',lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم')",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 6,
+            "peekOfCode": "class  out_stockFilter (django_filters.FilterSet):  \n    in_stock_name = django_filters.CharFilter(field_name='in_stock__name',lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم')\n    in_stock_code = django_filters.CharFilter(field_name='in_stock__code',lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الكود')\n    date = django_filters.DateFilter(field_name='date',widget=forms.DateInput(attrs={'class': 'form-control','type': 'date'}),label='التاريخ')\n    class Meta:\n        model = Out_Stock\n        fields = '__all__'\n        exclude = ['id','date','weaight','sheet','price','out_stocknumber','in_stock','iteam']\n#In_stoke_detalsFilter"
+        },
+        "kind": 6,
+        "importPath": "storge.filters",
+        "description": "storge.filters",
+        "peekOfCode": "class  out_stockFilter (django_filters.FilterSet):  \n    in_stock_name = django_filters.CharFilter(field_name='in_stock__name',lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الاسم')\n    in_stock_code = django_filters.CharFilter(field_name='in_stock__code',lookup_expr='icontains',widget=forms.TextInput(attrs={'class': 'form-control ',}),label='الكود')\n    date = django_filters.DateFilter(field_name='date',widget=forms.DateInput(attrs={'class': 'form-control','type': 'date'}),label='التاريخ')\n    class Meta:\n        model = Out_Stock\n        fields = '__all__'\n        exclude = ['id','date','weaight','sheet','price','out_stocknumber','in_stock','iteam']\n#In_stoke_detalsFilter",
+        "detail": "storge.filters",
+        "documentation": {}
+    },
+    {
+        "label": "SupplierForm",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class SupplierForm(forms.ModelForm):\n    name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    phone = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    email = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    address = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    class Meta:\n        model = Supplier\n        fields = ('name', 'phone', 'email', 'address')\nclass InStockNumberForm(forms.ModelForm):\n    supplier = forms.ModelChoiceField(queryset=Supplier.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "InStockNumberForm",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class InStockNumberForm(forms.ModelForm):\n    supplier = forms.ModelChoiceField(queryset=Supplier.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))\n    class Meta:\n        model = InStockNumber\n        fields = ('supplier',)\n        exclude = ('date','number','status')\nclass InStockNumberForm2(forms.ModelForm):\n    status = forms.ChoiceField(choices=InStockNumber.STATUS, widget=forms.Select(attrs={'class': 'form-control'}),required=False)\n    class Meta:\n        model = InStockNumber",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "InStockNumberForm2",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class InStockNumberForm2(forms.ModelForm):\n    status = forms.ChoiceField(choices=InStockNumber.STATUS, widget=forms.Select(attrs={'class': 'form-control'}),required=False)\n    class Meta:\n        model = InStockNumber\n        fields = ('status',)\n        exclude = ('date','number','supplier')\nclass IteamForm(forms.ModelForm):    \n    main_categorey = forms.ModelChoiceField(queryset=Main_categorey.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))\n    sub_categorey = forms.ModelChoiceField(queryset=Sub_categorey.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))\n    degree = forms.ModelChoiceField(queryset=Degree.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "IteamForm",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class IteamForm(forms.ModelForm):    \n    main_categorey = forms.ModelChoiceField(queryset=Main_categorey.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))\n    sub_categorey = forms.ModelChoiceField(queryset=Sub_categorey.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))\n    degree = forms.ModelChoiceField(queryset=Degree.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))\n    peper_type_country = forms.ModelChoiceField(queryset=Peper_type_country.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))\n    gram_categore = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'form-control'}),max_value=999)\n    linght = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'form-control'}),max_value=9999)\n    width = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'form-control'}),max_value=9999)\n    class Meta:\n        model = Iteam",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "In_stockForm",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class In_stockForm(forms.ModelForm):\n    weaight = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'kg'}),label='الوزن',required=False)\n    sheet = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'sheets'}),label='العدد ',required=False,)\n    price = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'LE'}),label='السعر',required=False)\n    iteam = forms.ModelChoiceField(queryset=Iteam.objects.all(), widget=forms.Select(attrs={'class': 'form-control col-lg-12'}),label=' اسم الصنف ',required=False)  \n    class Meta:\n        model = In_stock\n        fields = ('iteam', 'weaight', 'sheet', 'price')\n        exclude = ('id','name','code','supplier','date')\nIn_stockFormSet = formset_factory(In_stockForm, extra=10)",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CustomerForm",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class CustomerForm(forms.ModelForm):\n    name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    phone = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    email = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    address = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    class Meta:\n        model = Customer\n        fields = ('name', 'phone', 'email', 'address')      \n        exclude = ('id',)\nclass Out_StockNumberForm(forms.ModelForm):",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockNumberForm",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class Out_StockNumberForm(forms.ModelForm):\n    customer = forms.ModelChoiceField(queryset=Customer.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))\n    class Meta:\n        model = Out_StockNumber\n        fields = ('customer',)\n        exclude = ('date','number','status')\nclass Out_StockNumberForm2(forms.ModelForm):\n    status = forms.ChoiceField(choices=Out_StockNumber.STATUS, widget=forms.Select(attrs={'class': 'form-control'}),required=False)\n    class Meta:\n        model = Out_StockNumber",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockNumberForm2",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class Out_StockNumberForm2(forms.ModelForm):\n    status = forms.ChoiceField(choices=Out_StockNumber.STATUS, widget=forms.Select(attrs={'class': 'form-control'}),required=False)\n    class Meta:\n        model = Out_StockNumber\n        fields = ('status',)\n        exclude = ('date','number','customer')\nclass Out_stokeForm (forms.ModelForm):\n    weaight = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'kg'}),label='الوزن',required=False)\n    sheet = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'sheets'}),label='العدد ',required=False,)\n    price = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'LE'}),label='السعر',required=False)",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Out_stokeFor",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class Out_stokeForm (forms.ModelForm):\n    weaight = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'kg'}),label='الوزن',required=False)\n    sheet = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'sheets'}),label='العدد ',required=False,)\n    price = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'LE'}),label='السعر',required=False)\n    in_stock= forms.ModelChoiceField(queryset=In_stock.objects.all(), widget=forms.Select(attrs={'class': 'form-control col-lg-12'}),label=' اسم الصنف ',required=False)\n    in_stock_id = forms.IntegerField(widget=forms.HiddenInput(), required=False)\n    class Meta:\n        model = Out_Stock\n        fields = ('in_stock', 'weaight', 'sheet', 'price','in_stock_id')\n        exclude = ('id','name','code','date','out_stocknumber')",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Out_stoke_allFor",
+        "kind": 6,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "class Out_stoke_allForm (forms.ModelForm):\n    weaight = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'kg'}),label='الوزن',required=False)\n    sheet = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'sheets'}),label='العدد ',required=False)\n    price = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'LE'}),label='السعر',required=False)\n    in_stock= forms.ModelChoiceField(queryset=In_stock.objects.all(), widget=forms.Select(attrs={'class': 'form-control col-lg-12'}),label=' اسم الصنف ',required=False)\n    class Meta:\n        model = Out_Stock\n        fields = ('in_stock', 'weaight', 'sheet', 'price')\n        exclude = ('id','name','code','customer','date','out_stocknumber')",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "In_stockFormSet",
+        "kind": 5,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "In_stockFormSet = formset_factory(In_stockForm, extra=10)\nclass CustomerForm(forms.ModelForm):\n    name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    phone = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    email = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    address = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))\n    class Meta:\n        model = Customer\n        fields = ('name', 'phone', 'email', 'address')      \n        exclude = ('id',)",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Out_stokeFormSet",
+        "kind": 5,
+        "importPath": "storge.forms",
+        "description": "storge.forms",
+        "peekOfCode": "Out_stokeFormSet = formset_factory(Out_stokeForm, extra=3)\nclass Out_stoke_allForm (forms.ModelForm):\n    weaight = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'kg'}),label='الوزن',required=False)\n    sheet = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'sheets'}),label='العدد ',required=False)\n    price = forms.FloatField(widget=forms.TextInput(attrs={'class': 'form-control col-lg-10','placeholder': 'LE'}),label='السعر',required=False)\n    in_stock= forms.ModelChoiceField(queryset=In_stock.objects.all(), widget=forms.Select(attrs={'class': 'form-control col-lg-12'}),label=' اسم الصنف ',required=False)\n    class Meta:\n        model = Out_Stock\n        fields = ('in_stock', 'weaight', 'sheet', 'price')\n        exclude = ('id','name','code','customer','date','out_stocknumber')",
+        "detail": "storge.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Main_categorey",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Main_categorey(models.Model):\n    name = models.CharField(max_length=100)\n    code = models.CharField(max_length=100)\n    def __str__(self):\n        return self.name\n    #code \n    def  code_Main_categorey   (self):\n        return self.code  \nclass Sub_categorey(models.Model):\n    name = models.CharField(max_length=100)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sub_categorey",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Sub_categorey(models.Model):\n    name = models.CharField(max_length=100)\n    code = models.CharField(max_length=100)\n    main_categorey = models.ForeignKey(Main_categorey, on_delete=models.CASCADE)\n    def __str__(self):\n        return self.name\n    #code\n    def  code_Sub_categorey   (self):\n        return self.code\nclass Peper_type_country(models.Model):",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Peper_type_country",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Peper_type_country(models.Model):\n    name = models.CharField(max_length=100)\n    code = models.CharField(max_length=100)\n    def __str__(self):\n        return self.name\n    #code\n    def  code_Peper_type_country   (self):\n        return self.code\nclass Degree(models.Model):\n    name = models.CharField(max_length=100)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Degree",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Degree(models.Model):\n    name = models.CharField(max_length=100)\n    code = models.CharField(max_length=100)\n    def __str__(self):\n        return self.name   \n    #code\n    def  code_Degree   (self):\n        return self.code     \nclass Gram_Categore (models.Model):\n    name = models.FloatField(max_length=100,default=0000)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Gram_Categor",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Gram_Categore (models.Model):\n    name = models.FloatField(max_length=100,default=0000)\n    code = models.CharField(max_length=3,default=0000)\n    def __str__(self):\n        return str (self.name)   \n        #code\n    def  code_Gram_Categore   (self):   \n        return str (self.name)\nclass linght (models.Model):\n    name = models.FloatField(max_length=100 ,default=0000)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "lingh",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class linght (models.Model):\n    name = models.FloatField(max_length=100 ,default=0000)\n    code = models.CharField(max_length=4, default=0000 )\n    def __str__(self):\n        return str (self.name)   \n    #code\n    def  code_linght   (self):   \n        return str (self.name)   \nclass width (models.Model):\n    name = models.FloatField(max_length=100,default=0000)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "widt",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class width (models.Model):\n    name = models.FloatField(max_length=100,default=0000)\n    code = models.CharField(max_length=4,default=0000)\n    def __str__(self):\n        return str (self.name)   \n    #code\n    def  code_width   (self):   \n        return str (self.name)\n#المورديدن\nclass Supplier(models.Model):",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Supplier",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Supplier(models.Model):\n    user=models.ForeignKey(User, on_delete=models.CASCADE)\n    name = models.CharField(max_length=100, verbose_name='الاسم')\n    address = models.CharField(max_length=100 , verbose_name='العنوان')\n    phone = models.CharField(max_length=100 , verbose_name='الهاتف')\n    email = models.EmailField(max_length=100 , verbose_name='الايميل')\n    def __str__(self):\n        return str (self.name) \n#الاصناف\nclass Iteam (models.Model):# iteam ",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Itea",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Iteam (models.Model):# iteam \n    code = models.CharField(max_length=100, verbose_name='الكود',default='00-00-00-00-000',  )\n    name = models.CharField(max_length=100, verbose_name='الاسم',default='الاسم الكامل للصنف ', )\n    main_categorey = models.ForeignKey(Main_categorey, on_delete=models.CASCADE, null=True, blank=True)\n    sub_categorey = models.ForeignKey(Sub_categorey, on_delete=models.CASCADE, null=True, blank=True)\n    degree = models.ForeignKey(Degree, on_delete=models.CASCADE, null=True, blank=True)\n    peper_type_country = models.ForeignKey(Peper_type_country, on_delete=models.CASCADE, null=True, blank=True)\n    gram_categore = models.IntegerField(default='000')\n    linght = models.IntegerField(default='0000')\n    width = models.IntegerField(default='0000')",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "InStockNumber",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class InStockNumber(models.Model):\n    STATUS = (\n        ('تعديل', 'تعديل'),\n        ('نهائي', 'نهائي'),\n       )\n    date=models.DateField(auto_now_add=True,verbose_name='التاريخ')\n    number = models.IntegerField(default=0,verbose_name='رقم امر التوريد ')\n    supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE,verbose_name='المورد')\n    status = models.CharField(max_length=100, verbose_name='الحاله',default='تعديل' ,choices=STATUS)\n    def __str__(self):",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "In_stock",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class In_stock(models.Model): \n    date = models.DateField(auto_now_add=True,verbose_name='التاريخ',null=True, blank=True)\n    in_stocknumber = models.ForeignKey(InStockNumber, on_delete=models.CASCADE,verbose_name='رقم امر التوريد')\n    iteam = models.ForeignKey(Iteam, on_delete=models.CASCADE,verbose_name='الصنف')\n    weaight = models.FloatField(max_length=100, verbose_name='الوزن',default=0,null=True, blank=True)\n    sheet = models.IntegerField(default=0,null=True, blank=True,verbose_name='الورقه')\n    price = models.FloatField(max_length=100, verbose_name='السعر',default=0,null=True, blank=True)\n    name=models.CharField(max_length=100, verbose_name='الاسم',default='اذن توريد')\n    code=models.CharField(max_length=100, verbose_name='الكود',default='00-00-00-00-000000000000-0000', )\n    def __str__(self):",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Customer(models.Model):\n    name = models.CharField(max_length=100, verbose_name='الاسم')\n    user=models.ForeignKey(User, on_delete=models.CASCADE)\n    address = models.CharField(max_length=100, verbose_name='العنوان')\n    phone = models.CharField(max_length=100, verbose_name='الهاتف')\n    email = models.EmailField(max_length=100, verbose_name='الايميل')\n    def __str__(self):\n        return str (self.name)\n# اذن صرف الريسى    \nclass Out_StockNumber(models.Model):",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockNumber",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Out_StockNumber(models.Model):\n    STATUS = (\n        ('تعديل', 'تعديل'),\n        ('نهائي', 'نهائي'),\n    )\n    date = models.DateField(auto_now_add=True,null=True, blank=True,verbose_name='التاريخ')\n    number = models.IntegerField(default=0,verbose_name='رقم امر الصرف ')\n    customer = models.ForeignKey(Customer, on_delete=models.CASCADE,verbose_name='العميل')\n    status = models.CharField(max_length=100, verbose_name='الحاله',default='تعديل' ,choices=STATUS)\n    def __str__(self):",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 6,
+            "peekOfCode": "class  Out_Stock(models.Model):\n    date = models.DateField(auto_now_add=True,null=True, blank=True,verbose_name='التاريخ')\n    iteam=models.ForeignKey(Iteam, on_delete=models.CASCADE,verbose_name='الصنف',null=True, blank=True)\n    out_stocknumber = models.ForeignKey(Out_StockNumber, on_delete=models.CASCADE,verbose_name='رقم امر الصرف')\n    in_stock= models.ForeignKey(In_stock, on_delete=models.CASCADE,verbose_name='الصنف')\n    weaight = models.FloatField(max_length=100, verbose_name='الوزن',default=0,null=True, blank=True)\n    sheet = models.IntegerField(default=0,null=True, blank=True,verbose_name='الشيت')\n    price = models.FloatField(max_length=100, verbose_name='السعر',default=0,null=True, blank=True)\n    def __str__(self):\n        return str (self.in_stock.name)"
+        },
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class  Out_Stock(models.Model):\n    date = models.DateField(auto_now_add=True,null=True, blank=True,verbose_name='التاريخ')\n    iteam=models.ForeignKey(Iteam, on_delete=models.CASCADE,verbose_name='الصنف',null=True, blank=True)\n    out_stocknumber = models.ForeignKey(Out_StockNumber, on_delete=models.CASCADE,verbose_name='رقم امر الصرف')\n    in_stock= models.ForeignKey(In_stock, on_delete=models.CASCADE,verbose_name='الصنف')\n    weaight = models.FloatField(max_length=100, verbose_name='الوزن',default=0,null=True, blank=True)\n    sheet = models.IntegerField(default=0,null=True, blank=True,verbose_name='الشيت')\n    price = models.FloatField(max_length=100, verbose_name='السعر',default=0,null=True, blank=True)\n    def __str__(self):\n        return str (self.in_stock.name)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "In_stoke_detal",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class In_stoke_detals (models.Model):\n    date = models.DateField(auto_now_add=True)\n#البكر #removed\nclass Pukker (models.Model):  \n    weaight = models.FloatField(default=0, null=True, blank=True)\n#البكر الواباكو  #removed\nclass Sub (models.Model):\n    weaight = models.FloatField(default=0, null=True, blank=True)\n#removed\nclass Pako (models.Model):",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Pukke",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Pukker (models.Model):  \n    weaight = models.FloatField(default=0, null=True, blank=True)\n#البكر الواباكو  #removed\nclass Sub (models.Model):\n    weaight = models.FloatField(default=0, null=True, blank=True)\n#removed\nclass Pako (models.Model):\n    weaight = models.FloatField(default=0, null=True, blank=True)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Su",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Sub (models.Model):\n    weaight = models.FloatField(default=0, null=True, blank=True)\n#removed\nclass Pako (models.Model):\n    weaight = models.FloatField(default=0, null=True, blank=True)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "Pak",
+        "kind": 6,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "class Pako (models.Model):\n    weaight = models.FloatField(default=0, null=True, blank=True)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "set_iteam_code_and_name",
+        "kind": 2,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "def set_iteam_code_and_name(sender, instance, **kwargs):\n    instance.code = f\"{instance.main_categorey.code}-{instance.sub_categorey.code}-{instance.degree.code}-{instance.peper_type_country.code}-{instance.gram_categore}{instance.linght}{instance.width}\"\n    instance.name = f\"{instance.main_categorey.name} {instance.sub_categorey.name} {instance.degree.name} {instance.peper_type_country.name} {instance.gram_categore} {instance.linght} {instance.width}\"\nclass InStockNumber(models.Model):\n    STATUS = (\n        ('تعديل', 'تعديل'),\n        ('نهائي', 'نهائي'),\n       )\n    date=models.DateField(auto_now_add=True,verbose_name='التاريخ')\n    number = models.IntegerField(default=0,verbose_name='رقم امر التوريد ')",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "update_instocknumber_count",
+        "kind": 2,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "def update_instocknumber_count(sender, instance, created, **kwargs):\n    if created:\n        instance.number = InStockNumber.objects.count()\n        instance.save() \n#اذن التوريد\nclass In_stock(models.Model): \n    date = models.DateField(auto_now_add=True,verbose_name='التاريخ',null=True, blank=True)\n    in_stocknumber = models.ForeignKey(InStockNumber, on_delete=models.CASCADE,verbose_name='رقم امر التوريد')\n    iteam = models.ForeignKey(Iteam, on_delete=models.CASCADE,verbose_name='الصنف')\n    weaight = models.FloatField(max_length=100, verbose_name='الوزن',default=0,null=True, blank=True)",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "set_In_stoke_code",
+        "kind": 2,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "def set_In_stoke_code(sender, instance, **kwargs):\n  if instance.iteam:\n    similar_items = In_stock.objects.filter(\n        iteam=instance.iteam.id  \n    )\n    counter = similar_items.count()+1\n    instance.code = f\"{instance.iteam.code}-{str(counter).zfill(4)}\"\n    instance.name = f\"{instance.iteam.name}-{str(counter).zfill(4)}\"\n  else:\n        # Handle the case where iteam is not set",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "update_outstocknumber_count",
+        "kind": 2,
+        "importPath": "storge.models",
+        "description": "storge.models",
+        "peekOfCode": "def update_outstocknumber_count(sender, instance, created, **kwargs):\n    if created:\n        instance.number = Out_StockNumber.objects.count()\n        instance.save()\n#اذن صرف \nclass  Out_Stock(models.Model):\n    date = models.DateField(auto_now_add=True,null=True, blank=True,verbose_name='التاريخ')\n    iteam=models.ForeignKey(Iteam, on_delete=models.CASCADE,verbose_name='الصنف',null=True, blank=True)\n    out_stocknumber = models.ForeignKey(Out_StockNumber, on_delete=models.CASCADE,verbose_name='رقم امر الصرف')\n    in_stock= models.ForeignKey(In_stock, on_delete=models.CASCADE,verbose_name='الصنف')",
+        "detail": "storge.models",
+        "documentation": {}
+    },
+    {
+        "label": "In_StockTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class In_StockTable(tables.Table):\n    class Meta:\n        model = In_stock\n        fields = ('date','name','weaight')\n        attrs = {\"class\": \"table table-striped table-hover\"}\nclass Out_StockTable(tables.Table):\n    class Meta:\n        model = Out_Stock\n        fields = ('date','in_stock.name','weaight')\n        attrs = {\"class\": \"table table-striped table-hover\"}",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class Out_StockTable(tables.Table):\n    class Meta:\n        model = Out_Stock\n        fields = ('date','in_stock.name','weaight')\n        attrs = {\"class\": \"table table-striped table-hover\"}\nclass SupplierTable(tables.Table):\n    edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"supplier_update\" record.pk %}\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')\n    #name add link to update\n    name = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"in_stock_supplier\" record.pk %}\">{{record.name}}</a>', verbose_name='الاسم')\n    class Meta:",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "SupplierTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class SupplierTable(tables.Table):\n    edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"supplier_update\" record.pk %}\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')\n    #name add link to update\n    name = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"in_stock_supplier\" record.pk %}\">{{record.name}}</a>', verbose_name='الاسم')\n    class Meta:\n        model = Supplier\n        template_name = \"django_tables2/bootstrap4.html\"\n        fields = ('name', 'phone', 'address', 'email', 'edit')\n        exclude = ('id',)\nclass InStockNumberTable(tables.Table):",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "InStockNumberTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class InStockNumberTable(tables.Table):\n    #edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"InStockNumber_update\" record.pk %}\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')\n    number=tables.TemplateColumn(template_code='<a href=\"{% url \"in_stock\" record.pk %}\">{{record.number}}</a>', verbose_name='العدد')\n    class Meta:\n        model= InStockNumber\n        template_name = \"django_tables2/bootstrap4.html\"\n        fields = ('date','supplier', 'number','status')\n        exclude = ('id',)\nclass IteamTable(tables.Table):\n    edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')    ",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "IteamTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class IteamTable(tables.Table):\n    edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')    \n    class Meta:\n        model = Iteam\n        template_name = \"django_tables2/bootstrap4.html\"\n        fields = ('name','code')\n        exclude = ('id','edit')      \nclass In_stockTable(tables.Table):\n    class Meta:\n        model = In_stock",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "In_stockTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class In_stockTable(tables.Table):\n    class Meta:\n        model = In_stock\n        template_name = \"django_tables2/bootstrap4.html\"\n        fields = ('in_stocknumber','date','name','code','weaight','sheet','price')\n        exclude = ('id',)\nclass stocksTable(tables.Table):\n    class Meta:\n        model = In_stock\n        template_name = \"django_tables2/bootstrap4.html\"",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "stocksTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class stocksTable(tables.Table):\n    class Meta:\n        model = In_stock\n        template_name = \"django_tables2/bootstrap4.html\"\n        fields = ('name','code','price','total_weight','total_sheet','in_stocknumber')\n        exclude = ('id',) \nclass customerTable(tables.Table):\n    edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"custmer_update\" record.pk %}\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')  \n    name = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"out_stock_customer\" record.pk %}\">{{record.name}}</a>', verbose_name='الاسم')  \n    class Meta:",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "customerTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class customerTable(tables.Table):\n    edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"custmer_update\" record.pk %}\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')  \n    name = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"out_stock_customer\" record.pk %}\">{{record.name}}</a>', verbose_name='الاسم')  \n    class Meta:\n        model = Customer\n        template_name = \"django_tables2/bootstrap4.html\"\n        fields = ('name','phone','address','email','edit')\n        exclude = ('id',)\nclass Out_StockNumberTable(tables.Table):\n    #edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"OutStockNumber_update\" record.pk %}\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')  ",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockNumberTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class Out_StockNumberTable(tables.Table):\n    #edit = tables.TemplateColumn(orderable=False,template_code='<a href=\"{% url \"OutStockNumber_update\" record.pk %}\"><i class=\"fas fa-edit\"></i></a></a>', verbose_name='تعديل')  \n    number=tables.TemplateColumn(template_code='<a href=\"{% url \"out_stock\" record.pk %}\">{{record.number}}</a>', verbose_name='العدد')  \n    class Meta:\n        model= Out_StockNumber\n        template_name = \"django_tables2/bootstrap4.html\"\n        fields = ('date','customer', 'number','status')\n        exclude = ('id',)\nclass out_stockTable(tables.Table):\n    class Meta:",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "out_stockTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class out_stockTable(tables.Table):\n    class Meta:\n        model = Out_Stock\n        template_name = \"django_tables2/bootstrap4.html\"\n        fields = ('out_stocknumber','date','in_stock.name','in_stock.code','weaight','sheet','price')\n        exclude = ('id',)\nimport django_tables2 as tables\nfrom django.db import models\nfrom .models import Iteam, In_stock, Out_Stock\nclass StockTable(tables.Table):",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "StockTable",
+        "kind": 6,
+        "importPath": "storge.table",
+        "description": "storge.table",
+        "peekOfCode": "class StockTable(tables.Table):\n    edit = tables.TemplateColumn(\n        orderable=False,\n        template_code='<a href=\"\"><i class=\"fas fa-edit\"></i></a></a>',\n        verbose_name='تعديل'\n    )\n    total_weight = tables.Column(verbose_name='الوزن الإجمالي', empty_values=(), orderable=False)\n    total_sheets = tables.Column(verbose_name='عدد الأوراق الإجمالي', empty_values=(), orderable=False)\n    class Meta:\n        model = Iteam",
+        "detail": "storge.table",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "storge.urls",
+        "description": "storge.urls",
+        "peekOfCode": "urlpatterns = [  \n    path ('tr', views.transaction, name='transaction'),\n    path('storge/supplier/', views.supplier_view, name='supplier'),\n    path('storge/supplier/add/', views.supplier_add_view, name='supplier_add'),\n    path('storge/supplier/update/<int:pk>/', views.supplier_update_view, name='supplier_update'),\n    path ('storge/iteam/add/', views.iteam_add_view, name='iteam_add'),\n    path ('storge/iteam/', views.iteam_view, name='iteam'),\n    path('storge/InStockNumbery/', views.InStockNember_view, name='InStockNumber'),\n    path('storge/InStockNumbery/update/<int:pk>/', views.InStockNember_update_view, name='InStockNumber_update'),\n    path ('storge/in_stock/<int:pk>/', views.in_stock_view, name='in_stock'),",
+        "detail": "storge.urls",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def transaction(request):\n    in_stock=In_stock.objects.all()\n    out_stock=Out_Stock.objects.all()\n    in_stock_table = In_StockTable(In_stock.objects.order_by('-date'))\n    out_stock_table = Out_StockTable(Out_Stock.objects.order_by('-date'))\n    filterin = In_StockFilter(request.GET, queryset=in_stock)\n    filterout = Out_StockFilter(request.GET, queryset=out_stock)\n    in_stock_table = filterin.qs\n    out_stock_table = filterout.qs\n    in_stock_table = In_StockTable(in_stock_table)",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "supplier_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def supplier_view(request):\n    supplier=Supplier.objects.all()\n    table = SupplierTable(supplier)\n    filter = SupplierFilter(request.GET, queryset=supplier)\n    supplier = filter.qs\n    table = SupplierTable(supplier)\n    RequestConfig(request, paginate={'per_page': 30}).configure(table)\n    context = { 'supplier': supplier,'filter': filter, 'table': table}\n    return render(request, 'storge/supplier/supplier.html', context)\n#اضافه مورد",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "supplier_add_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def supplier_add_view(request):\n    form = SupplierForm()\n    user = User.objects.first()\n    if request.method == 'POST':\n        form = SupplierForm(request.POST)\n        if form.is_valid():\n            form = form.save(commit=False)\n            form.user = user\n            form.save()\n            return redirect('supplier')",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "supplier_update_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def supplier_update_view(request, pk):\n    supplier = get_object_or_404(Supplier, pk=pk)\n    form = SupplierForm(instance=supplier)\n    user=User.objects.first()\n    if request.method == 'POST':\n        form = SupplierForm(request.POST, instance=supplier)\n        if form.is_valid():\n            form = form.save(commit=False)\n            form.user = user\n            form.save()",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "InStockNember_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def InStockNember_view(request):\n    in_stock=InStockNumber.objects.all()\n#defolt sort by number\n    in_stock = in_stock.order_by('-number')\n    table = InStockNumberTable(in_stock)\n    filter = InStockNumberFilter(request.GET, queryset=in_stock)\n    in_stock = filter.qs\n    table = InStockNumberTable(in_stock)\n    RequestConfig(request, paginate={'per_page': 30}).configure(table)\n    form = InStockNumberForm()",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "InStockNember_update_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def InStockNember_update_view(request, pk):\n    in_stock = get_object_or_404(InStockNumber, pk=pk)\n    form = InStockNumberForm2(instance=in_stock)\n    #number=InStockNumber.objects.get(id=pk)\n    if request.method == 'POST':\n        form = InStockNumberForm2(request.POST, instance=in_stock)\n        if form.is_valid():\n            form = form.save(commit=False)\n            #form.number = number\n            form.save()",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "iteam_add_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def iteam_add_view(request):\n    form = IteamForm()\n    if request.method == 'POST':\n        form = IteamForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('iteam')\n    else:\n        form = IteamForm()\n    context = {'form': form}",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "iteam_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def iteam_view(request):\n    iteam=Iteam.objects.all()\n    table = IteamTable(iteam)\n    filter = IteamFilter(request.GET, queryset=iteam)\n    iteam = filter.qs\n    table = IteamTable(iteam)\n    RequestConfig(request, paginate={'per_page': 30}).configure(table)\n    context = { 'iteam': iteam,'filter': filter, 'table': table}\n    return render(request, 'storge/iteam/iteam_main.html', context)\n@login_required(login_url='login')",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "in_stock_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def in_stock_view(request,pk):\n    in_stocknumber = InStockNumber.objects.get(id=pk)\n    in_stock=In_stock.objects.filter(in_stocknumber=in_stocknumber)\n    table = In_stockTable(in_stock)\n    filter = In_stockFilter(request.GET, queryset=in_stock)\n    in_stock = filter.qs\n    table = In_stockTable(in_stock)\n    RequestConfig(request, paginate={'per_page': 30}).configure(table)\n    form = In_stockForm()\n    if request.method == 'POST':",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "in_stock_add_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def in_stock_add_view(request, pk):\n    in_stocknumber = get_object_or_404(InStockNumber,pk=pk)\n    formset=In_stockFormSet()\n    if request.method == 'POST':\n        formset=In_stockFormSet(request.POST)\n        if formset.is_valid():\n            for form in formset:\n                in_stock=form.save(commit=False)\n                in_stock.in_stocknumber=in_stocknumber\n                in_stock.save()",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "in_stock_supplier_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def in_stock_supplier_view(request,pk):\n    supplier = get_object_or_404(Supplier, pk=pk)\n    in_stocknumber = InStockNumber.objects.get(supplier=supplier)\n    in_stock=In_stock.objects.filter(in_stocknumber=in_stocknumber)\n    table = In_stockTable(in_stock)\n    filter = In_stockFilter(request.GET, queryset=in_stock)\n    in_stock = filter.qs\n    table = In_stockTable(in_stock)\n    RequestConfig(request, paginate={'per_page': 30}).configure(table)\n    context = { 'in_stock': in_stock,'filter': filter, 'table': table}",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "out_stock_customer_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def out_stock_customer_view(request, pk):\n    customer = get_object_or_404(Customer, pk=pk)\n    out_StockNumber = Out_StockNumber.objects.filter(customer=customer)\n    out_stoke=Out_Stock.objects.filter(out_stocknumber__in=out_StockNumber)\n    tables = out_stockTable(out_stoke)\n    filter = out_stockFilter(request.GET, queryset=out_stoke)\n    out_stoke = filter.qs\n    tables = out_stockTable(out_stoke)\n    RequestConfig(request, paginate={'per_page': 30}).configure(tables)  \n    context = { 'out_stoke': out_stoke,'filter': filter, 'tables': tables}",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "in_stocks_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def in_stocks_view(request):\n    if request.method == 'POST':\n        form = In_stockForm(request.POST)\n        if form.is_valid():\n            in_stock = form.save(commit=False)\n            in_stock.save()\n            for inner_form in form.inner_form_set:\n                if inner_form.is_valid():\n                    inner_form.instance.in_stock = in_stock\n                    inner_form.save()",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "custmer_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def custmer_view(request):\n    custmer=Customer.objects.all()\n    table = customerTable(custmer)\n    filter = CustomerFilter(request.GET, queryset=custmer)\n    custmer = filter.qs\n    table = customerTable(custmer)\n    RequestConfig(request, paginate={'per_page': 30}).configure(table)\n    form = CustomerForm()\n    if request.method == 'POST':\n        form = CustomerForm(request.POST)",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "custmer_update_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def custmer_update_view(request, pk):\n    custmer = get_object_or_404(Customer, pk=pk)\n    form = CustomerForm(instance=custmer)\n    if request.method == 'POST':\n        form = CustomerForm(request.POST, instance=custmer)\n        if form.is_valid():\n            form.save()\n            return redirect(\"custmer\")\n    context = {'form': form}\n    return render(request, 'storge/customer/customer_edit.html', context)",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockNumber_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def Out_StockNumber_view(request):\n    out_stocknumber=Out_StockNumber.objects.all() \n    #defolt sort by number\n    out_stocknumber = Out_StockNumber.objects.order_by('-number') \n    table = Out_StockNumberTable(out_stocknumber)\n    filter = Out_StockNumberFilter(request.GET, queryset=out_stocknumber)\n    out_stocknumber = filter.qs\n    table = Out_StockNumberTable(out_stocknumber)\n    RequestConfig(request, paginate={'per_page': 30}).configure(table)\n    form = Out_StockNumberForm()",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "Out_StockNumber_update_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def Out_StockNumber_update_view(request, pk):\n    out_stocknumber = get_object_or_404(Out_StockNumber, pk=pk)\n    form = Out_StockNumberForm2(instance=out_stocknumber)\n    if request.method == 'POST':\n        form = Out_StockNumberForm2(request.POST, instance=out_stocknumber)\n        if form.is_valid():\n            form.save()\n            return redirect(\"OutStockNumber\")\n    context = {'form': form}\n    return render(request, 'storge/OutStock/out_stocknumber_edit.html', context)",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "out_stock_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def out_stock_view(request, pk): \n    out_stocknumber = get_object_or_404(Out_StockNumber, pk=pk)\n    out_stoke= Out_Stock.objects.filter(out_stocknumber=out_stocknumber)\n    tables = out_stockTable(out_stoke)\n    filter = out_stockFilter(request.GET, queryset=out_stoke)\n    out_stoke = filter.qs\n    tables = out_stockTable(out_stoke)\n    RequestConfig(request, paginate={'per_page': 30}).configure(tables)\n    form = Out_stokeForm()\n    if request.method == 'POST':",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "out_stock_add_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def out_stock_add_view(request, pk):\n    out_stocknumber = get_object_or_404(Out_StockNumber,pk=pk)\n    formset=Out_stokeFormSet()\n    if request.method == 'POST':\n        formset=Out_stokeFormSet(request.POST)\n        if formset.is_valid():\n            for form in formset:\n                out_stoke=form.save(commit=False)\n                out_stoke.out_stocknumber=out_stocknumber\n                out_stoke.save()",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "out_stock_update_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def out_stock_update_view(request, pk):\n    out_stoke = get_object_or_404(Out_Stock, pk=pk)\n    form = Out_stokeForm(instance=out_stoke)\n    if request.method == 'POST':\n        form = Out_stokeForm(request.POST, instance=out_stoke)\n        if form.is_valid():\n            form.save()\n            return redirect(\"out_stoke\")\n    context = {'form': form}\n    return render(request, 'storge/OutStock/out_stoke_edit.html', context)",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "out_stock_all_view",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def out_stock_all_view(request):\n    out_stoke=Out_Stock.objects.all()\n    tables = out_stockTable(out_stoke)\n    filter = out_stockFilter(request.GET, queryset=out_stoke)\n    out_stoke = filter.qs\n    tables = out_stockTable(out_stoke)\n    RequestConfig(request, paginate={'per_page': 30}).configure(tables)\n    form = Out_stoke_allForm()\n    if request.method == 'POST':\n        form = Out_stoke_allForm(request.POST)",
+        "detail": "storge.views",
+        "documentation": {}
+    },
+    {
+        "label": "item_stock_vei",
+        "kind": 2,
+        "importPath": "storge.views",
+        "description": "storge.views",
+        "peekOfCode": "def item_stock_veiw (request):\n    table = StockTable(Iteam.objects.all())\n    filter = IteamFilter(request.GET, queryset=Iteam.objects.all())\n    table = filter.qs\n    table = StockTable(table)\n    RequestConfig(request, paginate={'per_page': 30}).configure(table)\n    context = {'table': table, 'filter': filter}\n    return render(request, 'storge/main/item_stock.html', context)",
+        "detail": "storge.views",
         "documentation": {}
     },
     {

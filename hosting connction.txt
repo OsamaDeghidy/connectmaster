@@ -26,6 +26,11 @@ pip install requests
 pip install arabic_reshaper
 pip install django-import-export
 pip install django-simple-history
+pip install django-crispy-forms
+pip install django_tables2
+pip install django-filter
+
+
 
  
 
@@ -57,7 +62,21 @@ python manage.py flush   # مسح الداتا بيز
 pip install django-paypal
 
 
+…or create a new repository on the command line
+echo "# connectmaster" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/OsamaDeghidy/connectmaster.git
+git push -u origin main
 
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/OsamaDeghidy/connectmaster.git
+git branch -M main
+git push -u origin main
  
 
 

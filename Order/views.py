@@ -137,30 +137,58 @@ def edit_corrective_action(request, corrective_action_id):
     return render(request, 'corrective_action/edit_corrective_action.html', {'form': form})
 
 @login_required
-def new_order(request,Sector_id,Customer_id,Product_id):
-     customer = get_object_or_404(Customer, pk = Customer_id)
-     product = get_object_or_404(Product, Product_Sector__pk = Sector_id, Product_Customer__pk = Customer_id, pk= Product_id)
-     form = NewOrderForm()
-     form_2 = New_Paper_and_cardboard_data_Form()
-     user = User.objects.get(username=request.user)
-     if request.method == "POST":
-          form = NewOrderForm(request.POST)
-          form_2 = New_Paper_and_cardboard_data_Form(request.POST)
-          if all ([form.is_valid(),form_2.is_valid()]):
-               Order = form.save(commit=False)
-               Paper_and_cardboard_data= form_2.save(commit=False)
-               Order.Ord_Product = product
-               Order.Ord_Created_By = user
-               Order.Ord_Customer_Name = customer
-               Order.save()
-               Paper_and_cardboard_data.CARD_Order = Order
-               Paper_and_cardboard_data.save()
-               #return redirect('orders:product_orders', Sector_id= Sector_id, Customer_id= Customer_id, Product_id= Product_id)
-               return redirect ('product_orders',Product_id=product.pk, Customer_id=product.Product_Customer.pk, Sector_id=product.Product_Sector.pk)
-     else:
-          form=NewOrderForm
-     
-     return render (request,'orders/New_Order.html',{'product':product,'form':form,'form_2':form_2})
+def new_order(request, Sector_id, Customer_id, Product_id):
+    customer = get_object_or_404(Customer, pk=Customer_id)
+    product = get_object_or_404(Product, Product_Sector__pk=Sector_id, Product_Customer__pk=Customer_id, pk=Product_id)
+    form = NewOrderForm()
+    form_2 = New_Paper_and_cardboard_data_Form()
+    user = User.objects.get(username=request.user)
+    
+    if request.method == "POST":
+        form = NewOrderForm(request.POST)
+        form_2 = New_Paper_and_cardboard_data_Form(request.POST)
+        
+        if all([form.is_valid(), form_2.is_valid()]):
+            order = form.save(commit=False)
+            paper_and_cardboard_data = form_2.save(commit=False)
+            
+            # Assign product details to order fields
+            order.Ord_Product = product
+            order.Ord_Created_By = user
+            order.Ord_Customer_Name = customer
+            order.Ord_import_order_number = product.product_Ordered_Supply
+            order.Order_Details = product.Product_Details
+            order.Ord_Operation_modification_type = product.product_dicription.Product_Description_type if product.product_dicription else ''
+            order.Ord_montage_size = product.Product_Design_and_printing_specifications.approved_montage_size if product.Product_Design_and_printing_specifications else ''
+            order.Ord_Number_the_montage = product.Product_Design_and_printing_specifications.approved_montage_count if product.Product_Design_and_printing_specifications else ''
+            order.Ord_colors_nember = ','.join(product.Product_Design_and_printing_specifications.product_color) if product.Product_Design_and_printing_specifications else ''
+            order.Ord_custom_colors = ','.join(filter(None, [
+                product.Product_Design_and_printing_specifications.tinted_colors1,
+                product.Product_Design_and_printing_specifications.tinted_colors2,
+                product.Product_Design_and_printing_specifications.tinted_colors3,
+                product.Product_Design_and_printing_specifications.tinted_colors4,
+                product.Product_Design_and_printing_specifications.tinted_colors5,
+                product.Product_Design_and_printing_specifications.tinted_colors6
+            ])) if product.Product_Design_and_printing_specifications else ''
+            order.Ord_type_print = ','.join(product.Product_Design_and_printing_specifications.pro_design_source) if product.Product_Design_and_printing_specifications else ''
+            order.Ord_Breaking_services = ','.join(product.Product_Crushing_Data.pro_crushing_data_type) if product.Product_Crushing_Data else ''
+            order.Ord_Note_Breaking = product.Product_Crushing_Data.pro_crushing_data_detals if product.Product_Crushing_Data else ''
+            order.Ord_Gluing = ','.join(product.Product_Gluing_And_Binding_Data.pro_Gluing_And_Binding_Data_type) if product.Product_Gluing_And_Binding_Data else ''
+            order.Ord_Note_Gluing = product.Product_Gluing_And_Binding_Data.pro_Gluing_And_Binding_Data_detals if product.Product_Gluing_And_Binding_Data else ''
+            order.Ord_Complete_Product = ','.join(product.Product_Finished_product_and_packing_data.pro_finished_product_and_packing_data_type) if product.Product_Finished_product_and_packing_data else ''
+            order.Ord_Packing = ','.join(product.Product_Finished_product_and_packing_data.pro_Finished_product_and_packing_data_Baku) if product.Product_Finished_product_and_packing_data else ''
+            order.Ord_Required_materials = product.Product_Finished_product_and_packing_data.pro_finished_product_and_packing_data_detals if product.Product_Finished_product_and_packing_data else ''
+            
+            order.save()
+            paper_and_cardboard_data.CARD_Order = order
+            paper_and_cardboard_data.save()
+            
+            return redirect('product_orders', Product_id=product.pk, Customer_id=product.Product_Customer.pk, Sector_id=product.Product_Sector.pk)
+    else:
+        form = NewOrderForm()
+    
+    return render(request, 'orders/New_Order.html', {'product':product, 'form':form, 'form_2':form_2})
+
 
 
 @login_required

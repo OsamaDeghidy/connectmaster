@@ -274,6 +274,7 @@ def edit_product(request, sector_id, customer_id, product_id):
 
 
 
+
 @login_required
 def print_product(request,Sector_id, Customer_id, Product_id):
      product = get_object_or_404(Product, Product_Sector__pk = Sector_id, Product_Customer__pk = Customer_id, pk = Product_id)

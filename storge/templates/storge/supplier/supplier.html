@@ -1,0 +1,64 @@
+{% extends 'layouts/base.html' %}{% load static %} {% block Title%} {{product.Product_Name}} {%endblock%} {% block content%} {% load render_table from django_tables2 %} {% load django_tables2 %}
+<!-- BreadCrumbs -->
+
+<!-- BreadCrumbs -->
+<div class="header bg-primary pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-3 mt--6">
+                    <a href="{% url 'supplier_add'%}" class="btn btn-sm btn-neutral">اضافة</a>
+                </div>
+                <div class="col-lg-6 col-5 text-right" dir="rtl">
+
+                    <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">الاصناف</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-lg-12 col-5 text-right mb--1" dir="rtl">
+                <form class="navbar-search navbar-search-light  " id="navbar-search-main" method="get">{% csrf_token %}
+                    <div class="form-group mb-0">
+                        <div class="input-group input-group-alternative input-group-merge">
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                            {{filter.form}}
+                            <input type="submit" value="Search" class="btn btn-primary">
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Content -->
+<div class="container-fluid mt--5" dir="rtl">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <!-- Card header -->
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        {% render_table table %}
+
+
+                    </table>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    {%endblock%}
+    <!-- Specific JS goes HERE -->
+    {% block javascripts %}{% endblock javascripts %}
